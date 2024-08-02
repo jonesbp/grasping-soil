@@ -18,10 +18,43 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<footer>
+			<div class="content">
+				<div class="left-side">
+					<div>
+						<ul class="primary">
+							<li>
+								<a href="/syllabus">Syllabus</a>
+								<ul>
+									<li><a href="/units/1-soil-as-substrate">1. Soil as Substrate</a></li>
+									<li><a href="/units/2-soil-as-archive">2. Soil as Archive</a></li>
+									<li><a href="/units/3-soil-as-health">3. Soil as Health</a></li>
+									<li><a href="/units/4-soil-as-belonging">4. Soil as Belonging</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="primary">
+							<li>
+								<a href="/essays">Essays</a>
+							</li>
+							<li>
+								<a href="/reading-list">Reading List</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="right-side">
+					<div>&copy; 2024 / <a href="/colophon">Colophon</a></div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
 <style is:global>
 :root {
+	--max-content-width: 1280px;
 	--text-color: rgb(50, 48, 34);
 	--background-color: rgb(205, 193, 175);
 	--translucent-background-color: rgba(205, 193, 175, 0.8);
@@ -40,5 +73,67 @@ body {
 	color: var(--text-color);
 	margin: 0;
 	padding: 0;
+}
+
+footer {
+	background-color: var(--text-color);
+	color: var(--background-color);
+	min-height: 100px;
+}
+
+footer .content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0 auto;
+	max-width: var(--max-content-width);
+	padding: 4rem 0 3rem 0;
+	width: 100%;
+}
+
+footer .left-side {
+	column-gap: 4rem;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 40px;
+}
+
+footer .content ul {
+	font-size: 1.4rem;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer .content  ul.primary > li {
+	margin-bottom: .25em;
+}
+
+footer .content li > ul {
+	font-size: 1.2rem;
+	margin-top: .5em;
+	padding-left: .5em;
+}
+
+footer .content li > ul li {
+	margin-top: .25em;
+}
+
+footer .content a {
+	color: var(--background-color);
+	text-decoration-color: transparent;
+	transition: all ease 0.1s;
+}
+
+footer .content a:hover {
+	color: var(--accent-color-brown-1);
+	text-decoration-color: var(--accent-color-brown-1);
+}
+
+footer .right-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-right: 40px;
+	text-align: right;
 }
 </style>
