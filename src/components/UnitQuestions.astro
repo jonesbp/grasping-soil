@@ -1,0 +1,48 @@
+---
+const {
+    questions
+} = Astro.props;
+---
+
+<h4>Questions</h4>
+
+<ul>
+{questions.map(question => (
+    <li>
+        {question}
+    </li>
+))}
+</ul>
+
+<style>
+h4 {
+    border-color: var(--accent-color-brown-3);
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 4rem;
+    margin-left: -1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    width: calc(100% + 1em);
+}
+
+ul {
+    list-style-type: none;
+    margin: 2rem 0;
+    max-width: 760px;
+    padding: 0;
+}
+
+li {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 130%;
+    margin-top: 1em;
+}
+
+li:first-of-type {
+    margin-top: 0;
+}
+</style>

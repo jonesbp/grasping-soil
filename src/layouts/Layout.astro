@@ -53,18 +53,109 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+/* Seravek Web Extra Light */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebExtraLight/SeravekWebExtraLight.woff2') format('woff2'),
+	url('/fonts/SeravekWebExtraLight/SeravekWebExtraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+/* Seravek Web Extra Light Italic */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebExtraLightItalic/SeravekWebExtraLightItalic.woff2') format('woff2'),
+	url('/fonts/SeravekWebExtraLightItalic/SeravekWebExtraLightItalic.woff') format('woff');
+	font-weight: 200;
+	font-style: italic;
+}
+
+/* Seravek Web Light */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebLight/SeravekWebLight.woff2') format('woff2'),
+	url('/fonts/SeravekWebLight/SeravekWebLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* Seravek Web Light Italic */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebLightItalic/SeravekWebLightItalic.woff2') format('woff2'),
+	url('/fonts/SeravekWebLightItalic/SeravekWebLightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+/* Seravek Web Regular */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebRegular/SeravekWebRegular.woff2') format('woff2'),
+	url('/fonts/SeravekWebRegular/SeravekWebRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Seravek Web Regular Italic */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebRegularItalic/SeravekWebRegularItalic.woff2') format('woff2'),
+	url('/fonts/SeravekWebRegularItalic/SeravekWebRegularItalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* Seravek Web Medium */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebMedium/SeravekWebMedium.woff2') format('woff2'),
+	url('/fonts/SeravekWebMedium/SeravekWebMedium.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* Seravek Web Medium Italic */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebMediumItalic/SeravekWebMediumItalic.woff2') format('woff2'),
+	url('/fonts/SeravekWebMediumItalic/SeravekWebMediumItalic.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+}
+
+/* Seravek Web Bold */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebBold/SeravekWebBold.woff2') format('woff2'),
+	url('/fonts/SeravekWebBold/SeravekWebBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Seravek Web Bold Italic */
+@font-face {
+	font-family: 'SeravekWeb';
+	src: url('/fonts/SeravekWebBoldItalic/SeravekWebBoldItalic.woff2') format('woff2'),
+	url('/fonts/SeravekWebBoldItalic/SeravekWebBoldItalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
 :root {
 	--max-content-width: 1280px;
+	--max-page-width: 960px;
 	--text-color: rgb(50, 48, 34);
-	--background-color: rgb(205, 193, 175);
-	--translucent-background-color: rgba(205, 193, 175, 0.8);
+	--background-color: rgb(214, 201, 189);
+	--translucent-background-color: rgb(214, 201, 189, 0.8);
 	--accent-color: rgb(72, 94, 63);
 	--accent-color-brown-1: rgb(202, 177, 20);
 	--accent-color-brown-2: rgb(58, 43, 45);
 	--accent-color-brown-3: rgb(94, 82, 71);
 }
 html {
-	font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+	font-family: 'SeravekWeb', Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 	font-weight: normal;
 }
 
@@ -99,6 +190,7 @@ footer .left-side {
 
 footer .content ul {
 	font-size: 1.4rem;
+	font-weight: 400;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -110,6 +202,7 @@ footer .content  ul.primary > li {
 
 footer .content li > ul {
 	font-size: 1.2rem;
+	font-weight: 300;
 	margin-top: .5em;
 	padding-left: .5em;
 }

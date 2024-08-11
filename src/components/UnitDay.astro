@@ -1,0 +1,31 @@
+---
+const {
+    number,
+    headline,
+} = Astro.props;
+---
+<div class="unit-day">
+    <h3>Day {number}: {headline}</h3>
+
+    <slot />
+</div>
+
+<style>
+.unit-day {
+    margin: 4rem auto 8rem auto;
+    max-width: var(--max-page-width);
+    width: 100%;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.unit-day :global(p) {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 140%;
+    max-width: 760px;
+}
+</style>

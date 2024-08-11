@@ -1,0 +1,38 @@
+---
+---
+<ul class="shortcut-list">
+    <slot />
+</ul>
+
+<style>
+ul.shortcut-list {
+    float: right;
+    font-size: 1.2rem;
+    list-style-type: none;
+    margin: 0 0 2rem 2rem;
+    padding-left: 0;
+}
+
+.shortcut-list :global(li a) {
+    color: var(--background-color);
+    display: block;
+    padding: .5em 1.5em .5em 1em;
+    text-decoration: none;
+}
+
+.shortcut-list :global(li:nth-of-type(4n + 1) a) {
+    background-color: var(--accent-color);
+}
+
+.shortcut-list :global(li:nth-of-type(4n + 2) a) {
+    background-color: var(--accent-color-brown-2);
+}
+
+.shortcut-list :global(li:nth-of-type(4n + 3) a) {
+    background-color: var(--accent-color-brown-3);
+}
+
+.shortcut-list :global(li:nth-of-type(4n + 4) a) {
+    background-color: var(--text-color);
+}
+</style>

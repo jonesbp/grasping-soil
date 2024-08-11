@@ -1,0 +1,31 @@
+---
+const {
+    imageSrc,
+    imageAlt,
+} = Astro.props;
+---
+<div class="unit-strip">
+    <div class="contents">
+        <img src={imageSrc} alt={imageAlt} />
+    </div>
+</div>
+
+<style>
+.unit-strip {
+    background-color: var(--accent-color-brown-3);
+    border-color: var(--accent-color-brown-2);
+    border-style: solid;
+    border-width: 4px 0;
+    margin-bottom: 6rem;
+}
+
+.unit-strip .contents {
+    margin: 0 auto;
+    max-width: var(--max-content-width);
+}
+
+.unit-strip .contents img {
+    display: block;
+    max-width: 100%;
+}
+</style>

@@ -1,0 +1,52 @@
+---
+
+---
+<div class="formatted-text-block">
+    <slot />
+</div>
+
+<style>
+.formatted-text-block {
+    max-width: 760px;
+}
+
+.formatted-text-block :global(p) {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 1em auto;
+}
+
+.formatted-text-block :global(p.large) {
+    font-size: 1.5rem;
+}
+
+.formatted-text-block :global(p.small) {}
+
+.formatted-text-block :global(blockquote) {
+    border-color: var(--accent-color-brown-1);
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 1em auto 2.5em .25em;
+    padding-left: .75em;
+}
+
+.formatted-text-block :global(ul) {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 2.5em auto;
+    padding-left: 1em;
+}
+
+.formatted-text-block :global(li) {
+    margin-bottom: 0.75em;
+}
+
+.formatted-text-block :global(li:last-of-type) {
+    margin-bottom: 0;
+}
+</style>

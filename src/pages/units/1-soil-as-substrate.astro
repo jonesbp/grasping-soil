@@ -1,6 +1,14 @@
 ---
 import UnitLayout from '../../layouts/UnitLayout.astro';
 
+import DayStrip from "../../components/DayStrip.astro";
+import FormattedText from '../../components/FormattedText.astro';
+import PageBlock from '../../components/PageBlock.astro';
+import ShortcutList from '../../components/ShortcutList.astro';
+import UnitDay from '../../components/UnitDay.astro';
+import UnitQuestions from '../../components/UnitQuestions.astro';
+import UnitStrip from '../../components/UnitStrip.astro';
+
 const number = 1;
 const title = "Soil as Substrate";
 ---
@@ -8,5 +16,118 @@ const title = "Soil as Substrate";
     number={number}
     title={title}
 >
+    <UnitStrip imageSrc="/images/unit-x/unit-X-strip.jpeg" alt="Illustrations" />
 
+    <PageBlock>
+        <ShortcutList>
+            <li>
+                <a href="#">1. Soil properties and uses broadly</a>
+            </li>
+            <li>
+                <a href="#">2. Soil organic matter</a>
+            </li>
+            <li>
+                <a href="#">3. TK</a>
+            </li>
+            <li>
+                <a href="#">4. TK</a>
+            </li>
+            <li>
+                <a href="#">5. TK</a>
+            </li>
+        </ShortcutList>
+        <FormattedText>
+            <p class="large">
+                Nulla quis lobortis urna. Donec non eros at turpis dignissim pharetra. Maecenas lobortis malesuada sodales. Etiam id massa in velit porta maximus ut eu orci. Nullam aliquam ex ut bibendum rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam aliquet, nibh ac tristique feugiat, ante ligula porttitor dui, tincidunt fermentum orci dolor in lorem. Vestibulum accumsan dui sit amet sagittis elementum.
+            </p>
+            <p>
+                Nunc aliquam nulla a velit tincidunt, sed fermentum ligula ullamcorper. Maecenas scelerisque interdum egestas. Aliquam sollicitudin mauris leo, sit amet lacinia erat suscipit vel. Mauris dolor arcu, tempus non blandit sit amet, elementum vel quam. Mauris maximus, erat vel ultrices lobortis, enim orci sodales elit, varius varius arcu orci eget arcu. Suspendisse et semper felis. Nunc quis lacus placerat, suscipit augue nec, facilisis velit. Vivamus porta ac lectus ullamcorper convallis. Proin efficitur gravida varius. Cras feugiat posuere sem a vehicula. Donec arcu nibh, iaculis eu libero eu, congue venenatis leo. Donec id tempus lacus, eget pellentesque nibh. Integer nec libero ipsum. Etiam aliquet ligula sit amet orci venenatis, eget mollis nisi placerat.
+            </p>
+        </FormattedText>
+    </PageBlock>
+
+    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-1.jpg" />
+
+    <UnitDay
+        number={1}
+        headline="Soil properties and uses broadly"
+    >
+        <FormattedText>
+            <p>
+                Soil is a universal substrate viewed and evaluated in different ways depending on the soil user: as a
+                source of medicine, a substrate to grow crops, a place to store carbon, where water is filtered, or
+                where to obtain clay for bricks, adobe or pottery, among many others.  Soil is weathered from rock,
+                influenced by plants, soil biota and climate over time. Its properties depend on the interplay of all these
+                factors in a way that it is difficult to say whether the soil determines the plant or microbial
+                community or vice versa. Rock-derived minerals such as phyllosilicates (smectite, vermiculite, etc.) or
+                quartz are the inorganic building blocks of soil that are separated by size classes (texture) into
+                rocks (&gt;2mm), sand (0.02-2mm), silt (0.002-0.02mm) and clay (&lt;0.002mm), organic matter is mostly
+                composed of decomposition products of plant and animal residues remaining from the activity of soil
+                biota, and the resulting soil structure distinguishes soil from other substrates. Soil structure is the
+                formation of aggregates as organic matter, especially from microbial products, glues together clay-,
+                silt- and sand-sized minerals. Most plant nutrients are released by weathering rock, except for
+                nitrogen that evolutionarily is a result of microbial fixation of atmospheric N2 gas.
+            </p>
+        </FormattedText>
+
+        <UnitQuestions
+            questions={[
+                "Who uses the substrate?",
+                "What invariant soil properties define soil?",
+                "What are variable and therefore manageable soil properties?",
+            ]}
+        />
+    </UnitDay>
+
+    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-2.jpg" />
+
+    <UnitDay
+        number={2}
+        headline="Soil organic matter (not Humus)"
+    >
+        <p>
+            Historically, organic matter in soil has been conceived as humus consisting of humic substances that are created mainly by microorganisms through humification, a process of secondary resynthesis of large and thereby recalcitrant molecules from decomposition of plant material. The scientific field is moving towards understanding soil organic matter through a soil continuum model, whereby plant residues are decomposed and the microbial residues persist in soil longer than predicted from their molecular properties, because they exist within and even interact with a complex soil architecture. This also means that plant materials that decompose more rapidly generate more persistent organic matter if they generate more microbial matter. Metabolomics of what microorganisms produce can uncover whether greater diversity of metabolites in itself would confer persistence and whether decomposition would generate a more diverse molecular composition,- a regulatory feedback loop whereby faster decomposition creates more diverse metabolites that slows decomposition. More organic carbon therefore accrues not by accumulation of what cannot be decomposed because it is inedible, but by accumulation of what is produced as a result of decomposition,- materials that are eminently edible, but are not eaten for a variety of reasons, including spatial heterogeneity, temporal variability and molecular diversity that also affect how molecules interact with mineral surfaces and whether they are located in aggregates, both of which that makes them less accessible to microorganisms that would produce carbon dioxide.
+        </p>
+
+        <UnitQuestions
+            questions={[
+                "What is the master(=the most important) regulator/variable of soil that defines its manageable property?",
+                "How does your thinking about soil change if the durability of organic matter is not a result of recalcitrance, but the interplay of biota and environment and that eating results in preserving?",
+                "Is such a view of soil carbon cycles more in line with Donna Haraway’s thinking about humus as a substrate to inspire humans’ being in the world?",
+            ]}
+        />
+    </UnitDay>
+
+    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-3.jpg" />
+
+    <UnitDay
+        number={3}
+        headline="TK"
+    >
+        <p>
+            Curabitur velit quam, tempus ut auctor egestas, pulvinar id enim. Phasellus convallis augue magna, in rhoncus nisl vestibulum at. Curabitur erat enim, tempor eleifend auctor quis, gravida id risus. Nulla consectetur ultrices diam, vel porttitor neque ornare vitae. Curabitur volutpat lectus eu sapien pulvinar, vel placerat massa euismod. Ut eu venenatis velit. Aenean quis ornare est, id porttitor urna. In hac habitasse platea dictumst. Aliquam elementum bibendum aliquam.
+        </p>
+    </UnitDay>
+
+    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-4.jpg" />
+
+    <UnitDay
+        number={4}
+        headline="TK"
+    >
+        <p>
+            Praesent a metus sed magna ornare blandit nec non risus. Vivamus feugiat rutrum leo, hendrerit imperdiet ipsum rhoncus non. Duis vel massa ut massa imperdiet porta non quis lorem. Praesent faucibus quis leo vitae ornare. Aliquam metus dolor, fringilla malesuada magna tempor, imperdiet venenatis eros. Quisque quam augue, auctor nec iaculis a, lobortis et risus. Nam sit amet libero maximus, eleifend quam in, rhoncus magna. Praesent sagittis mi vel orci fermentum, vitae semper enim convallis. Mauris in imperdiet nunc. Proin interdum bibendum nibh, id volutpat sem hendrerit at. In ac orci id risus dictum facilisis. Phasellus vitae pulvinar ex. Aenean nec nunc ut nunc consectetur aliquam sit amet sollicitudin enim. Fusce lectus nunc, porttitor nec ex ac, elementum aliquam est. Duis sit amet sapien molestie, porttitor ante quis, mollis orci. Etiam lacus dui, condimentum quis malesuada vitae, egestas non ex.
+        </p>
+    </UnitDay>
+
+    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-5.jpg" />
+
+    <UnitDay
+        number={5}
+        headline="TK"
+    >
+        <p>
+            Duis est risus, pharetra sed egestas at, lobortis at urna. Phasellus eu gravida est. Donec quis est et est tempor varius. Integer fringilla vehicula quam, sed ornare mauris. Donec eleifend magna quis ligula aliquam, ac ultrices purus finibus. Nulla convallis, risus vitae luctus pretium, arcu nibh vestibulum massa, at ultrices leo nisl ut purus. Integer et leo et quam porta venenatis. Aenean dictum massa sit amet consequat posuere. Aenean bibendum tellus in tortor volutpat, ut iaculis tortor porttitor. Proin odio risus, scelerisque vitae odio ut, pulvinar luctus purus. Pellentesque ornare ex quam, nec mollis tellus suscipit vitae. Pellentesque facilisis facilisis elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus posuere consequat gravida. Aenean purus arcu, ultrices quis erat sed, pellentesque gravida nunc.
+        </p>
+    </UnitDay>
 </UnitLayout>
