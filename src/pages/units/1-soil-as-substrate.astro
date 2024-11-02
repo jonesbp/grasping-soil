@@ -1,7 +1,6 @@
 ---
 import UnitLayout from '../../layouts/UnitLayout.astro';
 
-import DayStrip from "../../components/DayStrip.astro";
 import FormattedText from '../../components/FormattedText.astro';
 import PageBlock from '../../components/PageBlock.astro';
 import ShortcutList from '../../components/ShortcutList.astro';
@@ -21,113 +20,155 @@ const title = "Soil as Substrate";
     <PageBlock>
         <ShortcutList>
             <li>
-                <a href="#">1. Soil properties and uses broadly</a>
+                <a href="#">1. Who cares about (and for) soil? </a>
             </li>
             <li>
-                <a href="#">2. Soil organic matter</a>
+                <a href="#">2. Assessing soil’s properties and uses </a>
             </li>
             <li>
-                <a href="#">3. TK</a>
+                <a href="#">3. Soil organic matter (not humus) and the metabolic life of soil: What are we getting wrong?</a>
             </li>
             <li>
-                <a href="#">4. TK</a>
+                <a href="#">4. Approaching soil as a repository of historical metabolism</a>
             </li>
             <li>
-                <a href="#">5. TK</a>
+                <a href="#">5. Materializing future horizons through soil</a>
             </li>
         </ShortcutList>
         <FormattedText>
             <p class="large">
-                Nulla quis lobortis urna. Donec non eros at turpis dignissim pharetra. Maecenas lobortis malesuada sodales. Etiam id massa in velit porta maximus ut eu orci. Nullam aliquam ex ut bibendum rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam aliquet, nibh ac tristique feugiat, ante ligula porttitor dui, tincidunt fermentum orci dolor in lorem. Vestibulum accumsan dui sit amet sagittis elementum.
-            </p>
-            <p>
-                Nunc aliquam nulla a velit tincidunt, sed fermentum ligula ullamcorper. Maecenas scelerisque interdum egestas. Aliquam sollicitudin mauris leo, sit amet lacinia erat suscipit vel. Mauris dolor arcu, tempus non blandit sit amet, elementum vel quam. Mauris maximus, erat vel ultrices lobortis, enim orci sodales elit, varius varius arcu orci eget arcu. Suspendisse et semper felis. Nunc quis lacus placerat, suscipit augue nec, facilisis velit. Vivamus porta ac lectus ullamcorper convallis. Proin efficitur gravida varius. Cras feugiat posuere sem a vehicula. Donec arcu nibh, iaculis eu libero eu, congue venenatis leo. Donec id tempus lacus, eget pellentesque nibh. Integer nec libero ipsum. Etiam aliquet ligula sit amet orci venenatis, eget mollis nisi placerat.
+                In this unit, we approach soil as an active material that contributes to composing (and decomposing!) our
+                lifeworlds. To do so asks us to consider how the composition of soil is linked to flows of energy and materials
+                and dynamically intertwined with perception and response of various living and non-living processes. We
+                borrow Tim Ingold’s notion of the “ecology of material” to help us think through soil as “matter that is
+                always already historical” and how its material properties become a matter of concern for present communities
+                and future generations. This unit seeks to answer these questions through 1)  introductory overview to the
+                material composition of soil and its relation to use, 2) a review of the “metabolic” turn in soil studies to
+                3) an exercise to think through the composition of soil as a form of material memory that shapes future growth.
             </p>
         </FormattedText>
     </PageBlock>
 
-    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-1.jpg" />
-
     <UnitDay
         number={1}
-        headline="Soil properties and uses broadly"
+        headline="Who cares about (and for) soil?"
     >
         <FormattedText>
+            <p class="large">
+                To serve as a broad introduction to the course, today’s readings and activities aim to orient us towards
+                seeing soil as a material always in relation to its user and thus shaped by how it is cared for or neglected with
+                that use in mind.
+            </p>
             <p>
-                Soil is a universal substrate viewed and evaluated in different ways depending on the soil user: as a
-                source of medicine, a substrate to grow crops, a place to store carbon, where water is filtered, or
-                where to obtain clay for bricks, adobe or pottery, among many others.  Soil is weathered from rock,
-                influenced by plants, soil biota and climate over time. Its properties depend on the interplay of all these
-                factors in a way that it is difficult to say whether the soil determines the plant or microbial
-                community or vice versa. Rock-derived minerals such as phyllosilicates (smectite, vermiculite, etc.) or
-                quartz are the inorganic building blocks of soil that are separated by size classes (texture) into
-                rocks (&gt;2mm), sand (0.02-2mm), silt (0.002-0.02mm) and clay (&lt;0.002mm), organic matter is mostly
-                composed of decomposition products of plant and animal residues remaining from the activity of soil
-                biota, and the resulting soil structure distinguishes soil from other substrates. Soil structure is the
-                formation of aggregates as organic matter, especially from microbial products, glues together clay-,
-                silt- and sand-sized minerals. Most plant nutrients are released by weathering rock, except for
-                nitrogen that evolutionarily is a result of microbial fixation of atmospheric N2 gas.
+                <b>Beginning Exercise:</b> Can you think of a community or group involved with improving or caring for soil?
+                What activities do they undertake with that soil? To what extent are those activities also interventions aimed
+                at altering or affecting the composition of soil? Does this investment into creating soil also map onto generating
+                new possibilities of growth? How is the ecology of soil linked with an ecology of social relationships and
+                hopes for the future? How are soil and ideas of care linked?
             </p>
         </FormattedText>
 
-        <UnitQuestions
-            questions={[
-                "Who uses the substrate?",
-                "What invariant soil properties define soil?",
-                "What are variable and therefore manageable soil properties?",
-            ]}
-        />
     </UnitDay>
-
-    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-2.jpg" />
 
     <UnitDay
         number={2}
-        headline="Soil organic matter (not Humus)"
+        headline="Assessing soil’s properties and uses"
     >
-        <p>
-            Historically, organic matter in soil has been conceived as humus consisting of humic substances that are created mainly by microorganisms through humification, a process of secondary resynthesis of large and thereby recalcitrant molecules from decomposition of plant material. The scientific field is moving towards understanding soil organic matter through a soil continuum model, whereby plant residues are decomposed and the microbial residues persist in soil longer than predicted from their molecular properties, because they exist within and even interact with a complex soil architecture. This also means that plant materials that decompose more rapidly generate more persistent organic matter if they generate more microbial matter. Metabolomics of what microorganisms produce can uncover whether greater diversity of metabolites in itself would confer persistence and whether decomposition would generate a more diverse molecular composition,- a regulatory feedback loop whereby faster decomposition creates more diverse metabolites that slows decomposition. More organic carbon therefore accrues not by accumulation of what cannot be decomposed because it is inedible, but by accumulation of what is produced as a result of decomposition,- materials that are eminently edible, but are not eaten for a variety of reasons, including spatial heterogeneity, temporal variability and molecular diversity that also affect how molecules interact with mineral surfaces and whether they are located in aggregates, both of which that makes them less accessible to microorganisms that would produce carbon dioxide.
-        </p>
+        <FormattedText>
+            <p class="large">
+                Soil is a substrate viewed and evaluated in different ways depending on who is using it for what: it might be a
+                source of medicine, a media for growing crops, a place to store carbon, a filtration system for water, or where
+                to obtain clay for bricks, adobe or pottery, among many others. Soil is weathered from rock, influenced by plants,
+                soil biota and climate over time. Its properties depend on the interplay of all these factors in a way that it
+                is difficult to say whether the soil determines the plant or microbial community or vice versa. Rock-derived minerals
+                such as phyllosilicates (smectite, vermiculite, etc.) or quartz are the inorganic building blocks of soil that
+                are separated by size classes (texture) into rocks (&gt;2mm), sand (0.02-2mm), silt (0.002-0.02mm) and clay (&lt;0.002mm),
+                organic matter is mostly composed of decomposition products of plant and animal residues remaining from the
+                activity of soil biota, and the resulting soil structure distinguishes soil from other substrates. Soil structure is
+                the formation of aggregates as organic matter, especially from microbial products, glues together clay-, silt- and
+                sand-sized minerals. Most plant nutrients are released by weathering rock, except for nitrogen that evolutionarily
+                is a result of microbial fixation of atmospheric N<sub>2</sub> gas.
+            </p>
+        </FormattedText>
 
-        <UnitQuestions
-            questions={[
-                "What is the master(=the most important) regulator/variable of soil that defines its manageable property?",
-                "How does your thinking about soil change if the durability of organic matter is not a result of recalcitrance, but the interplay of biota and environment and that eating results in preserving?",
-                "Is such a view of soil carbon cycles more in line with Donna Haraway’s thinking about humus as a substrate to inspire humans’ being in the world?",
-            ]}
-        />
     </UnitDay>
-
-    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-3.jpg" />
 
     <UnitDay
         number={3}
-        headline="TK"
+        headline="Soil organic matter (not humus) and the metabolic life of soil: What are we getting wrong?"
     >
-        <p>
-            Curabitur velit quam, tempus ut auctor egestas, pulvinar id enim. Phasellus convallis augue magna, in rhoncus nisl vestibulum at. Curabitur erat enim, tempor eleifend auctor quis, gravida id risus. Nulla consectetur ultrices diam, vel porttitor neque ornare vitae. Curabitur volutpat lectus eu sapien pulvinar, vel placerat massa euismod. Ut eu venenatis velit. Aenean quis ornare est, id porttitor urna. In hac habitasse platea dictumst. Aliquam elementum bibendum aliquam.
-        </p>
+        <FormattedText>
+            <p class="large">
+                Historically, organic matter in soil has been called humus. Humic substances were understood to be created
+                by microorganisms through humification, a process where recalcitrant material such as dead leaves and roots
+                break down and become part of the soil. The level of organic matter is often seen as a barometer for soil
+                health and the “fuel” feeding soil’s fertility. Organic matter tends to make up about 2-10% of soil but it
+                determines its ability to retain moisture, sequester carbon, decompose pollutants and retain nutrients. A
+                quick look online reveals it is easy to buy a bag of “humus” to improve your garden’s soil. However, when
+                scientists use the term humic substances (HSs) they are referring to something more specific: a particular
+                transformed substance that for centuries now has been theorized as fundamentally different from what it was
+                derived from. More recently, soil scientists have moved away from such a model and towards understanding
+                soil organic matter through a soil continuum model. In this model, plant residues are decomposed and the
+                microbial residues of this decomposition persist in soil longer than predicted from their molecular properties,
+                because they exist within and even interact with a complex soil architecture. This also means that plant
+                materials that decompose more rapidly generate more persistent organic matter if they generate more microbial
+                matter.
+            </p>
+            <p>
+                Metabolomics, or the science of what substances microorganisms produce, can tell us more about whether greater
+                diversity of metabolites in a given soil lead to persistence and whether decomposition generates a more diverse
+                molecular composition. In this feedback loop, fast decomposition of organic matter creates more diverse metabolites
+                and which then in turn slows decomposition. For example, if a microorganism requires a different enzyme to
+                eat each different organic compound around it, then it has to make a choice whether it is worth making that
+                costly enzyme to eat that one compound. Imagine you have to have a different spoon for each food item on your
+                plate, and making those spoons cost you more energy than the food contains that you can eat with it, what
+                would you do?  More organic carbon therefore accrues not by accumulation of what cannot be decomposed because
+                it is inedible, but by accumulation of what is produced as a result of decomposition. These materials are
+                eminently edible, but are not eaten for a variety of reasons, including spatial heterogeneity (because the
+                microbe cannot invest the energy to swim around the corner in the hope to find some food), temporal variability
+                (because getting used to cold or warm, wet or dry conditions takes time, and if conditions change very quickly
+                and every day, microbes that could eat organic carbon cannot adapt) and molecular diversity (as explained above)
+                that also affect how molecules interact with mineral surfaces (e.g., organic matter adsorbed to clay minerals
+                are more difficult to eat by microorganisms) and whether they are located in aggregates (e.g., organic matter
+                within aggregates are not reachable by microorganisms), both of which that makes them less accessible to
+                microorganisms that would eat these molecules to produce carbon dioxide.
+            </p>
+        </FormattedText>
     </UnitDay>
-
-    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-4.jpg" />
 
     <UnitDay
         number={4}
-        headline="TK"
+        headline="Approaching soil as a repository of historical metabolism"
     >
-        <p>
-            Praesent a metus sed magna ornare blandit nec non risus. Vivamus feugiat rutrum leo, hendrerit imperdiet ipsum rhoncus non. Duis vel massa ut massa imperdiet porta non quis lorem. Praesent faucibus quis leo vitae ornare. Aliquam metus dolor, fringilla malesuada magna tempor, imperdiet venenatis eros. Quisque quam augue, auctor nec iaculis a, lobortis et risus. Nam sit amet libero maximus, eleifend quam in, rhoncus magna. Praesent sagittis mi vel orci fermentum, vitae semper enim convallis. Mauris in imperdiet nunc. Proin interdum bibendum nibh, id volutpat sem hendrerit at. In ac orci id risus dictum facilisis. Phasellus vitae pulvinar ex. Aenean nec nunc ut nunc consectetur aliquam sit amet sollicitudin enim. Fusce lectus nunc, porttitor nec ex ac, elementum aliquam est. Duis sit amet sapien molestie, porttitor ante quis, mollis orci. Etiam lacus dui, condimentum quis malesuada vitae, egestas non ex.
-        </p>
+        <FormattedText>
+            <p class="large">
+                The turn towards a metabolic understanding of soil compositions also opens up possibilities for thinking about
+                the metabolic flows shaping soil in relation to human history, in particular due to technological changes and
+                industrial processes. Alterations in the material world following the emergence of synthetic chemistry and
+                its manufacture of new chemical compounds, as well as the adaptive re-use of industrial by-products (i.e “waste”)
+                are but a few ways these anthropogenic histories show up in the properties and make-up of soil. As knowledge
+                systems change, so do the assessment of the dangers and harm these histories entail, generating new regulations
+                that unequally affect communities and users of soil.
+            </p>
+        </FormattedText>
     </UnitDay>
-
-    <DayStrip imageUrl="/images/unit-x/unit-X-strip-highlight-5.jpg" />
 
     <UnitDay
         number={5}
-        headline="TK"
+        headline="Materializing future horizons through soil"
     >
-        <p>
-            Duis est risus, pharetra sed egestas at, lobortis at urna. Phasellus eu gravida est. Donec quis est et est tempor varius. Integer fringilla vehicula quam, sed ornare mauris. Donec eleifend magna quis ligula aliquam, ac ultrices purus finibus. Nulla convallis, risus vitae luctus pretium, arcu nibh vestibulum massa, at ultrices leo nisl ut purus. Integer et leo et quam porta venenatis. Aenean dictum massa sit amet consequat posuere. Aenean bibendum tellus in tortor volutpat, ut iaculis tortor porttitor. Proin odio risus, scelerisque vitae odio ut, pulvinar luctus purus. Pellentesque ornare ex quam, nec mollis tellus suscipit vitae. Pellentesque facilisis facilisis elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus posuere consequat gravida. Aenean purus arcu, ultrices quis erat sed, pellentesque gravida nunc.
-        </p>
+        <FormattedText>
+            <p class="large">
+                The problem of industrial metabolites and synthetic compounds in soil as an historical remainder and reminder
+                of globalized industry and science leads to different kinds of practices of problem-solving depending on the
+                sites of the soil. In some cases, the proposed solutions may involve remediation practices, removal and containment
+                strategies, manufactured ignorance, or a combination of approaches. These histories and approaches generate
+                what (following Tsing et. al) we might call “patches” in the landscape. They also shape the kinds of designed
+                interventions and regulatory frameworks put in place for the future. Particular regulatory frameworks that
+                differ by nation or state may delimit what sorts of uses are now safe, or designate particular clean-up strategies
+                that may involve new approaches to landscape’s substrate that harness the metabolic properties of certain plants
+                to help “clean” that soil.
+            </p>
+        </FormattedText>
     </UnitDay>
 </UnitLayout>
