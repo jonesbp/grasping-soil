@@ -1,0 +1,39 @@
+---
+const {
+    unit,
+    title,
+} = Astro.props;
+---
+
+<div class="unit-title">
+    <h2>
+        <span class="unit">Unit {unit}</span>
+        <span class="title">{title}</span>
+    </h2>
+</div>
+
+<style>
+.unit-title {
+    margin: 0 auto;
+    max-width: var(--max-page-width);
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+}
+
+span.unit {
+    color: var(--tertiary-text-color);
+    display: block;
+    font-family: 'Paix', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+span.title {
+    color: var(--primary-text-color);
+    display: block;
+    font-size: 2rem;
+}
+</style>

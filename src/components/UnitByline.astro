@@ -1,0 +1,31 @@
+---
+const {
+    authors,
+} = Astro.props;
+
+let bylineString = 'By ';
+if (authors.length === 1) {
+    bylineString += authors[0];
+} else if (authors.length === 2) {
+    bylineString += authors[0] + " and " + authors[1];
+} else {
+    bylineString += authors.reduce((acc, val, idx) => {
+        if (idx === 0) return val;
+        if (idx === authors.length - 1) return `${acc}, and ${val}`;
+        return `${acc}, ${val}`;
+    });
+}
+---
+
+<div class="byline">
+    {bylineString}
+</div>
+
+<style>
+.byline {
+    color: var(--tertiary-text-color);
+    margin: 0 auto;
+    max-width: var(--max-page-width);
+    width: 100%;
+}
+</style>

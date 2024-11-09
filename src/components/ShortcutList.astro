@@ -24,8 +24,10 @@ div.container {
 
 div.headline {
     color: var(--primary-text-color);
+    font-family: 'Paix', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 ol.shortcut-list {
@@ -49,9 +51,40 @@ li::before {
 }
 
 ol.unit-1 a {
-    color: var(--accent-color-unit-1);
+    color: var(--accent-outline-unit-1);
     text-decoration-color: var(--accent-srgb-highlight-unit-1);
     text-decoration-color: var(--accent-p3-highlight-unit-1);
+    transition: .1s all ease;
+}
+ol.unit-1 a:hover {
+    color: var(--accent-color-unit-1);
+}
+ol.unit-2 a {
+    color: var(--accent-outline-unit-2);
+    text-decoration-color: var(--accent-srgb-highlight-unit-2);
+    text-decoration-color: var(--accent-p3-highlight-unit-2);
+    transition: .1s all ease;
+}
+ol.unit-2 a:hover {
+    color: var(--accent-color-unit-2);
+}
+ol.unit-3 a {
+    color: var(--accent-outline-unit-3);
+    text-decoration-color: var(--accent-srgb-highlight-unit-3);
+    text-decoration-color: var(--accent-p3-highlight-unit-3);
+    transition: .1s all ease;
+}
+ol.unit-3 a:hover {
+    color: var(--accent-color-unit-3);
+}
+ol.unit-4 a {
+    color: var(--accent-outline-unit-4);
+    text-decoration-color: var(--accent-srgb-highlight-unit-4);
+    text-decoration-color: var(--accent-p3-highlight-unit-4);
+    transition: .1s all ease;
+}
+ol.unit-4 a:hover {
+    color: var(--accent-color-unit-4);
 }
 
 </style>
