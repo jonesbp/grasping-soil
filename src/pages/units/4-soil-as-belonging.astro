@@ -1,6 +1,17 @@
 ---
 import UnitLayout from '../../layouts/UnitLayout.astro';
 
+import ActivityBlock from '../../components/ActivityBlock.astro';
+import FormattedText from '../../components/FormattedText.astro';
+import PageBlock from '../../components/PageBlock.astro';
+import ShortcutList from '../../components/ShortcutList.astro';
+import UnitByline from '../../components/UnitByline.astro';
+import UnitDay from '../../components/UnitDay.astro';
+import UnitHeader from '../../components/UnitHeader.astro';
+import UnitQuestions from '../../components/UnitQuestions.astro';
+import UnitStrip from '../../components/UnitStrip.astro';
+import UnitTitle from '../../components/UnitTitle.astro';
+
 const number = 3;
 const title = "Soil as Health";
 ---
@@ -9,4 +20,74 @@ const title = "Soil as Health";
     title={title}
 >
 
+    <UnitHeader />
+    <UnitStrip unit={number} imageSrc="/images/unit-x/unit-X-strip.jpeg" alt="Illustrations" />
+    <UnitTitle
+            unit={number}
+            title={title}
+    />
+    <UnitByline
+            authors={[
+                "Dotan Halevy",
+                "Paul Kurek",
+                "Basil Ibrahim",
+                "Steven Stoll",
+            ]}
+    />
+
+    <PageBlock>
+        <ShortcutList
+            unit={number}
+            links={[
+                "Soil and Sense of Place",
+                "Blood and Soil, Race and Nation",
+                "Soil as property and the properties of soil",
+                "Ashes to Ashes: Cemeteries and Burial Ground",
+            ]}
+        />
+        <FormattedText>
+            <p class="large">
+                Soil underlies human activity and society in the very physical and biological sense. It’s the literal foundation
+                for any kind of be(long)ing, because the cultivation of land feeds our bodies. However, human attachment to soil often
+                includes a series of abstractions, transforming soils from a physical substrate into ownership (like property in land),
+                or place (homeland, locality). Both senses relate to the words belong and belonging, which come from older Dutch
+                and German words for demand, obtain, reach for, and long for. What is the circular feedback between the conception of
+                land as an object of belonging and soil as a container and enabler of life? How do we grapple with the differences
+                or similarities between feeling tied to a particular place on earth and a political project that aims to tie
+                belonging to the soil through a rhetoric of blood, purity, and ultimately violence?
+            </p>
+        </FormattedText>
+
+        <UnitDay
+                unit={number}
+                day={1}
+                headline="Soil and Sense of Place"
+        >
+
+        </UnitDay>
+
+        <UnitDay
+                unit={number}
+                day={2}
+                headline="Blood and Soil, Race and Nation"
+        >
+
+        </UnitDay>
+
+        <UnitDay
+                unit={number}
+                day={3}
+                headline="Soil as property and the properties of soil"
+        >
+
+        </UnitDay>
+
+        <UnitDay
+                unit={number}
+                day={4}
+                headline="Ashes to Ashes: Cemeteries and Burial Ground"
+        >
+
+        </UnitDay>
+    </PageBlock>
 </UnitLayout>
