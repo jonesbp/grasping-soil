@@ -1,65 +1,39 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const starSvg = (await import("../assets/star.svg?raw")).default;
 ---
 
 <Layout title="Grasping Soil">
 	<main>
 		<div class="hero-container">
-			<img src="/images/hero.jpg" alt="placeholder hero image" />
+			<div class="image-clipper">
+				<img src="/images/hero.jpg" alt="placeholder hero image" />
+			</div>
+			<div class="striped-border-stroke" />
+			<div class="striped-border" />
 			<div class="text-overlay">
 				<h1 class="title">
-					<span class="word">Grasping</span><br />
-					<span class="word">Soil</span>
+					Grasping<br />
+					Soil
 				</h1>
 			</div>
 		</div>
 		<div class="content">
+			<div class="intro-links">
+				a <a class="syllabus-link" href="#">syllabus</a> + <a class="essays-link" href="#">essays</a>
+			</div>
+			<div class="horizontal-stars">
+				<span set:html={starSvg} />
+				<span set:html={starSvg} />
+				<span set:html={starSvg} />
+			</div>
 			<div class="abstract">
 				<p>
 					Officiis et qui nisi nisi incidunt cumque. Consequatur impedit delectus odio tenetur et odit.
 					Molestias occaecati debitis odit atque ducimus quos. Id dolorum dolorem necessitatibus et.
 					Ea quis et aliquam aliquid iste ut.
 				</p>
-			</div>
-			<div class="links">
-				<div class="text-content">
-					<a class="big-link" href="/syllabus">
-						Syllabus
-					</a>
-					<ul>
-						<li>
-							<a href="units/1-soil-as-substrate">
-								<span class="number">1</span>
-								Soil as Substrate
-							</a>
-						</li>
-						<li>
-							<a href="units/2-soil-as-archive">
-								<span class="number">2</span>
-								Soil as Archive
-							</a>
-						</li>
-						<li>
-							<a href="units/3-soil-as-health">
-								<span class="number">3</span>
-								Soil as Health
-							</a>
-						</li>
-						<li>
-							<a href="units/4-soil-as-belonging">
-								<span class="number">4</span>
-								Soil as Belonging
-							</a>
-						</li>
-					</ul>
-					<a class="big-link" href="/essays">
-						Essays
-					</a>
-				</div>
-				<img
-					class="image-underlay"
-					src="/images/jagged-alternations.svg"
-				/>
 			</div>
 		</div>
 	</main>
@@ -74,18 +48,55 @@ main {
 }
 
 .hero-container {
-	aspect-ratio: 2.4;
-	background-color: var(--text-color);
 	display: block;
 	flex-grow: 0;
-	overflow: hidden;
+	margin: 2rem auto 4rem auto;
+	max-width: 90%;
 	position: relative;
-	width: 100%:
+	width: auto:
+}
+
+.hero-container .image-clipper {
+	aspect-ratio: 3.2;
+	overflow: hidden;
+}
+
+.hero-container div.striped-border {
+	background: linear-gradient(
+		to right,
+		var(--accent-color-unit-1) 0%,
+		var(--accent-color-unit-1) 20%,
+		var(--accent-color-unit-2) 20%,
+		var(--accent-color-unit-2) 53%,
+		var(--accent-color-unit-3) 53%,
+		var(--accent-color-unit-3) 86%,
+		var(--accent-color-unit-4) 86%,
+		var(--accent-color-unit-4) 100%
+	);
+	height: 4px;
+	width: 100%;
+}
+
+.hero-container div.striped-border-stroke {
+	background: linear-gradient(
+		to right,
+		var(--accent-outline-unit-1) 0%,
+		var(--accent-outline-unit-1) 20%,
+		var(--accent-outline-unit-2) 20%,
+		var(--accent-outline-unit-2) 53%,
+		var(--accent-outline-unit-3) 53%,
+		var(--accent-outline-unit-3) 86%,
+		var(--accent-outline-unit-4) 86%,
+		var(--accent-outline-unit-4) 100%
+	);
+	height: 1px;
+	width: 100%;
 }
 
 .hero-container img {
 	display: block;
 	max-width: 100%;
+	opacity: .7;
 	position: relative;
 	z-index: 0;
 }
@@ -108,45 +119,78 @@ main {
 }
 
 .hero-container h1.title {
-	font-size: 4rem;
-	font-weight: 600;
-	line-height: 100%;
+	color: var(--accent-color-blue);
+	font-family: 'Paix', sans-serif;
+	font-size: 8rem;
+	font-weight: 700;
+	line-height: 80%;
 	margin: 0;
 	position: absolute;
 		left: 40px;
-		bottom: 2rem;
+		bottom: -3.36rem;
+	text-transform: uppercase;
 	z-index: 1;
 }
 
-.hero-container h1.title span {
-	background-color: var(--translucent-background-color);
-	color: var(--text-color);
-	display: inline-block;
-	padding: .2em;
-}
-
-.hero-container h1.title span:nth-of-type(1) {
-	padding-bottom: .1em;
-}
-
-.hero-container h1.title span:nth-of-type(2) {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .content {
-	display: grid;
 	flex-grow: 1;
-	grid-template-areas: "abstract links";
-	grid-template-columns: 1fr 1fr;
 	margin: 0 auto;
 	max-width: var(--max-content-width);
+	padding-bottom: 8rem;
 	width: 100%;
 }
 
+.content .intro-links {
+	color: var(--primary-text-color);
+	font-family: 'Paix', sans-serif;
+	font-size: 2rem;
+	margin: 4rem 0 2rem 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.intro-links a.syllabus-link {
+	color: var(--accent-color-unit-1);
+	text-decoration-color: var(--accent-srgb-highlight-unit-1);
+	text-decoration-color: var(--accent-p3-highlight-unit-1);
+	transition: all .3s ease;
+}
+
+.intro-links a.syllabus-link:hover {
+	color: var(--accent-srgb-highlight-unit-1);
+	color: var(--accent-p3-highlight-unit-1);
+}
+
+.intro-links a.essays-link {
+	color: var(--accent-color-blue);
+	text-decoration-color: var(--accent-srgb-highlight-blue);
+	text-decoration-color: var(--accent-p3-highlight-blue);
+	transition: all .3s ease;
+}
+
+.intro-links a.essays-link:hover {
+	color: var(--accent-srgb-highlight-blue);
+	color: var(--accent-p3-highlight-blue);
+}
+
+.content .horizontal-stars {
+	column-gap: .5rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+
+.content .horizontal-stars span {
+	display: block;
+	width: 1.5rem;
+}
+
+.content .horizontal-stars span :global(svg path) {
+	fill: var(--decorative-warm-gray);
+}
+
 .content .abstract {
-	grid-area: abstract;
-	padding: 2rem 40px;;
+	padding: 2rem 40px;
 }
 
 .content .abstract p:first-of-type {
@@ -154,125 +198,11 @@ main {
 }
 
 .content .abstract p {
-	font-size: 1.2em;
-	font-weight: 300;
+	font-size: 1.4em;
+	font-weight: 400;
 	line-height: 145%;
+	margin: 2rem auto;
+	max-width: 740px;
 }
 
-.content .links {
-	grid-area: links;
-	margin-right: 20px;
-	min-height: 400px;
-	overflow: hidden;
-	position: relative;
-}
-
-.content .links img.image-underlay {
-	display: block;
-	max-width: none;
-	min-width: 640px;
-	position: absolute;
-		bottom: 0;
-	width: auto;
-	z-index: 0;
-}
-
-.content .links .text-content {
-	margin: 8px 0;
-	position: relative;
-	z-index: 1;
-}
-
-.content .links ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	list-style-type: none;
-	margin: 8px 0;
-	padding: 0;
-}
-
-.content .links li {
-	margin: 0;
-	padding: 0;
-}
-
-.content .links li .number {
-	align-items: center;
-	border: solid 1px var(--background-color);
-	color: var(--background-color);
-	display: flex;
-	font-size: .4em;
-	font-weight: 200;
-	justify-content: center;
-	height: 1rem;
-	line-height: 100%;
-	vertical-align: top;
-	width: 1rem;
-}
-
-.content .links ul a {
-	align-items: center;
-	box-shadow: inset 0 0 0 0 var(--background-color);
-	box-sizing: border-box;
-	color: var(--background-color);
-	column-gap: .333em;
-	display: flex;
-	font-size: 1.75rem;
-	font-weight: 300;
-	height: 100%;
-	justify-content: flex-start;
-	line-height: 100%;
-	padding: .5em;
-	text-decoration: none;
-	transition: all ease 0.2s;
-}
-
-.content .links ul a:hover {
-	box-shadow: inset 0 0 0 4px var(--accent-color-brown-1);
-	color: var(--accent-color-brown-1);
-}
-
-.content .links ul a:hover .number {
-	color: var(--accent-color-brown-1);
-	border-color: var(--accent-color-brown-1);
-}
-
-.content .links ul li:nth-child(1) a {
-	background-color: var(--text-color);
-}
-
-.content .links ul li:nth-child(1) .number {
-	background-color: var(--text-color);
-}
-
-.content .links ul li:nth-child(2) a {
-	background-color: var(--accent-color);
-}
-.content .links ul li:nth-child(2) .number {
-	background-color: var(--accent-color);
-}
-
-.content .links ul li:nth-child(3) a {
-	background-color: var(--accent-color-brown-2);
-}
-.content .links ul li:nth-child(4) a {
-	background-color: var(--accent-color-brown-3);
-}
-
-a.big-link {
-	background-color: var(--text-color);
-	box-shadow: inset 0 0 0 0 var(--background-color);
-	color: var(--background-color);
-	display: block;
-	font-size: 2rem;
-	font-weight: 300;
-	padding: .5em .75em;
-	text-align: center;
-	text-decoration: none;
-}
-
-a.big-link:hover {
-	box-shadow: inset 0 0 0 4px var(--accent-color-brown-1);
-	color: var(--accent-color-brown-1);
-}
 </style>
