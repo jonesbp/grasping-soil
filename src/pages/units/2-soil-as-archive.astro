@@ -4,9 +4,12 @@ import UnitLayout from '../../layouts/UnitLayout.astro';
 import FormattedText from '../../components/FormattedText.astro';
 import PageBlock from '../../components/PageBlock.astro';
 import ShortcutList from '../../components/ShortcutList.astro';
+import UnitByline from '../../components/UnitByline.astro';
 import UnitDay from '../../components/UnitDay.astro';
+import UnitHeader from '../../components/UnitHeader.astro';
 import UnitQuestions from '../../components/UnitQuestions.astro';
 import UnitStrip from '../../components/UnitStrip.astro';
+import UnitTitle from '../../components/UnitTitle.astro';
 
 const number = 2;
 const title = "Soil as Archive";
@@ -15,23 +18,30 @@ const title = "Soil as Archive";
     number={number}
     title={title}
 >
-    <UnitStrip imageSrc="/images/unit-x/unit-X-strip.jpeg" alt="Illustrations" />
+    <UnitHeader />
+    <UnitStrip unit={number} imageSrc="/images/unit-x/unit-X-strip.jpeg" alt="Illustrations" />
+    <UnitTitle
+        unit={number}
+        title={title}
+    />
+    <UnitByline
+        authors={[
+            "Amiel Bize",
+            "Seth Denizen",
+            "Jayson Maurice Porter",
+        ]}
+    />
 
     <PageBlock>
-        <ShortcutList>
-            <li>
-                <a href="#">1. Archives of Soil</a>
-            </li>
-            <li>
-                <a href="#">2. Archives conspicuously without Soils</a>
-            </li>
-            <li>
-                <a href="#">3. Soil as an archive of historical relations</a>
-            </li>
-            <li>
-                <a href="#">4. Soil as a living archive of social relations</a>
-            </li>
-        </ShortcutList>
+        <ShortcutList
+            unit={number}
+            links={[
+                "Archives of Soil",
+                "Archives conspicuously without Soils",
+                "Soil as an archive of historical relations",
+                "Soil as a living archive of social relations",
+            ]}
+        />
         <FormattedText>
             <p class="large">
                 How does soil speak? What are its silences? In this unit we consider the histories that are embedded in,
@@ -73,7 +83,8 @@ const title = "Soil as Archive";
         </FormattedText>
 
         <UnitDay
-            number={1}
+            unit={number}
+            day={1}
             headline="Archives of Soil"
         >
             <FormattedText>
@@ -90,6 +101,7 @@ const title = "Soil as Archive";
             </FormattedText>
 
             <UnitQuestions
+                unit={number}
                 questions={[
                     "How have soil archives been created and used and in the service of what projects?",
                     "What are the implications of the typologies that have been created for understanding and archiving soil?",
@@ -109,6 +121,7 @@ const title = "Soil as Archive";
                 </p>
 
                 <UnitQuestions
+                        unit={number}
                         questions={[
                             "Are you comparing based on color? Based on texture? How would you make a classification system?",
                             `Scientists have <a href="https://wsm.isric.org/WSRC.html" target="_blank" rel="noopener noreferrer">collections</a> ` +
@@ -147,7 +160,8 @@ const title = "Soil as Archive";
         </UnitDay>
 
         <UnitDay
-            number={2}
+            day={2}
+            unit={number}
             headline="Archives conspicuously without Soils"
         >
             <FormattedText>
@@ -256,7 +270,8 @@ const title = "Soil as Archive";
         </UnitDay>
 
         <UnitDay
-            number={3}
+            unit={number}
+            day={3}
             headline="Soil as an archive of historical relations"
         >
             <FormattedText>
@@ -283,7 +298,8 @@ const title = "Soil as Archive";
         </UnitDay>
 
         <UnitDay
-            number={4}
+            unit={number}
+            day={4}
             headline="Soil as a living archive of social relations"
         >
 

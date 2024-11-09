@@ -1,22 +1,21 @@
 ---
 const {
+    unit,
     questions
 } = Astro.props;
 ---
 
 <h4>Questions</h4>
 
-<ul>
+<ul class={`unit-${unit}`}>
 {questions.map(question => (
-    <li>
-        {question}
-    </li>
+    <li set:html={question} />
 ))}
 </ul>
 
 <style>
 h4 {
-    border-color: var(--accent-color-brown-3);
+    border-color: var(--decorative-warm-gray);
     border-style: solid;
     border-width: 1px 0 0 0;
     font-size: 1.5rem;
@@ -44,5 +43,43 @@ li {
 
 li:first-of-type {
     margin-top: 0;
+}
+
+ul :global(a) {
+    font-weight: 400;
+    transition: .3s all ease;
+}
+
+ul.unit-1 :global(a) {
+    color: var(--accent-outline-unit-1);
+    text-decoration-color: var(--accent-srgb-highlight-unit-1);
+    text-decoration-color: var(--accent-p3-highlight-unit-1);
+}
+ul.unit-1 :global(a:hover) {
+    color: var(--accent-color-unit-1);
+}
+ul.unit-2 :global(a) {
+    color: var(--accent-outline-unit-2);
+    text-decoration-color: var(--accent-srgb-highlight-unit-2);
+    text-decoration-color: var(--accent-p3-highlight-unit-2);
+}
+ul.unit-2 :global(a:hover) {
+    color: var(--accent-color-unit-2);
+}
+ul.unit-3 :global(a) {
+    color: var(--accent-outline-unit-3);
+    text-decoration-color: var(--accent-srgb-highlight-unit-3);
+    text-decoration-color: var(--accent-p3-highlight-unit-3);
+}
+ul.unit-3 :global(a:hover) {
+    color: var(--accent-color-unit-3);
+}
+ul.unit-4 :global(a) {
+    color: var(--accent-outline-unit-4);
+    text-decoration-color: var(--accent-srgb-highlight-unit-4);
+    text-decoration-color: var(--accent-p3-highlight-unit-4);
+}
+ul.unit-4 :global(a:hover) {
+    color: var(--accent-color-unit-4);
 }
 </style>
