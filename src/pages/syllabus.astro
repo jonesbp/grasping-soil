@@ -51,220 +51,259 @@ import PageContent from "../components/PageContent.astro";
 </Layout>
 
 <style>
+ul.units {
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    margin: 4rem auto 0 auto;
+    max-width: var(--max-content-width);
+    padding: 0;
+    width: 90%;
+}
+
+@media all and (max-width: 1180px) {
     ul.units {
-        column-gap: 2rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        list-style-type: none;
-        margin: 4rem 0 0 0;
-        padding: 0;
+        grid-template-columns: 1fr 1fr;
     }
+}
 
-    ul.units li {
-        aspect-ratio: 2.5;
-        margin-top: 4rem;
-        position: relative;
+@media all and (max-width: 640px) {
+    ul.units {
+        grid-template-columns: 100%;
+        margin-top: 0;
     }
+}
 
-    ul.units .content-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        overflow: hidden;
-        position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        z-index: 1;
-    }
+ul.units li {
+    aspect-ratio: 2.5;
+    margin-top: 4rem;
+    position: relative;
+}
 
-    ul.units a {
-        align-items: center;
-        border-width: 0 0 4px 0;
-        border-style: solid;
-        display: flex;
-        font-size: 2rem;
-        height: 100%;
-        justify-content: flex-start;
-        padding: .5em 1em;
-        text-decoration: none;
-        transition: all .3s ease;
-    }
+ul.units .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    z-index: 1;
+}
 
-    ul.units li:nth-of-type(1) a {
-        background-color: var(--accent-color-unit-1);
-        border-color: var(--accent-srgb-highlight-unit-1);
-        border-color: var(--accent-p3-highlight-unit-1);
-        color: var(--accent-srgb-highlight-unit-1);
-        color: var(--accent-p3-highlight-unit-1);
-    }
-    ul.units li:nth-of-type(1) a span.label {
-        filter:
-            drop-shadow(-1px 0 0 var(--accent-outline-unit-1))
-            drop-shadow(1px 0 0 var(--accent-outline-unit-1))
-            drop-shadow(0 -1px 0 var(--accent-outline-unit-1))
-            drop-shadow(0 1px 0 var(--accent-outline-unit-1))
-        ;
-    }
-    ul.units li:nth-of-type(1) a:hover {
-        background-color: var(--accent-outline-unit-1);
-    }
-    ul.units li:nth-of-type(2) a {
-        background-color: var(--accent-color-unit-2);
-        border-color: var(--accent-srgb-highlight-unit-2);
-        border-color: var(--accent-p3-highlight-unit-2);
-        color: var(--accent-srgb-highlight-unit-2);
-        color: var(--accent-p3-highlight-unit-2);
-    }
-    ul.units li:nth-of-type(2) a span.label {
-        filter:
-            drop-shadow(-1px 0 0 var(--accent-outline-unit-2))
-            drop-shadow(1px 0 0 var(--accent-outline-unit-2))
-            drop-shadow(0 -1px 0 var(--accent-outline-unit-2))
-            drop-shadow(0 1px 0 var(--accent-outline-unit-2))
-        ;
-    }
-    ul.units li:nth-of-type(2) a:hover {
-        background-color: var(--accent-outline-unit-2);
-    }
-    ul.units li:nth-of-type(3) a {
-        background-color: var(--accent-color-unit-3);
-        border-color: var(--accent-srgb-highlight-unit-3);
-        border-color: var(--accent-p3-highlight-unit-3);
-        color: var(--accent-srgb-highlight-unit-3);
-        color: var(--accent-p3-highlight-unit-3);
-    }
-    ul.units li:nth-of-type(3) a span.label {
-        filter:
-            drop-shadow(-1px 0 0 var(--accent-outline-unit-3))
-            drop-shadow(1px 0 0 var(--accent-outline-unit-3))
-            drop-shadow(0 -1px 0 var(--accent-outline-unit-3))
-            drop-shadow(0 1px 0 var(--accent-outline-unit-3))
-        ;
-    }
-    ul.units li:nth-of-type(3) a:hover {
-        background-color: var(--accent-outline-unit-3);
-    }
-    ul.units li:nth-of-type(4) a {
-        background-color: var(--accent-color-unit-4);
-        border-color: var(--accent-srgb-highlight-unit-4);
-        border-color: var(--accent-p3-highlight-unit-4);
-        color: var(--accent-srgb-highlight-unit-4);
-        color: var(--accent-p3-highlight-unit-4);
-    }
-    ul.units li:nth-of-type(4) a span.label {
-        filter:
-            drop-shadow(-1px 0 0 var(--accent-outline-unit-4))
-            drop-shadow(1px 0 0 var(--accent-outline-unit-4))
-            drop-shadow(0 -1px 0 var(--accent-outline-unit-4))
-            drop-shadow(0 1px 0 var(--accent-outline-unit-4))
-        ;
-    }
-    ul.units li:nth-of-type(4) a:hover {
-        background-color: var(--accent-outline-unit-4);
-    }
+ul.units a {
+    align-items: center;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    display: flex;
+    font-size: 2rem;
+    height: 100%;
+    justify-content: flex-start;
+    padding: .5em 1em;
+    text-decoration: none;
+    transition: all .3s ease;
+}
 
-    ul.units li span.label {
-        z-index: 4;
-    }
+ul.units li:nth-of-type(1) a {
+    background-color: var(--accent-color-unit-1);
+    border-color: var(--accent-srgb-highlight-unit-1);
+    border-color: var(--accent-p3-highlight-unit-1);
+    color: var(--accent-srgb-highlight-unit-1);
+    color: var(--accent-p3-highlight-unit-1);
+}
+ul.units li:nth-of-type(1) a span.label {
+    filter:
+        drop-shadow(-1px 0 0 var(--accent-outline-unit-1))
+        drop-shadow(1px 0 0 var(--accent-outline-unit-1))
+        drop-shadow(0 -1px 0 var(--accent-outline-unit-1))
+        drop-shadow(0 1px 0 var(--accent-outline-unit-1))
+    ;
+}
+ul.units li:nth-of-type(1) a:hover {
+    background-color: var(--accent-outline-unit-1);
+}
+ul.units li:nth-of-type(2) a {
+    background-color: var(--accent-color-unit-2);
+    border-color: var(--accent-srgb-highlight-unit-2);
+    border-color: var(--accent-p3-highlight-unit-2);
+    color: var(--accent-srgb-highlight-unit-2);
+    color: var(--accent-p3-highlight-unit-2);
+}
+ul.units li:nth-of-type(2) a span.label {
+    filter:
+        drop-shadow(-1px 0 0 var(--accent-outline-unit-2))
+        drop-shadow(1px 0 0 var(--accent-outline-unit-2))
+        drop-shadow(0 -1px 0 var(--accent-outline-unit-2))
+        drop-shadow(0 1px 0 var(--accent-outline-unit-2))
+    ;
+}
+ul.units li:nth-of-type(2) a:hover {
+    background-color: var(--accent-outline-unit-2);
+}
+ul.units li:nth-of-type(3) a {
+    background-color: var(--accent-color-unit-3);
+    border-color: var(--accent-srgb-highlight-unit-3);
+    border-color: var(--accent-p3-highlight-unit-3);
+    color: var(--accent-srgb-highlight-unit-3);
+    color: var(--accent-p3-highlight-unit-3);
+}
+ul.units li:nth-of-type(3) a span.label {
+    filter:
+        drop-shadow(-1px 0 0 var(--accent-outline-unit-3))
+        drop-shadow(1px 0 0 var(--accent-outline-unit-3))
+        drop-shadow(0 -1px 0 var(--accent-outline-unit-3))
+        drop-shadow(0 1px 0 var(--accent-outline-unit-3))
+    ;
+}
+ul.units li:nth-of-type(3) a:hover {
+    background-color: var(--accent-outline-unit-3);
+}
+ul.units li:nth-of-type(4) a {
+    background-color: var(--accent-color-unit-4);
+    border-color: var(--accent-srgb-highlight-unit-4);
+    border-color: var(--accent-p3-highlight-unit-4);
+    color: var(--accent-srgb-highlight-unit-4);
+    color: var(--accent-p3-highlight-unit-4);
+}
+ul.units li:nth-of-type(4) a span.label {
+    filter:
+        drop-shadow(-1px 0 0 var(--accent-outline-unit-4))
+        drop-shadow(1px 0 0 var(--accent-outline-unit-4))
+        drop-shadow(0 -1px 0 var(--accent-outline-unit-4))
+        drop-shadow(0 1px 0 var(--accent-outline-unit-4))
+    ;
+}
+ul.units li:nth-of-type(4) a:hover {
+    background-color: var(--accent-outline-unit-4);
+}
 
+ul.units li span.label {
+    z-index: 4;
+}
+
+ul.units li span.number {
+    display: block;
+    color: var(--background-color);
+    font-family: 'Paix', sans-serif;
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+        top: -5.6rem;
+        left: -1.4rem;
+    text-transform: uppercase;
+    z-index: 0;
+}
+
+@media all and (max-width: 640px) {
     ul.units li span.number {
-        display: block;
-        color: var(--background-color);
-        font-family: 'Paix', sans-serif;
+        font-size: 14rem;
+    }
+}
+
+@media all and (max-width: 360px) {
+    ul.units li span.number {
         font-size: 12rem;
-        font-weight: 700;
-        line-height: 100%;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-            top: -5.6rem;
-            left: -1.4rem;
-        text-transform: uppercase;
-        z-index: 0;
     }
+}
 
-    ul.units li:nth-of-type(1) span.number {
-        filter:
-                drop-shadow(-1px 0 0 var(--accent-color-unit-1))
-                drop-shadow(1px 0 0 var(--accent-color-unit-1))
-                drop-shadow(0 -1px 0 var(--accent-color-unit-1))
-                drop-shadow(0 1px 0 var(--accent-color-unit-1))
-        ;
-    }
-    ul.units li:nth-of-type(2) span.number {
-        filter:
-                drop-shadow(-1px 0 0 var(--accent-color-unit-2))
-                drop-shadow(1px 0 0 var(--accent-color-unit-2))
-                drop-shadow(0 -1px 0 var(--accent-color-unit-2))
-                drop-shadow(0 1px 0 var(--accent-color-unit-2))
-        ;
-    }
-    ul.units li:nth-of-type(3) span.number {
-        filter:
-                drop-shadow(-1px 0 0 var(--accent-color-unit-3))
-                drop-shadow(1px 0 0 var(--accent-color-unit-3))
-                drop-shadow(0 -1px 0 var(--accent-color-unit-3))
-                drop-shadow(0 1px 0 var(--accent-color-unit-3))
-        ;
-    }
-    ul.units li:nth-of-type(4) span.number {
-        filter:
-                drop-shadow(-1px 0 0 var(--accent-color-unit-4))
-                drop-shadow(1px 0 0 var(--accent-color-unit-4))
-                drop-shadow(0 -1px 0 var(--accent-color-unit-4))
-                drop-shadow(0 1px 0 var(--accent-color-unit-4))
-        ;
-    }
+ul.units li:nth-of-type(1) span.number {
+    filter:
+            drop-shadow(-1px 0 0 var(--accent-color-unit-1))
+            drop-shadow(1px 0 0 var(--accent-color-unit-1))
+            drop-shadow(0 -1px 0 var(--accent-color-unit-1))
+            drop-shadow(0 1px 0 var(--accent-color-unit-1))
+    ;
+}
+ul.units li:nth-of-type(2) span.number {
+    filter:
+            drop-shadow(-1px 0 0 var(--accent-color-unit-2))
+            drop-shadow(1px 0 0 var(--accent-color-unit-2))
+            drop-shadow(0 -1px 0 var(--accent-color-unit-2))
+            drop-shadow(0 1px 0 var(--accent-color-unit-2))
+    ;
+}
+ul.units li:nth-of-type(3) span.number {
+    filter:
+            drop-shadow(-1px 0 0 var(--accent-color-unit-3))
+            drop-shadow(1px 0 0 var(--accent-color-unit-3))
+            drop-shadow(0 -1px 0 var(--accent-color-unit-3))
+            drop-shadow(0 1px 0 var(--accent-color-unit-3))
+    ;
+}
+ul.units li:nth-of-type(4) span.number {
+    filter:
+            drop-shadow(-1px 0 0 var(--accent-color-unit-4))
+            drop-shadow(1px 0 0 var(--accent-color-unit-4))
+            drop-shadow(0 -1px 0 var(--accent-color-unit-4))
+            drop-shadow(0 1px 0 var(--accent-color-unit-4))
+    ;
+}
 
+ul.units li a span.number-screen {
+    filter:
+            drop-shadow(-1px 0 0 var(--background-color))
+            drop-shadow(1px 0 0 var(--background-color))
+            drop-shadow(0 -1px 0 var(--background-color))
+            drop-shadow(0 1px 0 var(--background-color))
+    ;
+    font-family: 'Paix', sans-serif;
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    opacity: .333;
+    padding: 0;
+    position: absolute;
+        top: -5.6rem;
+        left: -1.4rem;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+@media all and (max-width: 640px) {
     ul.units li a span.number-screen {
-        filter:
-                drop-shadow(-1px 0 0 var(--background-color))
-                drop-shadow(1px 0 0 var(--background-color))
-                drop-shadow(0 -1px 0 var(--background-color))
-                drop-shadow(0 1px 0 var(--background-color))
-        ;
-        font-family: 'Paix', sans-serif;
-        font-size: 12rem;
-        font-weight: 700;
-        line-height: 100%;
-        margin: 0;
-        opacity: .333;
-        padding: 0;
-        position: absolute;
-            top: -5.6rem;
-            left: -1.4rem;
-        text-transform: uppercase;
-        z-index: 3;
+        font-size: 14rem;
     }
+}
 
-    ul.units li:nth-of-type(1) a span.number-screen {
-        color: var(--accent-color-unit-1);
-        transition: .3s all ease;
+@media all and (max-width: 360px) {
+    ul.units li a span.number-screen {
+        font-size: 12rem;
     }
-    ul.units li:nth-of-type(1) a:hover span.number-screen {
-        color: var(--accent-outline-unit-1);
-    }
-    ul.units li:nth-of-type(2) a span.number-screen {
-        color: var(--accent-color-unit-2);
-        transition: .3s all ease;
-    }
-    ul.units li:nth-of-type(2) a:hover span.number-screen {
-        color: var(--accent-outline-unit-2);
-    }
-    ul.units li:nth-of-type(3) a span.number-screen {
-        color: var(--accent-color-unit-3);
-        transition: .3s all ease;
-    }
-    ul.units li:nth-of-type(3) a:hover span.number-screen {
-        color: var(--accent-outline-unit-3);
-    }
-    ul.units li:nth-of-type(4) a span.number-screen {
-        color: var(--accent-color-unit-4);
-        transition: .3s all ease;
-    }
-    ul.units li:nth-of-type(4) a:hover span.number-screen {
-        color: var(--accent-outline-unit-4);
-    }
+}
+
+ul.units li:nth-of-type(1) a span.number-screen {
+    color: var(--accent-color-unit-1);
+    transition: .3s all ease;
+}
+ul.units li:nth-of-type(1) a:hover span.number-screen {
+    color: var(--accent-outline-unit-1);
+}
+ul.units li:nth-of-type(2) a span.number-screen {
+    color: var(--accent-color-unit-2);
+    transition: .3s all ease;
+}
+ul.units li:nth-of-type(2) a:hover span.number-screen {
+    color: var(--accent-outline-unit-2);
+}
+ul.units li:nth-of-type(3) a span.number-screen {
+    color: var(--accent-color-unit-3);
+    transition: .3s all ease;
+}
+ul.units li:nth-of-type(3) a:hover span.number-screen {
+    color: var(--accent-outline-unit-3);
+}
+ul.units li:nth-of-type(4) a span.number-screen {
+    color: var(--accent-color-unit-4);
+    transition: .3s all ease;
+}
+ul.units li:nth-of-type(4) a:hover span.number-screen {
+    color: var(--accent-outline-unit-4);
+}
 </style>
