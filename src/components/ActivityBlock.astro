@@ -1,0 +1,26 @@
+---
+const {
+    unit,
+    headline,
+} = Astro.props;
+---
+<div class="activity-block">
+    <h3>{headline}</h3>
+    <slot />
+</div>
+
+<style>
+.activity-block {
+    background-color: var(--background-light-color);
+    border-color: var(--decorative-warm-gray);
+    border-style: solid;
+    border-width: 2px 0 0 0;
+    padding: 1rem;
+}
+
+h3 {
+    color: var(--primary-text-color);
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+</style>
