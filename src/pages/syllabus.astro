@@ -12,25 +12,33 @@ import PageContent from "../components/PageContent.astro";
                 <li>
                     <span class="number">1</span>
                     <div class="content-wrapper">
-                        <a href="/units/1-soil-as-substrate">Soil as Substrate</a>
+                        <a href="/units/1-soil-as-substrate">
+                            <span class="label">Soil as Substrate</span>
+                        </a>
                     </div>
                 </li>
                 <li>
                     <span class="number">2</span>
                     <div class="content-wrapper">
-                        <a href="/units/2-soil-as-archive">Soil as Archive</a>
+                        <a href="/units/2-soil-as-archive">
+                            <span class="label">Soil as Archive</span>
+                        </a>
                     </div>
                 </li>
                 <li>
                     <span class="number">3</span>
                     <div class="content-wrapper">
-                        <a href="/units/3-soil-as-health">Soil as Health</a>
+                        <a href="/units/3-soil-as-health">
+                            <span class="label">Soil as Health</span>
+                        </a>
                     </div>
                 </li>
                 <li>
                     <span class="number">4</span>
                     <div class="content-wrapper">
-                        <a href="/units/4-soil-as-belonging">Soil as Belonging</a>
+                        <a href="/units/4-soil-as-belonging">
+                            <span class="label">Soil as Belonging</span>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -76,6 +84,7 @@ import PageContent from "../components/PageContent.astro";
         justify-content: flex-start;
         padding: .5em 1em;
         text-decoration: none;
+        transition: all .3s ease;
     }
 
     ul.units li:nth-of-type(1) a {
@@ -85,12 +94,34 @@ import PageContent from "../components/PageContent.astro";
         color: var(--accent-srgb-highlight-unit-1);
         color: var(--accent-p3-highlight-unit-1);
     }
+    ul.units li:nth-of-type(1) a span.label {
+        filter:
+            drop-shadow(-1px 0 0 var(--accent-outline-unit-1))
+            drop-shadow(1px 0 0 var(--accent-outline-unit-1))
+            drop-shadow(0 -1px 0 var(--accent-outline-unit-1))
+            drop-shadow(0 1px 0 var(--accent-outline-unit-1))
+        ;
+    }
+    ul.units li:nth-of-type(1) a:hover {
+        background-color: var(--accent-outline-unit-1);
+    }
     ul.units li:nth-of-type(2) a {
         background-color: var(--accent-color-unit-2);
         border-color: var(--accent-srgb-highlight-unit-2);
         border-color: var(--accent-p3-highlight-unit-2);
         color: var(--accent-srgb-highlight-unit-2);
         color: var(--accent-p3-highlight-unit-2);
+    }
+    ul.units li:nth-of-type(2) a span.label {
+        filter:
+            drop-shadow(-1px 0 0 var(--accent-outline-unit-2))
+            drop-shadow(1px 0 0 var(--accent-outline-unit-2))
+            drop-shadow(0 -1px 0 var(--accent-outline-unit-2))
+            drop-shadow(0 1px 0 var(--accent-outline-unit-2))
+        ;
+    }
+    ul.units li:nth-of-type(2) a:hover {
+        background-color: var(--accent-outline-unit-2);
     }
     ul.units li:nth-of-type(3) a {
         background-color: var(--accent-color-unit-3);
@@ -99,12 +130,34 @@ import PageContent from "../components/PageContent.astro";
         color: var(--accent-srgb-highlight-unit-3);
         color: var(--accent-p3-highlight-unit-3);
     }
+    ul.units li:nth-of-type(3) a span.label {
+        filter:
+            drop-shadow(-1px 0 0 var(--accent-outline-unit-3))
+            drop-shadow(1px 0 0 var(--accent-outline-unit-3))
+            drop-shadow(0 -1px 0 var(--accent-outline-unit-3))
+            drop-shadow(0 1px 0 var(--accent-outline-unit-3))
+        ;
+    }
+    ul.units li:nth-of-type(3) a:hover {
+        background-color: var(--accent-outline-unit-3);
+    }
     ul.units li:nth-of-type(4) a {
         background-color: var(--accent-color-unit-4);
         border-color: var(--accent-srgb-highlight-unit-4);
         border-color: var(--accent-p3-highlight-unit-4);
         color: var(--accent-srgb-highlight-unit-4);
         color: var(--accent-p3-highlight-unit-4);
+    }
+    ul.units li:nth-of-type(4) a span.label {
+        filter:
+            drop-shadow(-1px 0 0 var(--accent-outline-unit-4))
+            drop-shadow(1px 0 0 var(--accent-outline-unit-4))
+            drop-shadow(0 -1px 0 var(--accent-outline-unit-4))
+            drop-shadow(0 1px 0 var(--accent-outline-unit-4))
+        ;
+    }
+    ul.units li:nth-of-type(4) a:hover {
+        background-color: var(--accent-outline-unit-4);
     }
 
     ul.units li span.number {
