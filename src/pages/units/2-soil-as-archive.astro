@@ -1,8 +1,9 @@
 ---
 import UnitLayout from '../../layouts/UnitLayout.astro';
 
-import ContentColumn from '../../components/ContentColumn.astro';
 import FormattedText from '../../components/FormattedText.astro';
+import PageBlock from '../../components/PageBlock.astro';
+import ShortcutList from '../../components/ShortcutList.astro';
 import UnitDay from '../../components/UnitDay.astro';
 import UnitQuestions from '../../components/UnitQuestions.astro';
 import UnitStrip from '../../components/UnitStrip.astro';
@@ -16,7 +17,21 @@ const title = "Soil as Archive";
 >
     <UnitStrip imageSrc="/images/unit-x/unit-X-strip.jpeg" alt="Illustrations" />
 
-    <ContentColumn>
+    <PageBlock>
+        <ShortcutList>
+            <li>
+                <a href="#">1. Archives of Soil</a>
+            </li>
+            <li>
+                <a href="#">2. Archives conspicuously without Soils</a>
+            </li>
+            <li>
+                <a href="#">3. Soil as an archive of historical relations</a>
+            </li>
+            <li>
+                <a href="#">4. Soil as a living archive of social relations</a>
+            </li>
+        </ShortcutList>
         <FormattedText>
             <p class="large">
                 How does soil speak? What are its silences? In this unit we consider the histories that are embedded in,
@@ -31,24 +46,29 @@ const title = "Soil as Archive";
                 the moment of fact retrieval (the making of <em>narratives</em>); and the moment of introspective
                 significance (the making of <em>history</em> in the final instance)” (pp. 26-27)
             </blockquote>
+            <p>
+                This unit builds on the previous unit’s exploration of soil’s ability to hold and reflect historical metabolisms
+                to consider its role in holding, reflecting, or obscuring history more broadly. We ask the following questions
+                to frame this unit’s activities and readings:
+            </p>
             <ul>
                 <li>
                     How can we envision soil as an archive—what does this help us see? What silences are embedded in
                     this archive?
                 </li>
                 <li>
-                    How have soil archives been created and used and in the service of what projects? What erasures are
+                    How have soil archives been created and used and in the service of what projects?  What erasures are
                     embedded in this process?
                 </li>
                 <li>
-                    How can we reimagine soil as an archive—one that materializes the lasting legacies of imperial
-                    histories and racialized social relations?
+                    How can we reimagine soil as an archive—one that materializes the lasting legacies of imperial histories
+                    and racialized social relations?
                 </li>
             </ul>
             <p>
-                Understanding the way that social and historical processes manifest materially in the soil can both help
-                us understand how we live with the legacies of past and ongoing processes, but also to take control of
-                the archive—to better understand what those legacies are and how we might reshape them.
+                Understanding the way that social and historical processes manifest materially in the soil can both help us
+                understand how we live with the legacies of past and ongoing processes, but also to take control of the
+                archive—to better understand what those legacies are and how we might reshape them.
             </p>
         </FormattedText>
 
@@ -57,19 +77,73 @@ const title = "Soil as Archive";
             headline="Archives of Soil"
         >
             <FormattedText>
+                <p class="large">
+                    Today we continue some of the work we did in the prior unit on building our skills of assessment and
+                    judgment of soil while also considering what values such practices reflect and reproduce. These activities
+                    and readings aim to replicate and interrogate how scientists create and collect soil monoliths.
+                </p>
                 <p>
-                    Soil collections are archives in the sense that they bring together materials and organize them; in the
-                    sense that they further certain (violent) classification projects; in the sense that they tell
-                    historical stories; and in the sense that they have afterlives.
+                    <b>Lesson Argument:</b> Soil collections are archives in the sense that they bring together materials
+                    and organize them; in the sense that they further certain (violent) classification projects; in the
+                    sense that they tell historical stories; and in the sense that they have afterlives.
                 </p>
             </FormattedText>
 
             <UnitQuestions
-                    questions={[
-                        "How have soil archives been created and used and in the service of what projects?",
-                        "What are the implications of the typologies that have been created for understanding and archiving soil?",
-                    ]}
+                questions={[
+                    "How have soil archives been created and used and in the service of what projects?",
+                    "What are the implications of the typologies that have been created for understanding and archiving soil?",
+                ]}
             />
+
+            <!-- TODO: Development an Activity Block -->
+
+            <div>
+                <h3>Activity: Creating Soil Monoliths</h3>
+
+                <p>
+                    Find two sites near you where there is soil—in each, take a sample of the top soil using a clear cup. Compare
+                    them and try to describe the features you are comparing. What do the layers look like? If you don’t see any
+                    layers, add dish detergent and shake it up, then wait for the sediments to fall. Look at the ratio of different
+                    layers: soil, silt, sand, clay.
+                </p>
+
+                <UnitQuestions
+                        questions={[
+                            "Are you comparing based on color? Based on texture? How would you make a classification system?",
+                            `Scientists have <a href="https://wsm.isric.org/WSRC.html" target="_blank" rel="noopener noreferrer">collections</a> ` +
+                                `of these <a href="https://www.youtube.com/watch?v=b2IIv6WmrEc" target="_blnak" rel="noopener noreferrer">monoliths</a>. ` +
+                                `Is making a monolith of your own considered an archive? If so, what is it archiving? What makes something an archive?`,
+                        ]}
+                />
+
+                <p>
+                    <!-- TODO: Broken link? -->
+                    <b>Reference:</b> <a href="https://www.mbsoils.ca/wp-content/uploads/Mounting-your-soil-monolith-Oct-2020_MW_Generic-for-MSSS-website22163.pdf" target="_blank" rel="noopener noreferrer">https://www.mbsoils.ca/wp-content/uploads/Mounting-your-soil-monolith-Oct-2020_MW_Generic-for-MSSS-website22163.pdf</a>
+                </p>
+            </div>
+
+            <!-- TODO: Develop an Assignment block -->
+
+            <div>
+                <h3>Assignment: Explore FAO/UNESCO Soil Map and discuss with questions</h3>
+
+                <ul>
+                    <li>Look at the legend - consider the note on nomenclature on page 2. What do these naming choices suggest about the goals of this map?</li>
+                    <li>Read Lyons and Guldi excerpts. Thinking with Lyons, what are some of the broader implications of categorizing in this way?</li>
+                </ul>
+
+                <h4>Readings/Other Media:</h4>
+                <ul>
+                    <li>FAO/UNESCO Soil Map of the World | FAO SOILS PORTAL | Food and Agriculture Organization of the United Nations</li>
+                    <li><a href="https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soil/national-soil-archive" target="_blank"US National Soil Archive</li>
+                    <li>Kristina Lyons, Vital Decomposition (excerpt)</li>
+                    <li>Michel Rolph Trouillot, Silencing the Past (excerpt)</li>
+                    <li>Bowker and Star, Sorting Things Out (excerpt)</li>
+                    <li>Guldi, The Long Land War Chap 5 - “On Failing to Make a Map in Time”</li>
+                    <li>Bruno Latour, <a href="http://www.bruno-latour.fr/sites/default/files/downloads/53-PANDORA-TOPOFIL-pdf.pdf" target="_blank" rel="noopener noreferrer">Circulating Reference</a></li>
+                </ul>
+            </div>
         </UnitDay>
 
         <UnitDay
@@ -77,20 +151,108 @@ const title = "Soil as Archive";
             headline="Archives conspicuously without Soils"
         >
             <FormattedText>
-                <p>
+                <p class="large">
                     Some archives are about soil, and intentionally index soil within archival frameworks. Some archives
-                    go to elaborate lengths to remove soil–we might say, following Michel-Rolph Trouillot, to silence
-                    soil–and we can see an example of this in the modern herbarium. Plant collectors laboriously
-                    disentangle plants from soil, using chemical washes and dehydrators in order to mount plants flat on
-                    a piece of paper. These herbarium sheets are then archived and organized according to evolutionary
-                    relationships. Soil information is very rarely included, except for in one herbarium, which is
-                    called the “Codex Badiano.” This is the oldest extant medicinal text in the Americas, and its
-                    illustrations of plants always include roots and soil. Clearly, its authors thought that soil was an
-                    important part of how plants should be described. In this lesson, we will consider what the
-                    silencing of soil in botanical archives has meant historically, and what it might teach us about the
-                    metaphysics of our contemporary empirical practices.
+                    go to elaborate lengths to remove soil–we might say, following Michel-Rolph Trouillot, to silence soil–and
+                    we can see an example of this in the modern herbarium. Plant collectors laboriously disentangle plants
+                    from soil, using chemical washes and dehydrators in order to mount plants flat on a piece of paper.
+                    These herbarium sheets are then archived and organized according to evolutionary relationships. Soil
+                    information is very rarely included, except for in one herbarium, which is called the
+                    “<a href="https://tischlibrary.tufts.edu/special-collections-badianus-manuscript" target="_blank" rel="noopener noreferrer">Codex Badiano</a>.”
+                    This is the oldest extant medicinal text in the Americas, and its illustrations of plants always include
+                    roots and soil. Clearly, its authors thought that soil was an important part of how plants should be
+                    described. In this lesson, we will consider what the silencing of soil in botanical archives has meant
+                    historically, and what it might teach us about the metaphysics of our contemporary empirical practices.
                 </p>
             </FormattedText>
+
+            <div>
+                <h3>Activity:</h3>
+                <p class="large">
+                    Let’s follow Michel-Rolph Trouillot’s four moments through the botanical garden to examine the silences that may or may not be produced.
+                </p>
+
+                <h4>Step 1</h4>
+                <p>
+                    Trouillot’s first moment is the moment a plant is collected. In this moment, the plant is pulled out of
+                    the ground, meticulously disentangled from the soil, and made into a "type." Before the plant was pulled
+                    from the ground it was just another plant in a world full of plants, but in the moment it is "collected"
+                    it begins to stand in for the species in general. It is no longer specific to that piece of ground, to
+                    that soil, or to its relationship with sun and shade in the place it grew. It is now a specimen. Let's
+                    examine this moment of fact creation in the Missouri Botanical Garden archive.
+                </p>
+                <p>
+                    Go to the Missouri Botanical Garden archival database:<br />
+                    <a href="https://livingcollections.org/home" target="_blank" rel="noopener noreferrer">https://livingcollections.org/home</a>
+                </p>
+                <p>
+                    Find a plant in the Missouri Botanic Garden (any plant) that you would like to explore. For example,
+                    try searching: "Fraxinus americana."
+                </p>
+                <p>
+                    To find Trouillot’s 1st moment for this plant, go to one of the plant's herbarium sheets and look at it
+                    closely. Who collected this plant? What was their name? Where did they collect it? Next, explore the links
+                    associated with the plant. How many different ways has this plant (and plant species) been entered into
+                    this database? As you explore the archive, you are now exploring Trouillot’s second moment: the moment
+                    where the collected plant becomes part of a larger archive.
+                </p>
+
+                <h4>Step 2</h4>
+                <p>
+                    Trouillot’s third moment is when we start to do things with the archive. This is when narratives are
+                    constructed through the ability to retrieve information that the archive has made available to our thinking.
+                </p>
+                <p>
+                    Directly next to the species name (maybe Fraxinus americana) of your plant in the Living Collections
+                    Management System there will be a small Missouri Botanical Garden Logo. Click on this small logo.
+                    This will take you to Tropicos, the MOBOT taxonomic database. What can you learn about the plant here?
+                    Does the plant have an "author"? Who is this person? What other plants did they identify?
+                </p>
+                <p>
+                    In the case of Fraxinus americana, the author is Linneaus himself, meaning that Linnaeus was the first
+                    one to name this species. You'll also find citation information for the text in which the species first
+                    appeared in writing. In this case, Tropicos tells us that Fraxinus americana was first identified by
+                    Linneaus in the book Species Plantarum (1753). Next to this citation you'll see some more small logos...
+                    one of them has the letters "BHL." Click on this link, which will take you to the Biodiversity Heritage
+                    Library site: <a href="https://www.biodiversitylibrary.org" target="_blank" rel="noopener noreferrer">https://www.biodiversitylibrary.org</a>
+                </p>
+                <p>
+                    Here, you will see a digital scan of the physical book from 1753 where Fraxinus americana first appeared.
+                </p>
+
+                <h4>Step 3</h4>
+                <p>
+                    Trouillot’s final step is the making of history. This is where many narratives are considered and analyzed
+                    in order to construct an account of the past. In this case, the plant was collected in 1941 by Jonathan
+                    Wright as part of a collection he called "Plants of Indian Territory." Could we think of this plant's
+                    history as exclusively taxonomic, or might think of the legacy of settler colonialism as an important
+                    dimension of this plant's "territory?"
+                </p>
+                <p>
+                    In the final step, you will research and write your own history of this plant. Consider what aspects of
+                    this plant's history may have been left out of its presentation in the herbarium—for instance, more
+                    about the person who collected it and the circumstances under which they did so; or alternative contexts
+                    in which that plant may have gained meaning (e.g. within Indigenous knowledge systems). Drawing on this
+                    research, write a blurb for this plant that “includes the soil”—that is, situates it within a  political,
+                    historical, ecological, and social context.
+                </p>
+
+                <h4>Readings/other media:</h4>
+                <ul>
+                    <li>
+                        Robin Wall Kimmerer, <a href="https://www.yesmagazine.org/environment/2021/10/29/hearing-the-language-of-trees" target="_blank" rel="noopener noreferrer">Hearing the Language of Trees</a>
+                    </li>
+                    <li>
+                        Seth Denizen, <a href="https://www.jstor.org/stable/10.3998/mpub.12762617.6" target="_blank" rel="noopener noreferrer">“Where is the earth in the herbarium”</a>
+                        <ul>
+                            <li>Or watch: <a href="https://www.youtube.com/watch?v=CnG-E_fLAFQ" target="_blank" rel="noopener noreferrer">Seth Denizen: Where is the earth in the herbarium? (Earth Writing, Faculty Workshop)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Camile Dungy, <a href="https://emergencemagazine.org/essay/from-dirt/" target="_blank" rel="noopener noreferrer">“From Dirt”</a>
+                    </li>
+                </ul>
+            </div>
         </UnitDay>
 
         <UnitDay
@@ -98,12 +260,26 @@ const title = "Soil as Archive";
             headline="Soil as an archive of historical relations"
         >
             <FormattedText>
-                <p>
-                    Soils and their substrates, such as arsenic ore, help us tell histories of racism, empire,
-                    capitalism, and landscape. Learn that our soils are created by many forms of circulation. Learn how
-                    chemical-intensive agriculture emerged, in part, through the social relations with and within soils.
+                <p class="large">
+                    Soils are created by many forms of circulation. Understanding soils and their mineral substrates, such
+                    as arsenic ore, help us tell histories of racism, empire, capitalism, and landscape. Learn how chemical-intensive
+                    agriculture emerged, in part, through the social relations with and within soils.
                 </p>
             </FormattedText>
+            <div>
+                <h3>Activity 1</h3>
+                <p>
+                    Read Jayson Porter’s essay in the essays section of this website and consider it alongside the
+                    <a href="https://en.wikipedia.org/wiki/Ring_of_Fire" target="_blank" rel="noopener noreferrer">Ring of Fire map</a>.
+                </p>
+            </div>
+
+            <div>
+                <h3>Activity 2</h3>
+                <p>
+
+                </p>
+            </div>
         </UnitDay>
 
         <UnitDay
@@ -112,5 +288,5 @@ const title = "Soil as Archive";
         >
 
         </UnitDay>
-    </ContentColumn>
+    </PageBlock>
 </UnitLayout>
