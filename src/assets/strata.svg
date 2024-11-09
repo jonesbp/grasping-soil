@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+  <defs>
+    <pattern id="strata" x="0" y="0" width="1200" height="300" patternUnits="userSpaceOnUse">
+      <!-- Paths with tighter spacing -->
+      <path d="M-200 -100 Q 0 -130, 200 -90, 400 -130, 600 -90, 800 -130, 1400 -95" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 -75 Q 0 -105, 200 -65, 400 -105, 600 -65, 800 -105, 1400 -70" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 -50 Q 0 -80, 200 -40, 400 -80, 600 -40, 800 -80, 1400 -45" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 -25 Q 0 -55, 200 -15, 400 -55, 600 -15, 800 -55, 1400 -20" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 0 Q 0 -30, 200 10, 400 -30, 600 10, 800 -30, 1400 5" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 25 Q 0 -5, 200 35, 400 -5, 600 35, 800 -5, 1400 30" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 50 Q 0 20, 200 60, 400 20, 600 60, 800 20, 1400 55" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 75 Q 0 45, 200 85, 400 45, 600 85, 800 45, 1400 80" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 100 Q 0 70, 200 110, 400 70, 600 110, 800 70, 1400 105" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 125 Q 0 95, 200 135, 400 95, 600 135, 800 95, 1400 130" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 150 Q 0 120, 200 160, 400 120, 600 160, 800 120, 1400 155" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 175 Q 0 145, 200 185, 400 145, 600 185, 800 145, 1400 180" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 200 Q 0 170, 200 210, 400 170, 600 210, 800 170, 1400 205" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 225 Q 0 195, 200 235, 400 195, 600 235, 800 195, 1400 230" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 250 Q 0 220, 200 260, 400 220, 600 260, 800 220, 1400 255" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 275 Q 0 245, 200 285, 400 245, 600 285, 800 245, 1400 280" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 300 Q 0 270, 200 310, 400 270, 600 310, 800 270, 1400 305" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 325 Q 0 295, 200 335, 400 295, 600 335, 800 295, 1400 330" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 350 Q 0 320, 200 360, 400 320, 600 360, 800 320, 1400 355" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+      <path d="M-200 375 Q 0 345, 200 385, 400 345, 600 385, 800 345, 1400 380" fill="none" stroke="black" stroke-width="1" transform="rotate(15)"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1200" height="300" fill="url(#strata)"/>
+</svg>

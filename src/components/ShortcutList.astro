@@ -1,38 +1,57 @@
 ---
+const {
+    unit,
+    links,
+} = Astro.props;
 ---
-<ul class="shortcut-list">
-    <slot />
-</ul>
+<div class="container">
+    <div class="headline">Unit Outline</div>
+    <ol class={`shortcut-list unit-${unit}`}>
+        {links.map((link, idx) => (
+            <li>
+                <a href={`#day-${idx + 1}`}>{link}</a>
+            </li>
+        ))}
+    </ol>
+</div>
 
 <style>
-ul.shortcut-list {
+div.container {
     float: right;
+    margin: 0 0 2rem 2rem;
+    max-width: 33.333%;
+}
+
+div.headline {
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+ol.shortcut-list {
+    counter-reset: list;
     font-size: 1.2rem;
     list-style-type: none;
-    margin: 0 0 2rem 2rem;
     padding-left: 0;
 }
 
-.shortcut-list :global(li a) {
-    color: var(--background-color);
-    display: block;
-    padding: .5em 1.5em .5em 1em;
-    text-decoration: none;
+li {
+    counter-increment: list;
+    line-height: 145%;
+    margin-bottom: .5em;
+    padding-left: 1rem;
 }
 
-.shortcut-list :global(li:nth-of-type(4n + 1) a) {
-    background-color: var(--accent-color);
+li::before {
+    content: counter(list) ". ";
+    color: var(--tertiary-text-color);
+    margin-left: -1rem;
 }
 
-.shortcut-list :global(li:nth-of-type(4n + 2) a) {
-    background-color: var(--accent-color-brown-2);
+ol.unit-1 a {
+    color: var(--accent-color-unit-1);
+    text-decoration-color: var(--accent-srgb-highlight-unit-1);
+    text-decoration-color: var(--accent-p3-highlight-unit-1);
 }
 
-.shortcut-list :global(li:nth-of-type(4n + 3) a) {
-    background-color: var(--accent-color-brown-3);
-}
-
-.shortcut-list :global(li:nth-of-type(4n + 4) a) {
-    background-color: var(--text-color);
-}
 </style>

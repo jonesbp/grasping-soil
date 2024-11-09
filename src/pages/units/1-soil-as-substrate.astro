@@ -5,6 +5,7 @@ import FormattedText from '../../components/FormattedText.astro';
 import PageBlock from '../../components/PageBlock.astro';
 import ShortcutList from '../../components/ShortcutList.astro';
 import UnitDay from '../../components/UnitDay.astro';
+import UnitHeader from '../../components/UnitHeader.astro';
 import UnitQuestions from '../../components/UnitQuestions.astro';
 import UnitStrip from '../../components/UnitStrip.astro';
 
@@ -15,26 +16,20 @@ const title = "Soil as Substrate";
     number={number}
     title={title}
 >
-    <UnitStrip imageSrc="/images/unit-x/unit-X-strip.jpeg" alt="Illustrations" />
+    <UnitHeader />
+    <UnitStrip unit={number} imageSrc="/images/unit-x/unit-X-strip.jpeg" alt="Illustrations" />
 
     <PageBlock>
-        <ShortcutList>
-            <li>
-                <a href="#">1. Who cares about (and for) soil? </a>
-            </li>
-            <li>
-                <a href="#">2. Assessing soil’s properties and uses </a>
-            </li>
-            <li>
-                <a href="#">3. Soil organic matter (not humus) and the metabolic life of soil: What are we getting wrong?</a>
-            </li>
-            <li>
-                <a href="#">4. Approaching soil as a repository of historical metabolism</a>
-            </li>
-            <li>
-                <a href="#">5. Materializing future horizons through soil</a>
-            </li>
-        </ShortcutList>
+        <ShortcutList
+            unit={number}
+            links={[
+                "Who cares about (and for) soil?",
+                "Assessing soil’s properties and uses",
+                "Soil organic matter (not humus) and the metabolic life of soil: What are we getting wrong?",
+                "Approaching soil as a repository of historical metabolism",
+                "Materializing future horizons through soil",
+            ]}
+        />
         <FormattedText>
             <p class="large">
                 In this unit, we approach soil as an active material that contributes to composing (and decomposing!) our
@@ -50,7 +45,8 @@ const title = "Soil as Substrate";
     </PageBlock>
 
     <UnitDay
-        number={1}
+        unit={number}
+        day={1}
         headline="Who cares about (and for) soil?"
     >
         <FormattedText>
@@ -71,7 +67,8 @@ const title = "Soil as Substrate";
     </UnitDay>
 
     <UnitDay
-        number={2}
+        unit={number}
+        day={2}
         headline="Assessing soil’s properties and uses"
     >
         <FormattedText>
@@ -94,7 +91,8 @@ const title = "Soil as Substrate";
     </UnitDay>
 
     <UnitDay
-        number={3}
+        unit={number}
+        day={3}
         headline="Soil organic matter (not humus) and the metabolic life of soil: What are we getting wrong?"
     >
         <FormattedText>
@@ -137,7 +135,8 @@ const title = "Soil as Substrate";
     </UnitDay>
 
     <UnitDay
-        number={4}
+        unit={number}
+        day={4}
         headline="Approaching soil as a repository of historical metabolism"
     >
         <FormattedText>
@@ -154,7 +153,8 @@ const title = "Soil as Substrate";
     </UnitDay>
 
     <UnitDay
-        number={5}
+        unit={number}
+        day={5}
         headline="Materializing future horizons through soil"
     >
         <FormattedText>

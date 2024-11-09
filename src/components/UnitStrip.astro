@@ -1,10 +1,11 @@
 ---
 const {
+    unit,
     imageSrc,
     imageAlt,
 } = Astro.props;
 ---
-<div class="unit-strip">
+<div class={`unit-strip unit-${unit}`}>
     <div class="contents">
         <img src={imageSrc} alt={imageAlt} />
     </div>
@@ -12,11 +13,32 @@ const {
 
 <style>
 .unit-strip {
-    background-color: var(--accent-color-brown-3);
-    border-color: var(--accent-color-brown-2);
     border-style: solid;
     border-width: 4px 0;
     margin-bottom: 6rem;
+    position: relative;
+    z-index: 1;
+}
+
+.unit-strip.unit-1 {
+    background-color: var(--accent-color-unit-1);
+    border-top-color: var(--accent-outline-unit-1);
+    border-bottom-color: var(--accent-color-unit-1);
+}
+.unit-strip.unit-2 {
+    background-color: var(--accent-color-unit-2);
+    border-top-color: var(--accent-outline-unit-2);
+    border-bottom-color: var(--accent-color-unit-2);
+}
+.unit-strip.unit-3 {
+    background-color: var(--accent-color-unit-3);
+    border-top-color: var(--accent-outline-unit-3);
+    border-bottom-color: var(--accent-color-unit-3);
+}
+.unit-strip.unit-4 {
+    background-color: var(--accent-color-unit-4);
+    border-top-color: var(--accent-outline-unit-4);
+    border-bottom-color: var(--accent-color-unit-4);
 }
 
 .unit-strip .contents {

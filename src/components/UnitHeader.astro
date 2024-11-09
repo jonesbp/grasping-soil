@@ -1,0 +1,47 @@
+---
+
+---
+<div class="header-ribbon">
+    <a href="/">
+        <div class="content">
+            Grasping Soil
+        </div>
+    </a>
+</div>
+
+<style>
+.header-ribbon {
+    height: 4.6rem;
+    position: relative;
+    z-index: 0;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: var(--max-content-width);
+    width: 100%;
+}
+
+a {
+    background-color: var(--accent-outline-blue);
+    color: var(--accent-color-blue);
+    display: block;
+    filter:
+        drop-shadow(-1px 0 0 var(--accent-outline-blue))
+        drop-shadow(1px 0 0 var(--accent-outline-blue))
+        drop-shadow(0 -1px 0 var(--accent-outline-blue))
+        drop-shadow(0 1px 0 var(--accent-outline-blue))
+    ;
+    font-family: 'Paix', sans-serif;
+    font-size: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s all ease;
+}
+
+a:hover {
+    background-color: var(--accent-color-blue);
+    color: var(--accent-srgb-highlight-blue);
+    color: var(--accent-p3-highlight-blue);
+}
+</style>
