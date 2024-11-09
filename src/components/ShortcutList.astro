@@ -3,6 +3,8 @@ const {
     unit,
     links,
 } = Astro.props;
+
+const starSvg = (await import("../assets/star.svg?raw")).default;
 ---
 <div class="container">
     <div class="headline">Unit Outline</div>
@@ -13,6 +15,11 @@ const {
             </li>
         ))}
     </ol>
+    <div class="horizontal-stars">
+        <span set:html={starSvg} />
+        <span set:html={starSvg} />
+        <span set:html={starSvg} />
+    </div>
 </div>
 
 <style>
@@ -87,4 +94,19 @@ ol.unit-4 a:hover {
     color: var(--accent-color-unit-4);
 }
 
+.horizontal-stars {
+    column-gap: .5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.horizontal-stars span {
+    display: block;
+    width: 1.5rem;
+}
+
+.horizontal-stars span :global(svg path) {
+    fill: var(--decorative-warm-gray);
+}
 </style>
