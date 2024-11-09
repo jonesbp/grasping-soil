@@ -1,0 +1,44 @@
+---
+const { top, bottom } = Astro.props;
+---
+{top && (
+    <div class="striped-border-stroke" />
+)}
+<div class="striped-border" />
+{bottom && (
+    <div class="striped-border-stroke" />
+)}
+
+<style>
+div.striped-border {
+    background: linear-gradient(
+            to right,
+            var(--accent-color-unit-1) 0%,
+            var(--accent-color-unit-1) 20%,
+            var(--accent-color-unit-2) 20%,
+            var(--accent-color-unit-2) 53%,
+            var(--accent-color-unit-3) 53%,
+            var(--accent-color-unit-3) 86%,
+            var(--accent-color-unit-4) 86%,
+            var(--accent-color-unit-4) 100%
+    );
+    height: 4px;
+    width: 100%;
+}
+
+div.striped-border-stroke {
+    background: linear-gradient(
+            to right,
+            var(--accent-outline-unit-1) 0%,
+            var(--accent-outline-unit-1) 20%,
+            var(--accent-outline-unit-2) 20%,
+            var(--accent-outline-unit-2) 53%,
+            var(--accent-outline-unit-3) 53%,
+            var(--accent-outline-unit-3) 86%,
+            var(--accent-outline-unit-4) 86%,
+            var(--accent-outline-unit-4) 100%
+    );
+    height: 1px;
+    width: 100%;
+}
+</style>

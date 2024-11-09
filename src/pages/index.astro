@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageContent from '../components/PageContent.astro';
+import StripedBorder from '../components/StripedBorder.astro';
 
 const starSvg = (await import("../assets/star.svg?raw")).default;
 ---
@@ -10,8 +12,7 @@ const starSvg = (await import("../assets/star.svg?raw")).default;
 			<div class="image-clipper">
 				<img src="/images/hero.jpg" alt="placeholder hero image" />
 			</div>
-			<div class="striped-border-stroke" />
-			<div class="striped-border" />
+			<StripedBorder top={true} />
 			<div class="text-overlay">
 				<h1 class="title">
 					Grasping<br />
@@ -19,9 +20,9 @@ const starSvg = (await import("../assets/star.svg?raw")).default;
 				</h1>
 			</div>
 		</div>
-		<div class="content">
+		<PageContent>
 			<div class="intro-links">
-				a <a class="syllabus-link" href="#">syllabus</a> + <a class="essays-link" href="#">essays</a>
+				a <a class="syllabus-link" href="/syllabus">syllabus</a> + <a class="essays-link" href="/essays">essays</a>
 			</div>
 			<div class="horizontal-stars">
 				<span set:html={starSvg} />
@@ -35,18 +36,11 @@ const starSvg = (await import("../assets/star.svg?raw")).default;
 					Ea quis et aliquam aliquid iste ut.
 				</p>
 			</div>
-		</div>
+		</PageContent>
 	</main>
 </Layout>
 
 <style>
-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	min-height: 100vh;
-}
-
 .hero-container {
 	display: block;
 	flex-grow: 0;
@@ -61,37 +55,6 @@ main {
 	overflow: hidden;
 }
 
-.hero-container div.striped-border {
-	background: linear-gradient(
-		to right,
-		var(--accent-color-unit-1) 0%,
-		var(--accent-color-unit-1) 20%,
-		var(--accent-color-unit-2) 20%,
-		var(--accent-color-unit-2) 53%,
-		var(--accent-color-unit-3) 53%,
-		var(--accent-color-unit-3) 86%,
-		var(--accent-color-unit-4) 86%,
-		var(--accent-color-unit-4) 100%
-	);
-	height: 4px;
-	width: 100%;
-}
-
-.hero-container div.striped-border-stroke {
-	background: linear-gradient(
-		to right,
-		var(--accent-outline-unit-1) 0%,
-		var(--accent-outline-unit-1) 20%,
-		var(--accent-outline-unit-2) 20%,
-		var(--accent-outline-unit-2) 53%,
-		var(--accent-outline-unit-3) 53%,
-		var(--accent-outline-unit-3) 86%,
-		var(--accent-outline-unit-4) 86%,
-		var(--accent-outline-unit-4) 100%
-	);
-	height: 1px;
-	width: 100%;
-}
 
 .hero-container img {
 	display: block;
@@ -132,15 +95,8 @@ main {
 	z-index: 1;
 }
 
-.content {
-	flex-grow: 1;
-	margin: 0 auto;
-	max-width: var(--max-content-width);
-	padding-bottom: 8rem;
-	width: 100%;
-}
 
-.content .intro-links {
+.intro-links {
 	color: var(--primary-text-color);
 	font-family: 'Paix', sans-serif;
 	font-size: 2rem;
@@ -173,31 +129,31 @@ main {
 	color: var(--accent-p3-highlight-blue);
 }
 
-.content .horizontal-stars {
+.horizontal-stars {
 	column-gap: .5rem;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 3rem;
 }
 
-.content .horizontal-stars span {
+.horizontal-stars span {
 	display: block;
 	width: 1.5rem;
 }
 
-.content .horizontal-stars span :global(svg path) {
+.horizontal-stars span :global(svg path) {
 	fill: var(--decorative-warm-gray);
 }
 
-.content .abstract {
+.abstract {
 	padding: 2rem 40px;
 }
 
-.content .abstract p:first-of-type {
+.abstract p:first-of-type {
 	margin-top: 0;
 }
 
-.content .abstract p {
+.abstract p {
 	font-size: 1.4em;
 	font-weight: 400;
 	line-height: 145%;

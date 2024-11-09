@@ -1,0 +1,86 @@
+---
+import StripedBorder from "./StripedBorder.astro";
+
+const { title } = Astro.props;
+---
+
+<div class="page-header">
+    <div class="image-clipper">
+        <img src="/images/hero.jpg" alt="placeholder hero image" />
+    </div>
+    <StripedBorder top={true} />
+    <div class="text-overlay">
+        <div class="title">
+            <a class="site-title" href="/">Grasping<br />
+            Soil</a> <h1>{title}</h1>
+        </div>
+    </div>
+</div>
+
+<style>
+.page-header {
+    display: block;
+    margin: 2rem auto 4rem auto;
+    max-width: 90%;
+    position: relative;
+    width: auto;
+}
+
+.page-header .image-clipper {
+    aspect-ratio: 4.8;
+    overflow: hidden;
+}
+
+.page-header img {
+    display: block;
+    max-width: 100%;
+    opacity: .7;
+    position: relative;
+    z-index: 0;
+}
+
+.page-header .text-overlay {
+    height: 100%;
+    margin-left: calc(-1 * (var(--max-content-width) / 2));
+    max-width: var(--max-content-width);
+    position: absolute;
+        top: 0;
+        left: 50%;
+    width: 100%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1280px) {
+    .page-header .text-overlay {
+        margin-left: calc(-50vw);
+    }
+}
+
+.page-header .title {
+    color: var(--accent-color-blue);
+    font-family: 'Paix', sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 80%;
+    margin: 0;
+    position: absolute;
+        left: 40px;
+        bottom: -1.18rem;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.page-header .title .site-title {
+    color: var(--accent-color-blue);
+    opacity: .7;
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--accent-srgb-highlight-blue);
+    color: var(--accent-p3-highlight-blue);
+    display: inline;
+    font-size: 1em;
+    margin: 0;
+}
+</style>
