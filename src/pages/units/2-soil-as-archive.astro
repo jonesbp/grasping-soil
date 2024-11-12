@@ -10,6 +10,8 @@ import UnitHeader from '../../components/UnitHeader.astro';
 import UnitQuestions from '../../components/UnitQuestions.astro';
 import UnitStrip from '../../components/UnitStrip.astro';
 import UnitTitle from '../../components/UnitTitle.astro';
+import ActivityBlock from "../../components/ActivityBlock.astro";
+import ImageBlock from '../../components/ImageBlock.astro';
 
 const number = 2;
 const title = "Soil as Archive";
@@ -110,9 +112,10 @@ const title = "Soil as Archive";
 
             <!-- TODO: Development an Activity Block -->
 
-            <div>
-                <h3>Activity: Creating Soil Monoliths</h3>
-
+            <ActivityBlock
+                unit={number}
+                headline="Activity: Creating Soil Monoliths"
+            >
                 <p>
                     Find two sites near you where there is soil—in each, take a sample of the top soil using a clear cup. Compare
                     them and try to describe the features you are comparing. What do the layers look like? If you don’t see any
@@ -131,16 +134,15 @@ const title = "Soil as Archive";
                 />
 
                 <p>
-                    <!-- TODO: Broken link? -->
                     <b>Reference:</b> <a href="https://www.mbsoils.ca/wp-content/uploads/Mounting-your-soil-monolith-Oct-2020_MW_Generic-for-MSSS-website22163.pdf" target="_blank" rel="noopener noreferrer">https://www.mbsoils.ca/wp-content/uploads/Mounting-your-soil-monolith-Oct-2020_MW_Generic-for-MSSS-website22163.pdf</a>
                 </p>
-            </div>
+            </ActivityBlock>
 
-            <!-- TODO: Develop an Assignment block -->
 
-            <div>
-                <h3>Assignment: Explore FAO/UNESCO Soil Map and discuss with questions</h3>
-
+            <ActivityBlock
+                unit={number}
+                headline="Assignment: Explore FAO/UNESCO Soil Map and discuss with questions"
+            >
                 <ul>
                     <li>Look at the legend - consider the note on nomenclature on page 2. What do these naming choices suggest about the goals of this map?</li>
                     <li>Read Lyons and Guldi excerpts. Thinking with Lyons, what are some of the broader implications of categorizing in this way?</li>
@@ -148,15 +150,15 @@ const title = "Soil as Archive";
 
                 <h4>Readings/Other Media:</h4>
                 <ul>
-                    <li>FAO/UNESCO Soil Map of the World | FAO SOILS PORTAL | Food and Agriculture Organization of the United Nations</li>
-                    <li><a href="https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soil/national-soil-archive" target="_blank"US National Soil Archive</li>
+                    <li><a href="https://www.fao.org/soils-portal/data-hub/soil-maps-and-databases/faounesco-soil-map-of-the-world/en/" target="_blank" rel="noopener noreferrer">FAO/UNESCO Soil Map of the World | FAO SOILS PORTAL | Food and Agriculture Organization of the United Nations</a></li>
+                    <li><a href="https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soil/national-soil-archive" target="_blank" rel="noopener noreferrer">US National Soil Archive</a></li>
                     <li>Kristina Lyons, Vital Decomposition (excerpt)</li>
                     <li>Michel Rolph Trouillot, Silencing the Past (excerpt)</li>
                     <li>Bowker and Star, Sorting Things Out (excerpt)</li>
                     <li>Guldi, The Long Land War Chap 5 - “On Failing to Make a Map in Time”</li>
                     <li>Bruno Latour, <a href="http://www.bruno-latour.fr/sites/default/files/downloads/53-PANDORA-TOPOFIL-pdf.pdf" target="_blank" rel="noopener noreferrer">Circulating Reference</a></li>
                 </ul>
-            </div>
+            </ActivityBlock>
         </UnitDay>
 
         <UnitDay
@@ -180,8 +182,10 @@ const title = "Soil as Archive";
                 </p>
             </FormattedText>
 
-            <div>
-                <h3>Activity:</h3>
+            <ActivityBlock
+                unit={number}
+                headline="Activity"
+            >
                 <p class="large">
                     Let’s follow Michel-Rolph Trouillot’s four moments through the botanical garden to examine the silences that may or may not be produced.
                 </p>
@@ -235,6 +239,10 @@ const title = "Soil as Archive";
                 </p>
 
                 <h4>Step 3</h4>
+
+                <ImageBlock>
+                    <img src="/images/unit-2/fraxinus.jpeg" alt="Fraxinus specimen with annotations" />
+                </ImageBlock>
                 <p>
                     Trouillot’s final step is the making of history. This is where many narratives are considered and analyzed
                     in order to construct an account of the past. In this case, the plant was collected in 1941 by Jonathan
@@ -250,23 +258,23 @@ const title = "Soil as Archive";
                     research, write a blurb for this plant that “includes the soil”—that is, situates it within a  political,
                     historical, ecological, and social context.
                 </p>
+            </ActivityBlock>
 
-                <h4>Readings/other media:</h4>
-                <ul>
-                    <li>
-                        Robin Wall Kimmerer, <a href="https://www.yesmagazine.org/environment/2021/10/29/hearing-the-language-of-trees" target="_blank" rel="noopener noreferrer">Hearing the Language of Trees</a>
-                    </li>
-                    <li>
-                        Seth Denizen, <a href="https://www.jstor.org/stable/10.3998/mpub.12762617.6" target="_blank" rel="noopener noreferrer">“Where is the earth in the herbarium”</a>
-                        <ul>
-                            <li>Or watch: <a href="https://www.youtube.com/watch?v=CnG-E_fLAFQ" target="_blank" rel="noopener noreferrer">Seth Denizen: Where is the earth in the herbarium? (Earth Writing, Faculty Workshop)</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        Camile Dungy, <a href="https://emergencemagazine.org/essay/from-dirt/" target="_blank" rel="noopener noreferrer">“From Dirt”</a>
-                    </li>
-                </ul>
-            </div>
+            <h4>Readings/other media:</h4>
+            <ul>
+                <li>
+                    Robin Wall Kimmerer, <a href="https://www.yesmagazine.org/environment/2021/10/29/hearing-the-language-of-trees" target="_blank" rel="noopener noreferrer">Hearing the Language of Trees</a>
+                </li>
+                <li>
+                    Seth Denizen, <a href="https://www.jstor.org/stable/10.3998/mpub.12762617.6" target="_blank" rel="noopener noreferrer">“Where is the earth in the herbarium”</a>
+                    <ul>
+                        <li>Or watch: <a href="https://www.youtube.com/watch?v=CnG-E_fLAFQ" target="_blank" rel="noopener noreferrer">Seth Denizen: Where is the earth in the herbarium? (Earth Writing, Faculty Workshop)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Camile Dungy, <a href="https://emergencemagazine.org/essay/from-dirt/" target="_blank" rel="noopener noreferrer">“From Dirt”</a>
+                </li>
+            </ul>
         </UnitDay>
 
         <UnitDay
@@ -281,20 +289,48 @@ const title = "Soil as Archive";
                     agriculture emerged, in part, through the social relations with and within soils.
                 </p>
             </FormattedText>
-            <div>
-                <h3>Activity 1</h3>
+            <ActivityBlock
+                unit={number}
+                headline="Activity 1"
+            >
                 <p>
                     Read Jayson Porter’s essay in the essays section of this website and consider it alongside the
                     <a href="https://en.wikipedia.org/wiki/Ring_of_Fire" target="_blank" rel="noopener noreferrer">Ring of Fire map</a>.
                 </p>
-            </div>
+            </ActivityBlock>
 
-            <div>
-                <h3>Activity 2</h3>
+            <ActivityBlock
+                unit={number}
+                headline="Activity 2"
+            >
                 <p>
-
+                    First, use <a href="https://www.epa.gov/ejscreen" target="_blank" rel="noopener noreferrer">EJScreen</a> to see how
+                    close you live to a superfund site, hazardous waste, or other toxins. Second, explore the “Socioeconomic Indicators”
+                    tab to see how these indicators overlap toxic regions. Lastly, explore the “Health Disparities” tab to further
+                    investigate the connections between toxicity, socioeconomic difference, and health disparities.
                 </p>
-            </div>
+                <p>
+                    Read about counter mapping:
+                </p>
+                <ul>
+                    <li>“<a href="https://emergencemagazine.org/feature/counter-mapping/" target="_blank" rel="noopener noreferrer">Counter Mapping</a>”, <i>Emergence Magazine</i></li>
+                    <li>“<a href="https://www.theguardian.com/science/blog/2018/mar/06/counter-mapping-cartography-that-lets-the-powerless-speak" target="_blank" rel="noopener noreferrer">Counter-mapping: cartography that lets the powerless speak</a>”, <i>The Guardian</i></li>
+                </ul>
+                <p>
+                    <span class="highlight-tag">Discuss:</span> If counter mapping challenges “dominate power structures to further
+                    seemingly progressive goals,” how might counter-archiving require alternate forms of Trouillot’s “moment of fact
+                    retrieval”? Do you think the essay does the work of counter-archiving, and if so, how? Consider the historical
+                    case of arsenic. How might a soil archive of toxicity challenge power, counter dominant narratives in society,
+                    and provide hope for the future?
+                </p>
+            </ActivityBlock>
+
+            <h4>Additional Readings / Other Media</h4>
+            <ul>
+                <li>Max Libriorion, Pollution is Colonialism (excerpt)</li>
+                <li>Adam Romero, “<a href="https://www-degruyter-com.eux.idm.oclc.org/document/doi/10.1525/9780520381575-002/html" target="_blank" rel="noopener noreferrer">Economic Poisoning</a>”, (ecerpt, A Letter to Rachel Carson)</li>
+                <li>Rachel Carson, <i>Silent Springs</i> (excerpt/quote)</li>
+            </ul>
         </UnitDay>
 
         <UnitDay

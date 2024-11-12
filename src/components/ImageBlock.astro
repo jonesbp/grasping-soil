@@ -1,0 +1,22 @@
+---
+
+---
+<div class="image-content-block">
+    <slot />
+</div>
+
+<style>
+.image-content-block {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    max-width: 50%;
+    padding: 0;
+    width: max-content;
+}
+
+.image-content-block :global(img) {
+    border: 4px var(--decorative-warm-gray) solid;
+    display: block;
+    max-width: 100%;
+}
+</style>
