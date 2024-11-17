@@ -1,0 +1,31 @@
+---
+import Layout from "./Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
+import PageContent from "../components/PageContent.astro";
+
+const {
+    title,
+} = Astro.props;
+---
+
+<Layout title={title}>
+    <main>
+        <PageHeader title="Resources" />
+        <PageContent>
+            <div class="resource-column">
+                <slot />
+            </div>
+        </PageContent>
+    </main>
+</Layout>
+
+<style>
+    main {
+        min-height: 100vh;
+    }
+
+    .resource-column {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+</style>

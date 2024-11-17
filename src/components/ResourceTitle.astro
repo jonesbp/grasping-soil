@@ -1,0 +1,27 @@
+---
+const { title } = Astro.props;
+---
+
+<div class="resource-title">
+    <h2>
+        <span class="title">{title}</span>
+    </h2>
+</div>
+
+<style>
+.resource-title {
+    margin: 0 auto;
+    max-width: var(--max-page-width);
+    width: 100%;
+}
+
+h2 {
+    margin: 0 0 3rem 0;
+}
+
+span.title {
+    color: var(--primary-text-color);
+    display: block;
+    font-size: 2rem;
+}
+</style>
