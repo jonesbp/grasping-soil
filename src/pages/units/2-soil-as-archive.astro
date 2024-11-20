@@ -44,7 +44,7 @@ const title = "Soil as Archive";
                 "Soil as a living archive of social relations",
             ]}
         />
-        <FormattedText>
+        <FormattedText unit={number}>
             <p class="large">
                 How does soil speak? What are its silences? In this unit we consider the histories that are embedded in,
                 revealed by, and erased by soil.
@@ -89,7 +89,7 @@ const title = "Soil as Archive";
             day={1}
             headline="Archives of Soil"
         >
-            <FormattedText>
+            <FormattedText unit={number}>
                 <p class="large">
                     Today we continue some of the work we did in the prior unit on building our skills of assessment and
                     judgment of soil while also considering what values such practices reflect and reproduce. These activities
@@ -100,64 +100,64 @@ const title = "Soil as Archive";
                     and organize them; in the sense that they further certain (violent) classification projects; in the
                     sense that they tell historical stories; and in the sense that they have afterlives.
                 </p>
+                <UnitQuestions
+                        unit={number}
+                        questions={[
+                            "How have soil archives been created and used and in the service of what projects?",
+                            "What are the implications of the typologies that have been created for understanding and archiving soil?",
+                        ]}
+                />
             </FormattedText>
-
-            <UnitQuestions
-                unit={number}
-                questions={[
-                    "How have soil archives been created and used and in the service of what projects?",
-                    "What are the implications of the typologies that have been created for understanding and archiving soil?",
-                ]}
-            />
-
-            <!-- TODO: Development an Activity Block -->
 
             <ActivityBlock
                 unit={number}
                 headline="Activity: Creating Soil Monoliths"
             >
-                <p>
-                    Find two sites near you where there is soil—in each, take a sample of the top soil using a clear cup. Compare
-                    them and try to describe the features you are comparing. What do the layers look like? If you don’t see any
-                    layers, add dish detergent and shake it up, then wait for the sediments to fall. Look at the ratio of different
-                    layers: soil, silt, sand, clay.
-                </p>
+                <FormattedText unit={number}>
+                    <p>
+                        Find two sites near you where there is soil—in each, take a sample of the top soil using a clear cup. Compare
+                        them and try to describe the features you are comparing. What do the layers look like? If you don’t see any
+                        layers, add dish detergent and shake it up, then wait for the sediments to fall. Look at the ratio of different
+                        layers: soil, silt, sand, clay.
+                    </p>
 
-                <UnitQuestions
-                        unit={number}
-                        questions={[
-                            "Are you comparing based on color? Based on texture? How would you make a classification system?",
-                            `Scientists have <a href="https://wsm.isric.org/WSRC.html" target="_blank" rel="noopener noreferrer">collections</a> ` +
-                                `of these <a href="https://www.youtube.com/watch?v=b2IIv6WmrEc" target="_blnak" rel="noopener noreferrer">monoliths</a>. ` +
-                                `Is making a monolith of your own considered an archive? If so, what is it archiving? What makes something an archive?`,
-                        ]}
-                />
+                    <UnitQuestions
+                            unit={number}
+                            questions={[
+                                "Are you comparing based on color? Based on texture? How would you make a classification system?",
+                                `Scientists have <a href="https://wsm.isric.org/WSRC.html" target="_blank" rel="noopener noreferrer">collections</a> ` +
+                                    `of these <a href="https://www.youtube.com/watch?v=b2IIv6WmrEc" target="_blnak" rel="noopener noreferrer">monoliths</a>. ` +
+                                    `Is making a monolith of your own considered an archive? If so, what is it archiving? What makes something an archive?`,
+                            ]}
+                    />
 
-                <p>
-                    <b>Reference:</b> <a href="https://www.mbsoils.ca/wp-content/uploads/Mounting-your-soil-monolith-Oct-2020_MW_Generic-for-MSSS-website22163.pdf" target="_blank" rel="noopener noreferrer">https://www.mbsoils.ca/wp-content/uploads/Mounting-your-soil-monolith-Oct-2020_MW_Generic-for-MSSS-website22163.pdf</a>
-                </p>
+                    <p>
+                        <b>Reference:</b> <a href="https://www.mbsoils.ca/wp-content/uploads/Mounting-your-soil-monolith-Oct-2020_MW_Generic-for-MSSS-website22163.pdf" target="_blank" rel="noopener noreferrer">https://www.mbsoils.ca/wp-content/uploads/Mounting-your-soil-monolith-Oct-2020_MW_Generic-for-MSSS-website22163.pdf</a>
+                    </p>
+                </FormattedText>
             </ActivityBlock>
-
 
             <ActivityBlock
                 unit={number}
                 headline="Assignment: Explore FAO/UNESCO Soil Map and discuss with questions"
             >
-                <ul>
-                    <li>Look at the legend - consider the note on nomenclature on page 2. What do these naming choices suggest about the goals of this map?</li>
-                    <li>Read Lyons and Guldi excerpts. Thinking with Lyons, what are some of the broader implications of categorizing in this way?</li>
-                </ul>
+                <FormattedText unit={number}>
+                    <ul>
+                        <li>Look at the legend - consider the note on nomenclature on page 2. What do these naming choices suggest about the goals of this map?</li>
+                        <li>Read Lyons and Guldi excerpts. Thinking with Lyons, what are some of the broader implications of categorizing in this way?</li>
+                    </ul>
 
-                <h4>Readings/Other Media:</h4>
-                <ul>
-                    <li><a href="https://www.fao.org/soils-portal/data-hub/soil-maps-and-databases/faounesco-soil-map-of-the-world/en/" target="_blank" rel="noopener noreferrer">FAO/UNESCO Soil Map of the World | FAO SOILS PORTAL | Food and Agriculture Organization of the United Nations</a></li>
-                    <li><a href="https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soil/national-soil-archive" target="_blank" rel="noopener noreferrer">US National Soil Archive</a></li>
-                    <li>Kristina Lyons, Vital Decomposition (excerpt)</li>
-                    <li>Michel Rolph Trouillot, Silencing the Past (excerpt)</li>
-                    <li>Bowker and Star, Sorting Things Out (excerpt)</li>
-                    <li>Guldi, The Long Land War Chap 5 - “On Failing to Make a Map in Time”</li>
-                    <li>Bruno Latour, <a href="http://www.bruno-latour.fr/sites/default/files/downloads/53-PANDORA-TOPOFIL-pdf.pdf" target="_blank" rel="noopener noreferrer">Circulating Reference</a></li>
-                </ul>
+                    <h4>Readings/Other Media:</h4>
+                    <ul>
+                        <li><a href="https://www.fao.org/soils-portal/data-hub/soil-maps-and-databases/faounesco-soil-map-of-the-world/en/" target="_blank" rel="noopener noreferrer">FAO/UNESCO Soil Map of the World | FAO SOILS PORTAL | Food and Agriculture Organization of the United Nations</a></li>
+                        <li><a href="https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soil/national-soil-archive" target="_blank" rel="noopener noreferrer">US National Soil Archive</a></li>
+                        <li>Kristina Lyons, Vital Decomposition (excerpt)</li>
+                        <li>Michel Rolph Trouillot, Silencing the Past (excerpt)</li>
+                        <li>Bowker and Star, Sorting Things Out (excerpt)</li>
+                        <li>Guldi, The Long Land War Chap 5 - “On Failing to Make a Map in Time”</li>
+                        <li>Bruno Latour, <a href="http://www.bruno-latour.fr/sites/default/files/downloads/53-PANDORA-TOPOFIL-pdf.pdf" target="_blank" rel="noopener noreferrer">Circulating Reference</a></li>
+                    </ul>
+                </FormattedText>
             </ActivityBlock>
         </UnitDay>
 
@@ -166,7 +166,7 @@ const title = "Soil as Archive";
             unit={number}
             headline="Archives conspicuously without Soils"
         >
-            <FormattedText>
+            <FormattedText unit={number}>
                 <p class="large">
                     Some archives are about soil, and intentionally index soil within archival frameworks. Some archives
                     go to elaborate lengths to remove soil–we might say, following Michel-Rolph Trouillot, to silence soil–and
@@ -186,95 +186,99 @@ const title = "Soil as Archive";
                 unit={number}
                 headline="Activity"
             >
-                <p class="large">
-                    Let’s follow Michel-Rolph Trouillot’s four moments through the botanical garden to examine the silences that may or may not be produced.
-                </p>
+                <FormattedText unit={number}>
+                    <p class="large">
+                        Let’s follow Michel-Rolph Trouillot’s four moments through the botanical garden to examine the silences that may or may not be produced.
+                    </p>
 
-                <h4>Step 1</h4>
-                <p>
-                    Trouillot’s first moment is the moment a plant is collected. In this moment, the plant is pulled out of
-                    the ground, meticulously disentangled from the soil, and made into a "type." Before the plant was pulled
-                    from the ground it was just another plant in a world full of plants, but in the moment it is "collected"
-                    it begins to stand in for the species in general. It is no longer specific to that piece of ground, to
-                    that soil, or to its relationship with sun and shade in the place it grew. It is now a specimen. Let's
-                    examine this moment of fact creation in the Missouri Botanical Garden archive.
-                </p>
-                <p>
-                    Go to the Missouri Botanical Garden archival database:<br />
-                    <a href="https://livingcollections.org/home" target="_blank" rel="noopener noreferrer">https://livingcollections.org/home</a>
-                </p>
-                <p>
-                    Find a plant in the Missouri Botanic Garden (any plant) that you would like to explore. For example,
-                    try searching: "Fraxinus americana."
-                </p>
-                <p>
-                    To find Trouillot’s 1st moment for this plant, go to one of the plant's herbarium sheets and look at it
-                    closely. Who collected this plant? What was their name? Where did they collect it? Next, explore the links
-                    associated with the plant. How many different ways has this plant (and plant species) been entered into
-                    this database? As you explore the archive, you are now exploring Trouillot’s second moment: the moment
-                    where the collected plant becomes part of a larger archive.
-                </p>
+                    <h4>Step 1</h4>
+                    <p>
+                        Trouillot’s first moment is the moment a plant is collected. In this moment, the plant is pulled out of
+                        the ground, meticulously disentangled from the soil, and made into a "type." Before the plant was pulled
+                        from the ground it was just another plant in a world full of plants, but in the moment it is "collected"
+                        it begins to stand in for the species in general. It is no longer specific to that piece of ground, to
+                        that soil, or to its relationship with sun and shade in the place it grew. It is now a specimen. Let's
+                        examine this moment of fact creation in the Missouri Botanical Garden archive.
+                    </p>
+                    <p>
+                        Go to the Missouri Botanical Garden archival database:<br />
+                        <a href="https://livingcollections.org/home" target="_blank" rel="noopener noreferrer">https://livingcollections.org/home</a>
+                    </p>
+                    <p>
+                        Find a plant in the Missouri Botanic Garden (any plant) that you would like to explore. For example,
+                        try searching: "Fraxinus americana."
+                    </p>
+                    <p>
+                        To find Trouillot’s 1st moment for this plant, go to one of the plant's herbarium sheets and look at it
+                        closely. Who collected this plant? What was their name? Where did they collect it? Next, explore the links
+                        associated with the plant. How many different ways has this plant (and plant species) been entered into
+                        this database? As you explore the archive, you are now exploring Trouillot’s second moment: the moment
+                        where the collected plant becomes part of a larger archive.
+                    </p>
 
-                <h4>Step 2</h4>
-                <p>
-                    Trouillot’s third moment is when we start to do things with the archive. This is when narratives are
-                    constructed through the ability to retrieve information that the archive has made available to our thinking.
-                </p>
-                <p>
-                    Directly next to the species name (maybe Fraxinus americana) of your plant in the Living Collections
-                    Management System there will be a small Missouri Botanical Garden Logo. Click on this small logo.
-                    This will take you to Tropicos, the MOBOT taxonomic database. What can you learn about the plant here?
-                    Does the plant have an "author"? Who is this person? What other plants did they identify?
-                </p>
-                <p>
-                    In the case of Fraxinus americana, the author is Linneaus himself, meaning that Linnaeus was the first
-                    one to name this species. You'll also find citation information for the text in which the species first
-                    appeared in writing. In this case, Tropicos tells us that Fraxinus americana was first identified by
-                    Linneaus in the book Species Plantarum (1753). Next to this citation you'll see some more small logos...
-                    one of them has the letters "BHL." Click on this link, which will take you to the Biodiversity Heritage
-                    Library site: <a href="https://www.biodiversitylibrary.org" target="_blank" rel="noopener noreferrer">https://www.biodiversitylibrary.org</a>
-                </p>
-                <p>
-                    Here, you will see a digital scan of the physical book from 1753 where Fraxinus americana first appeared.
-                </p>
+                    <h4>Step 2</h4>
+                    <p>
+                        Trouillot’s third moment is when we start to do things with the archive. This is when narratives are
+                        constructed through the ability to retrieve information that the archive has made available to our thinking.
+                    </p>
+                    <p>
+                        Directly next to the species name (maybe Fraxinus americana) of your plant in the Living Collections
+                        Management System there will be a small Missouri Botanical Garden Logo. Click on this small logo.
+                        This will take you to Tropicos, the MOBOT taxonomic database. What can you learn about the plant here?
+                        Does the plant have an "author"? Who is this person? What other plants did they identify?
+                    </p>
+                    <p>
+                        In the case of Fraxinus americana, the author is Linneaus himself, meaning that Linnaeus was the first
+                        one to name this species. You'll also find citation information for the text in which the species first
+                        appeared in writing. In this case, Tropicos tells us that Fraxinus americana was first identified by
+                        Linneaus in the book Species Plantarum (1753). Next to this citation you'll see some more small logos...
+                        one of them has the letters "BHL." Click on this link, which will take you to the Biodiversity Heritage
+                        Library site: <a href="https://www.biodiversitylibrary.org" target="_blank" rel="noopener noreferrer">https://www.biodiversitylibrary.org</a>
+                    </p>
+                    <p>
+                        Here, you will see a digital scan of the physical book from 1753 where Fraxinus americana first appeared.
+                    </p>
 
-                <h4>Step 3</h4>
+                    <h4>Step 3</h4>
 
-                <ImageBlock>
-                    <img src="/images/unit-2/fraxinus.jpeg" alt="Fraxinus specimen with annotations" />
-                </ImageBlock>
-                <p>
-                    Trouillot’s final step is the making of history. This is where many narratives are considered and analyzed
-                    in order to construct an account of the past. In this case, the plant was collected in 1941 by Jonathan
-                    Wright as part of a collection he called "Plants of Indian Territory." Could we think of this plant's
-                    history as exclusively taxonomic, or might think of the legacy of settler colonialism as an important
-                    dimension of this plant's "territory?"
-                </p>
-                <p>
-                    In the final step, you will research and write your own history of this plant. Consider what aspects of
-                    this plant's history may have been left out of its presentation in the herbarium—for instance, more
-                    about the person who collected it and the circumstances under which they did so; or alternative contexts
-                    in which that plant may have gained meaning (e.g. within Indigenous knowledge systems). Drawing on this
-                    research, write a blurb for this plant that “includes the soil”—that is, situates it within a  political,
-                    historical, ecological, and social context.
-                </p>
+                    <ImageBlock>
+                        <img src="/images/unit-2/fraxinus.jpeg" alt="Fraxinus specimen with annotations" />
+                    </ImageBlock>
+                    <p>
+                        Trouillot’s final step is the making of history. This is where many narratives are considered and analyzed
+                        in order to construct an account of the past. In this case, the plant was collected in 1941 by Jonathan
+                        Wright as part of a collection he called "Plants of Indian Territory." Could we think of this plant's
+                        history as exclusively taxonomic, or might think of the legacy of settler colonialism as an important
+                        dimension of this plant's "territory?"
+                    </p>
+                    <p>
+                        In the final step, you will research and write your own history of this plant. Consider what aspects of
+                        this plant's history may have been left out of its presentation in the herbarium—for instance, more
+                        about the person who collected it and the circumstances under which they did so; or alternative contexts
+                        in which that plant may have gained meaning (e.g. within Indigenous knowledge systems). Drawing on this
+                        research, write a blurb for this plant that “includes the soil”—that is, situates it within a  political,
+                        historical, ecological, and social context.
+                    </p>
+                </FormattedText>
             </ActivityBlock>
 
-            <h3>Readings/other media:</h3>
-            <ul>
-                <li>
-                    Robin Wall Kimmerer, <a href="https://www.yesmagazine.org/environment/2021/10/29/hearing-the-language-of-trees" target="_blank" rel="noopener noreferrer">Hearing the Language of Trees</a>
-                </li>
-                <li>
-                    Seth Denizen, <a href="https://www.jstor.org/stable/10.3998/mpub.12762617.6" target="_blank" rel="noopener noreferrer">“Where is the earth in the herbarium”</a>
-                    <ul>
-                        <li>Or watch: <a href="https://www.youtube.com/watch?v=CnG-E_fLAFQ" target="_blank" rel="noopener noreferrer">Seth Denizen: Where is the earth in the herbarium? (Earth Writing, Faculty Workshop)</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Camile Dungy, <a href="https://emergencemagazine.org/essay/from-dirt/" target="_blank" rel="noopener noreferrer">“From Dirt”</a>
-                </li>
-            </ul>
+            <FormattedText unit={number}>
+                <h3>Readings/other media:</h3>
+                <ul>
+                    <li>
+                        Robin Wall Kimmerer, <a href="https://www.yesmagazine.org/environment/2021/10/29/hearing-the-language-of-trees" target="_blank" rel="noopener noreferrer">Hearing the Language of Trees</a>
+                    </li>
+                    <li>
+                        Seth Denizen, <a href="https://www.jstor.org/stable/10.3998/mpub.12762617.6" target="_blank" rel="noopener noreferrer">“Where is the earth in the herbarium”</a>
+                        <ul>
+                            <li>Or watch: <a href="https://www.youtube.com/watch?v=CnG-E_fLAFQ" target="_blank" rel="noopener noreferrer">Seth Denizen: Where is the earth in the herbarium? (Earth Writing, Faculty Workshop)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Camile Dungy, <a href="https://emergencemagazine.org/essay/from-dirt/" target="_blank" rel="noopener noreferrer">“From Dirt”</a>
+                    </li>
+                </ul>
+            </FormattedText>
         </UnitDay>
 
         <UnitDay
@@ -293,44 +297,50 @@ const title = "Soil as Archive";
                 unit={number}
                 headline="Activity 1"
             >
-                <p>
-                    Read Jayson Porter’s essay in the essays section of this website and consider it alongside the
-                    <a href="https://en.wikipedia.org/wiki/Ring_of_Fire" target="_blank" rel="noopener noreferrer">Ring of Fire map</a>.
-                </p>
+                <FormattedText unit={number}>
+                    <p>
+                        Read Jayson Porter’s essay in the essays section of this website and consider it alongside the
+                        <a href="https://en.wikipedia.org/wiki/Ring_of_Fire" target="_blank" rel="noopener noreferrer">Ring of Fire map</a>.
+                    </p>
+                </FormattedText>
             </ActivityBlock>
 
             <ActivityBlock
                 unit={number}
                 headline="Activity 2"
             >
-                <p>
-                    First, use <a href="https://www.epa.gov/ejscreen" target="_blank" rel="noopener noreferrer">EJScreen</a> to see how
-                    close you live to a superfund site, hazardous waste, or other toxins. Second, explore the “Socioeconomic Indicators”
-                    tab to see how these indicators overlap toxic regions. Lastly, explore the “Health Disparities” tab to further
-                    investigate the connections between toxicity, socioeconomic difference, and health disparities.
-                </p>
-                <p>
-                    Read about counter mapping:
-                </p>
-                <ul>
-                    <li>“<a href="https://emergencemagazine.org/feature/counter-mapping/" target="_blank" rel="noopener noreferrer">Counter Mapping</a>”, <i>Emergence Magazine</i></li>
-                    <li>“<a href="https://www.theguardian.com/science/blog/2018/mar/06/counter-mapping-cartography-that-lets-the-powerless-speak" target="_blank" rel="noopener noreferrer">Counter-mapping: cartography that lets the powerless speak</a>”, <i>The Guardian</i></li>
-                </ul>
-                <p>
-                    <span class="highlight-tag">Discuss:</span> If counter mapping challenges “dominate power structures to further
-                    seemingly progressive goals,” how might counter-archiving require alternate forms of Trouillot’s “moment of fact
-                    retrieval”? Do you think the essay does the work of counter-archiving, and if so, how? Consider the historical
-                    case of arsenic. How might a soil archive of toxicity challenge power, counter dominant narratives in society,
-                    and provide hope for the future?
-                </p>
+                <FormattedText unit={number}>
+                    <p>
+                        First, use <a href="https://www.epa.gov/ejscreen" target="_blank" rel="noopener noreferrer">EJScreen</a> to see how
+                        close you live to a superfund site, hazardous waste, or other toxins. Second, explore the “Socioeconomic Indicators”
+                        tab to see how these indicators overlap toxic regions. Lastly, explore the “Health Disparities” tab to further
+                        investigate the connections between toxicity, socioeconomic difference, and health disparities.
+                    </p>
+                    <p>
+                        Read about counter mapping:
+                    </p>
+                    <ul>
+                        <li>“<a href="https://emergencemagazine.org/feature/counter-mapping/" target="_blank" rel="noopener noreferrer">Counter Mapping</a>”, <i>Emergence Magazine</i></li>
+                        <li>“<a href="https://www.theguardian.com/science/blog/2018/mar/06/counter-mapping-cartography-that-lets-the-powerless-speak" target="_blank" rel="noopener noreferrer">Counter-mapping: cartography that lets the powerless speak</a>”, <i>The Guardian</i></li>
+                    </ul>
+                    <p>
+                        <span class="highlight-tag">Discuss:</span> If counter mapping challenges “dominate power structures to further
+                        seemingly progressive goals,” how might counter-archiving require alternate forms of Trouillot’s “moment of fact
+                        retrieval”? Do you think the essay does the work of counter-archiving, and if so, how? Consider the historical
+                        case of arsenic. How might a soil archive of toxicity challenge power, counter dominant narratives in society,
+                        and provide hope for the future?
+                    </p>
+                </FormattedText>
             </ActivityBlock>
 
-            <h3>Additional Readings / Other Media</h3>
-            <ul>
-                <li>Max Libriorion, Pollution is Colonialism (excerpt)</li>
-                <li>Adam Romero, “<a href="https://www-degruyter-com.eux.idm.oclc.org/document/doi/10.1525/9780520381575-002/html" target="_blank" rel="noopener noreferrer">Economic Poisoning</a>”, (ecerpt, A Letter to Rachel Carson)</li>
-                <li>Rachel Carson, <i>Silent Springs</i> (excerpt/quote)</li>
-            </ul>
+            <FormattedText unit={number}>
+                <h3>Additional Readings / Other Media</h3>
+                <ul>
+                    <li>Max Libriorion, Pollution is Colonialism (excerpt)</li>
+                    <li>Adam Romero, “<a href="https://www-degruyter-com.eux.idm.oclc.org/document/doi/10.1525/9780520381575-002/html" target="_blank" rel="noopener noreferrer">Economic Poisoning</a>”, (ecerpt, A Letter to Rachel Carson)</li>
+                    <li>Rachel Carson, <i>Silent Springs</i> (excerpt/quote)</li>
+                </ul>
+            </FormattedText>
         </UnitDay>
 
         <UnitDay
@@ -338,7 +348,7 @@ const title = "Soil as Archive";
             day={4}
             headline="Soil as a living archive of social relations"
         >
-            <FormattedText>
+            <FormattedText unit={number}>
                 <p class="large">
                     Different people have different ideas of what is desirable (in the soil), and static concepts of soil health,
                     fertility, and even toxicity do not necessarily help us understand how soil works for or against people. This
@@ -351,35 +361,39 @@ const title = "Soil as Archive";
                 unit={number}
                 headline="Activity"
             >
-                <p>
-                    Explore the <a href="https://thinkingthroughsoil.studio/" target="_blank" rel="noopener noreferrer">Thinking Through Soil</a>
-                    project’s representations of soil, discuss w/questions.
-                </p>
+                <FormattedText unit={number}>
+                    <p>
+                        Explore the <a href="https://thinkingthroughsoil.studio/" target="_blank" rel="noopener noreferrer">Thinking Through Soil</a>
+                        project’s representations of soil, discuss w/questions.
+                    </p>
+                </FormattedText>
             </ActivityBlock>
             <ActivityBlock
                 unit={number}
                 headline="Assignment: Your Soil Archive"
             >
-                <p>
-                    All waste passes through the soil at some point. Garbage, construction debris, bodily fluids, pharmaceuticals,
-                    nuclear fuel rods, and socks with holes in them will one day make a soil somewhere. For a visualization of
-                    this, please take a look at Seth’s <a href="https://thinkingthroughsoil.studio/" target="_blank" rel="noopener noreferrer">soil images</a>. In this exercise consider a day and your waste
-                    during that time, including human waste, and the waste of materials you used or interacted with – what
-                    have you added to the soil?
-                </p>
-                <ul>
-                    <li>
-                        Write a list of the materials you discarded (or excreted) during the day
-                    </li>
-                    <li>
-                        Think about where these materials came from as well as where they go
-                    </li>
-                    <li>
-                        Consider how your own practices are shaped by the economic and social context you are a part of and is manifested in the soil that will be created
-                    </li>
-                </ul>
+                <FormattedText unit={number}>
+                    <p>
+                        All waste passes through the soil at some point. Garbage, construction debris, bodily fluids, pharmaceuticals,
+                        nuclear fuel rods, and socks with holes in them will one day make a soil somewhere. For a visualization of
+                        this, please take a look at Seth’s <a href="https://thinkingthroughsoil.studio/" target="_blank" rel="noopener noreferrer">soil images</a>. In this exercise consider a day and your waste
+                        during that time, including human waste, and the waste of materials you used or interacted with – what
+                        have you added to the soil?
+                    </p>
+                    <ul>
+                        <li>
+                            Write a list of the materials you discarded (or excreted) during the day
+                        </li>
+                        <li>
+                            Think about where these materials came from as well as where they go
+                        </li>
+                        <li>
+                            Consider how your own practices are shaped by the economic and social context you are a part of and is manifested in the soil that will be created
+                        </li>
+                    </ul>
+                </FormattedText>
             </ActivityBlock>
-            <FormattedText>
+            <FormattedText unit={number}>
                 <h3>
                     Readings / Other Media
                 </h3>

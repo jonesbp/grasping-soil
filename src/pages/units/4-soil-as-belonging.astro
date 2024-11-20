@@ -45,7 +45,7 @@ const title = "Soil as Belonging";
                 "Ashes to Ashes: Cemeteries and Burial Ground",
             ]}
         />
-        <FormattedText>
+        <FormattedText unit={number}>
             <p class="large">
                 Soil underlies human activity and society in the very physical and biological sense. It’s the literal foundation
                 for any kind of be(long)ing, because the cultivation of land feeds our bodies. However, human attachment to soil often
@@ -63,90 +63,92 @@ const title = "Soil as Belonging";
                 day={1}
                 headline="Soil and Sense of Place"
         >
-            <FormattedText>
+            <FormattedText unit={number}>
                 <p class="large">
                     Today’s focus is on thinking and reading about how soil and our sensorial experience of it  can often evoke a feeling of home.
                 </p>
+                <UnitQuestions
+                        unit={number}
+                        questions={[
+                            "Do you see soil somewhere around where you live?",
+                            "Can you define what kind of soil it is? What is its texture? Smell? Taste?",
+                            "Do you consider soil part of your sense of home?",
+                        ]}
+                />
             </FormattedText>
-            <UnitQuestions
-                unit={number}
-                questions={[
-                    "Do you see soil somewhere around where you live?",
-                    "Can you define what kind of soil it is? What is its texture? Smell? Taste?",
-                    "Do you consider soil part of your sense of home?",
-                ]}
-            />
             <ActivityBlock
                 unit={number}
                 headline="Lesson plan: Get Down On the Ground"
             >
-                <p>
-                    We tend to avoid the ground. It’s fine to walk on and maybe to dig with a shovel, but most people who are not farmers
-                    avoid contact with the soils that sustain all the grass, trees, and other plants all around us. While in Unit 1 we took a
-                    more removed eye to assessing soil’s textures and components, now it’s time to use the other senses as well. What
-                    does the smell or even taste of soil evoke for you?
-                </p>
-                <p>
-                    <span class="highlight-tag">One of the members of our seminar had this experience:</span> I was on the ground playing
-                    with my child when I smelled something deeply familiar. It was the soil, which I had known when I was her age.
-                    Time and the growth of my body had distanced me from interacting with soil, its texture, its smell, all of its
-                    properties, as intimately as I once did.
-                </p>
-                <p>
-                    Understanding soil in all the ways expressed in this syllabus must begin with the stuff itself. It’s not an
-                    idea–it’s a substance made up of living and non-living things. The first assignment is to smell it, taste it,
-                    and feel it wherever you live.
-                </p>
-                <p>
-                    Some examples of what engaging with soil in this way might evoke:
-                </p>
-                <p>
-                    The artist Laura Parker suggests tasting soil and created an interactive-installation called
-                    <a href="https://www.lauraparkerstudio.com/taste" target="_blank" rel="noopener noreferrer"><i>Taste of Place</i></a> in which
-                    she held soil tastings with samples from eighty-six farms. Taste your soils and write a paragraph about the experience.
-                </p>
-                <p>
-                    Or, read the first two pages of <a href="https://www.google.co.uk/books/edition/The_Known_World/CVS9a6lC5CwC?hl=en&gbpv=1&pg=PA1&printsec=frontcover" target="_blank" rel="noopener noreferrer"><i>The Known World</i></a>
-                    here to consider the tangled ways tasting soil can evoke a lifetime of accrued knowledge of a place.
-                </p>
-                <p>
-                    Here is another article that helps reconnect with what it is like to dig in the dirt:
-                </p>
-                <p>
-                    Emma Marris, “<a href="https://emergencemagazine.org/essay/tending-soil/" target="_blank" rel="noopener noreferrer">Tending Soil</a>,” <i>Emergence Magazine</i>
-                </p>
+                <FormattedText unit={number}>
+                    <p>
+                        We tend to avoid the ground. It’s fine to walk on and maybe to dig with a shovel, but most people who are not farmers
+                        avoid contact with the soils that sustain all the grass, trees, and other plants all around us. While in Unit 1 we took a
+                        more removed eye to assessing soil’s textures and components, now it’s time to use the other senses as well. What
+                        does the smell or even taste of soil evoke for you?
+                    </p>
+                    <p>
+                        <span class="highlight-tag">One of the members of our seminar had this experience:</span> I was on the ground playing
+                        with my child when I smelled something deeply familiar. It was the soil, which I had known when I was her age.
+                        Time and the growth of my body had distanced me from interacting with soil, its texture, its smell, all of its
+                        properties, as intimately as I once did.
+                    </p>
+                    <p>
+                        Understanding soil in all the ways expressed in this syllabus must begin with the stuff itself. It’s not an
+                        idea–it’s a substance made up of living and non-living things. The first assignment is to smell it, taste it,
+                        and feel it wherever you live.
+                    </p>
+                    <p>
+                        Some examples of what engaging with soil in this way might evoke:
+                    </p>
+                    <p>
+                        The artist Laura Parker suggests tasting soil and created an interactive-installation called
+                        <a href="https://www.lauraparkerstudio.com/taste" target="_blank" rel="noopener noreferrer"><i>Taste of Place</i></a> in which
+                        she held soil tastings with samples from eighty-six farms. Taste your soils and write a paragraph about the experience.
+                    </p>
+                    <p>
+                        Or, read the first two pages of <a href="https://www.google.co.uk/books/edition/The_Known_World/CVS9a6lC5CwC?hl=en&gbpv=1&pg=PA1&printsec=frontcover" target="_blank" rel="noopener noreferrer"><i>The Known World</i></a>
+                        here to consider the tangled ways tasting soil can evoke a lifetime of accrued knowledge of a place.
+                    </p>
+                    <p>
+                        Here is another article that helps reconnect with what it is like to dig in the dirt:
+                    </p>
+                    <p>
+                        Emma Marris, “<a href="https://emergencemagazine.org/essay/tending-soil/" target="_blank" rel="noopener noreferrer">Tending Soil</a>,” <i>Emergence Magazine</i>
+                    </p>
+                </FormattedText>
             </ActivityBlock>
 
             <ActivityBlock
                 unit={number}
                 headline="Assignment 2: Soils and Home"
             >
-                <p>
-                    How does soil type help to define your place in the world? It’s a strange question because you probably had no idea
-                    what your local soil is called or what it’s made of but it certainly has played a role in what makes up the
-                    ecology of your region.
-                </p>
-                <p>
-                    Take a look at the <a href="https://soilexplorer.net/" target="_blank" rel="noopener noreferrer">World Soil Explorer</a>, which
-                    allows you to see soil types in any country, city, and even locality. If you live in the United States, you can
-                    look up your <a href="https://www.nrcs.usda.gov/resources/education-and-teaching-materials/state-soils" target="_blank" rel="noopener noreferrer">state’s official soil</a>: the soil most common in your state.
-                </p>
-                <p>
-                    The American naturalist and philosopher Henry David Thoreau engaged in a kind of experiment in 1845. He built a
-                    very small house and lived on the shore of Walden Pond for two years, two months, and two days. In <i>Walden</i>,
-                    Thoreau writes about the entire environment of the pond. One of the things he did in those years was to grow
-                    acres of beans for himself and to exchange for other locally-grown products.
-                </p>
-                <p>
-                    <a href="https://www.gutenberg.org/files/205/205-h/205-h.htm" target="_blank" rel="noopener noreferrer">Read the first few pages of “The Beanfield” from <i>Walden</i></a>.
-                    How does cultivating the soil’s of Concord, Massachusetts, deepen Thoreau’s relationship to his native town? Where would you live to be close to your soils and how do you think the experience would change you?
-                </p>
-                <p>
-                    Where would you live to be close to your soils and how do you think the experience would change you?
-                </p>
+                <FormattedText unit={number}>
+                    <p>
+                        How does soil type help to define your place in the world? It’s a strange question because you probably had no idea
+                        what your local soil is called or what it’s made of but it certainly has played a role in what makes up the
+                        ecology of your region.
+                    </p>
+                    <p>
+                        Take a look at the <a href="https://soilexplorer.net/" target="_blank" rel="noopener noreferrer">World Soil Explorer</a>, which
+                        allows you to see soil types in any country, city, and even locality. If you live in the United States, you can
+                        look up your <a href="https://www.nrcs.usda.gov/resources/education-and-teaching-materials/state-soils" target="_blank" rel="noopener noreferrer">state’s official soil</a>: the soil most common in your state.
+                    </p>
+                    <p>
+                        The American naturalist and philosopher Henry David Thoreau engaged in a kind of experiment in 1845. He built a
+                        very small house and lived on the shore of Walden Pond for two years, two months, and two days. In <i>Walden</i>,
+                        Thoreau writes about the entire environment of the pond. One of the things he did in those years was to grow
+                        acres of beans for himself and to exchange for other locally-grown products.
+                    </p>
+                    <p>
+                        <a href="https://www.gutenberg.org/files/205/205-h/205-h.htm" target="_blank" rel="noopener noreferrer">Read the first few pages of “The Beanfield” from <i>Walden</i></a>.
+                        How does cultivating the soil’s of Concord, Massachusetts, deepen Thoreau’s relationship to his native town? Where would you live to be close to your soils and how do you think the experience would change you?
+                    </p>
+                    <p>
+                        Where would you live to be close to your soils and how do you think the experience would change you?
+                    </p>
+                </FormattedText>
             </ActivityBlock>
-
-
         </UnitDay>
 
         <UnitDay
@@ -154,7 +156,7 @@ const title = "Soil as Belonging";
                 day={2}
                 headline="Blood and Soil, Race and Nation"
         >
-            <FormattedText>
+            <FormattedText unit={number}>
                 <p class="large">
                     Romantic illustrations of soil, landscapes, vegetation, forests, light, plants, flowers, crosses, and ruins encapsulate
                     the human longing for connecting to the land and nature as locus amoenus (idealized place) of their origin.
@@ -168,62 +170,64 @@ const title = "Soil as Belonging";
                     soil and people can be weaponized to put a racial claim on the land, the mobile and fluid nature of soil
                     can help us to deconstruct these claims.
                 </p>
+                <UnitQuestions
+                        unit={number}
+                        questions={[
+                            "How/when does soil become an object of collective identity?",
+                            "What are the added layers of meaning attached to soil for it to become part of one’s identity formation?",
+                            "What role does art—or other types of media—play in establishing this connection between blood and soil?",
+                        ]}
+                />
             </FormattedText>
-            <UnitQuestions
-                unit={number}
-                questions={[
-                    "How/when does soil become an object of collective identity?",
-                    "What are the added layers of meaning attached to soil for it to become part of one’s identity formation?",
-                    "What role does art—or other types of media—play in establishing this connection between blood and soil?",
-                ]}
-            />
             <ActivityBlock
                 unit={number}
                 headline="Assignment"
             >
-                <p>
-                    In 2024, the Alte Nationalgalerie in Berlin showcased an exhibit by famous romantic painter Caspar David Friedrich (1774-1840)
-                    named <a href="https://www.smb.museum/en/exhibitions/detail/caspar-david-friedrich/" target="_blank" rel="noopener noreferrer">Infinite Landscapes</a>.
-                    The painter, known for depictions of endless landscapes such as <a href="https://www.hamburger-kunsthalle.de/en/wanderer-travel" target="_blank" rel="noopener noreferrer">Wanderer Above the Sea Fog</a>,
-                    continues to spark the imagination of today’s visitors and connection to a communal longing for nature.
-                    At the same time, it was romantic painters like Friedrich who showed the beauty of the German landscape that the
-                    Nazis then instrumentalized to illustrate the ideological connection between blood and soil. It helped them make
-                    the case that the German soil had to be defended via bloodshed. First, take a look at the exhibition website
-                    and write down your initial thoughts. How do these paintings make you feel about your place in nature and the world?
-                    Then, in a second step, give us your thoughts about how you think idealizing nature as national territory distorts
-                    or weaponizes the sentimental feeling nature might trigger for its own purpose?
-                </p>
-                <p>
-                    These readings might be helpful to consider and explore:
-                </p>
-                <ul>
-                    <li>
-                        David Haney, <a href="https://www.google.co.uk/books/edition/_/POR9EAAAQBAJ?hl=en&gbpv=1" target="_blank" rel="noopener noreferrer"><i>Architecture and the Nazi Cultural Landscape: Blood, Soil, Building</i></a>
-                    </li>
-                    <li>
-                        Peter Staudenmaeier, “Organic Farming in Nazi Germany: The Politics of Biodynamic Agriculture, 1933–1945,” <i>Environmental History</i>
-                    </li>
-                    <li>
-                        Tiago Saraiva, <a href="https://mitpress.mit.edu/9780262536158/fascist-pigs/" target="_blank" rel="noopener noreferrer"><i>Fascist Pigs, Technoscientific Organisms and the History of Fascism</i>
-                    </li>
-                    <li>
-                        Christy Wampole, <a href="https://press.uchicago.edu/ucp/books/book/chicago/R/bo22891000.html." target="_blank" rel="noopener noreferrer"><i>Rootedness: The Ramifications of a Metaphor</i></a>
-                    </li>
-                </ul>
-                <p>
-                    Then, read chapter 4 of Primo Levi’s <a href="https://archive.org/details/survivalinauschw00levi_0" target="_blank" rel="noopener noreferrer"><i>Survival in Auschwitz</i></a>.
-                    Here he describes an instance, where the blood of his foot drips on the soil of the camp. How is the concrete
-                    relationship he describes here different from the fascist blood and soil fantasies of purity? Are there any other
-                    instances you know where soil and ground stand in for political ideas? <a href="https://tif.ssrc.org/2020/06/03/solid-ground-idioms-of-the-left/" target="_blank" rel="noopener noreferrer">Here</a>
-                    is an example. Also, this article about Kenyan politics of the soil captures how idioms of the soil and belonging
-                    are not unique to European history: Prestholdt, Jeremy. “Politics of the Soil: Separatism, Authocthony, and
-                    Decolonization at the Kenyan Coast.” <i>The Journal of African History</i> 55, no. 2 (July 2014): 249–70.
-                </p>
-                <p>
-                    Also, please check out this other online syllabus—“<a href="https://somatosphere.com/2020/science-in-dark-times-a-syllabus-on-science-technology-and-medicine-under-illiberal-political-regimes.html/" target="_blank" rel="noopener noreferrer">Science in Dark Times:
-                    a syllabus on science, technology, and medicine under illiberal political regimes</a>”—for more readings on how fascism
-                    is enacted through many forms
-                </p>
+                <FormattedText unit={number}>
+                    <p>
+                        In 2024, the Alte Nationalgalerie in Berlin showcased an exhibit by famous romantic painter Caspar David Friedrich (1774-1840)
+                        named <a href="https://www.smb.museum/en/exhibitions/detail/caspar-david-friedrich/" target="_blank" rel="noopener noreferrer">Infinite Landscapes</a>.
+                        The painter, known for depictions of endless landscapes such as <a href="https://www.hamburger-kunsthalle.de/en/wanderer-travel" target="_blank" rel="noopener noreferrer">Wanderer Above the Sea Fog</a>,
+                        continues to spark the imagination of today’s visitors and connection to a communal longing for nature.
+                        At the same time, it was romantic painters like Friedrich who showed the beauty of the German landscape that the
+                        Nazis then instrumentalized to illustrate the ideological connection between blood and soil. It helped them make
+                        the case that the German soil had to be defended via bloodshed. First, take a look at the exhibition website
+                        and write down your initial thoughts. How do these paintings make you feel about your place in nature and the world?
+                        Then, in a second step, give us your thoughts about how you think idealizing nature as national territory distorts
+                        or weaponizes the sentimental feeling nature might trigger for its own purpose?
+                    </p>
+                    <p>
+                        These readings might be helpful to consider and explore:
+                    </p>
+                    <ul>
+                        <li>
+                            David Haney, <a href="https://www.google.co.uk/books/edition/_/POR9EAAAQBAJ?hl=en&gbpv=1" target="_blank" rel="noopener noreferrer"><i>Architecture and the Nazi Cultural Landscape: Blood, Soil, Building</i></a>
+                        </li>
+                        <li>
+                            Peter Staudenmaeier, “Organic Farming in Nazi Germany: The Politics of Biodynamic Agriculture, 1933–1945,” <i>Environmental History</i>
+                        </li>
+                        <li>
+                            Tiago Saraiva, <a href="https://mitpress.mit.edu/9780262536158/fascist-pigs/" target="_blank" rel="noopener noreferrer"><i>Fascist Pigs, Technoscientific Organisms and the History of Fascism</i>
+                        </li>
+                        <li>
+                            Christy Wampole, <a href="https://press.uchicago.edu/ucp/books/book/chicago/R/bo22891000.html." target="_blank" rel="noopener noreferrer"><i>Rootedness: The Ramifications of a Metaphor</i></a>
+                        </li>
+                    </ul>
+                    <p>
+                        Then, read chapter 4 of Primo Levi’s <a href="https://archive.org/details/survivalinauschw00levi_0" target="_blank" rel="noopener noreferrer"><i>Survival in Auschwitz</i></a>.
+                        Here he describes an instance, where the blood of his foot drips on the soil of the camp. How is the concrete
+                        relationship he describes here different from the fascist blood and soil fantasies of purity? Are there any other
+                        instances you know where soil and ground stand in for political ideas? <a href="https://tif.ssrc.org/2020/06/03/solid-ground-idioms-of-the-left/" target="_blank" rel="noopener noreferrer">Here</a>
+                        is an example. Also, this article about Kenyan politics of the soil captures how idioms of the soil and belonging
+                        are not unique to European history: Prestholdt, Jeremy. “Politics of the Soil: Separatism, Authocthony, and
+                        Decolonization at the Kenyan Coast.” <i>The Journal of African History</i> 55, no. 2 (July 2014): 249–70.
+                    </p>
+                    <p>
+                        Also, please check out this other online syllabus—“<a href="https://somatosphere.com/2020/science-in-dark-times-a-syllabus-on-science-technology-and-medicine-under-illiberal-political-regimes.html/" target="_blank" rel="noopener noreferrer">Science in Dark Times:
+                        a syllabus on science, technology, and medicine under illiberal political regimes</a>”—for more readings on how fascism
+                        is enacted through many forms
+                    </p>
+                </FormattedText>
             </ActivityBlock>
         </UnitDay>
 
@@ -232,7 +236,7 @@ const title = "Soil as Belonging";
                 day={3}
                 headline="Soil as property and the properties of soil"
         >
-            <FormattedText>
+            <FormattedText unit={number}>
                 <p class="large">
                     What are the connections between the properties of soil and the conditions of making soil into someone’s “property”? This day
                     explores to whom soil belongs by asking how soil is created, defined, conceptualized, and historicized. The first
@@ -292,49 +296,51 @@ const title = "Soil as Belonging";
                 unit={number}
                 headline="Activity: The Properties of Soil"
             >
-                <p>
-                    Search “what is terroir?” on the internet and watch 2-3 videos where someone defines it. Most likely it will be
-                    a video about wine. How do they describe the relationship between wine and soil? What is your reaction? Do
-                    they articulate it in terms of science? Or an “art” of wine making? What sort of sense of taste does developing
-                    a sense of terroir require cultivating? Do you believe that terroir exists? How does the notion of terroir
-                    fit within modern agricultural systems?
-                </p>
-                <p>
-                    Follow up this initial search with these readings:
-                </p>
-                <ul>
-                    <li>
-                        Heather Paxson, “<a href="https://anthropology.mit.edu/sites/default/files/documents/paxson_locating_value_in_artisan_cheese.pdf" target="_blank" rel="noopener noreferrer">Locating Value in Artisan Cheese: Reverse Engineering Terroir for New-World Landscapes</a>.”
-                        <i>American Anthropologist</i> 112, no. 3 (2010): 444–57.
-                    </li>
-                    <li>
-                        Brad Weiss, “<a href="https://doi.org/10.1111/j.1548-1360.2011.01106.x" target="_blank" rel="noopener noreferrer">Making Pigs Local: Discerning the Sensory Character of Place</a>.”
-                        <i>Cultural Anthropology</i> 26, no. 3 (2011): 438–61.
-                    </li>
-                    <li>
-                        Daniel Monterescu and Ariel Handel, “<a href="https://merip.org/2022/05/indigenous-wine-and-settler-colonialism-in-israel-and-palestine/" target="_blank" rel="noopener noreferrer">Indigenous Wine and Settler Colonialism in Israel and Palestine</a>,”
-                        <i>MERIP</i> 302 (Spring 2022)
-                    </li>
-                </ul>
-                <p>
-                    Does food, taste, and the notion of “terroir” lead us to any new way of reconciling the challenges of how attachment to
-                    place is both essential to earthly flourishing and essentializing? We can see throughout this unit that claiming the
-                    particularities of soil as an expression of identity and belonging can run the political spectrum. One text you
-                    might consider for discussing this further is Bruno Latour’s <a href="https://www.are.na/block/22813640" target="_blank" rel="noopener noreferrer"><i>Down to Earth</i></a>. Here is an excerpt:
-                </p>
-                <blockquote>
-                    “It is the uprooting that is illegitimate, not the belonging. To belong to a land, to want to stay put and keep
-                    on working one's plot of land, to be attached to it, has become "reactionary", as we have seen, only by
-                    contrast with the headlong flight forward imposed by modernization. If we stop fleeing, what does the desire
-                    for attachment look like? The negotiation -- the fraternization? -- between supporters of the Local and supporters
-                    of the Terrestrial has to bear on the importance, the legitimacy, even the necessity of belonging to a land,
-                    but -- and here lies the whole difficulty -- without immediately confusing it with what the Local has added to it: ethnic
-                    homogeneity, a focus on patrimony, historicism, nostalgia, inauthentic authenticity. On the contrary, there
-                    is nothing more innovative, nothing more present, subtle, technical, an artificial (in the positive sense
-                    of the word), nothing less rustic and rural, nothing more creative, nothing more contemporary than to
-                    negotiate landing on some ground."
-                    <cite>Bruto Latour, <i>Down to Earth</i>, 53</cite>
-                </blockquote>
+                <FormattedText unit={number}>
+                    <p>
+                        Search “what is terroir?” on the internet and watch 2-3 videos where someone defines it. Most likely it will be
+                        a video about wine. How do they describe the relationship between wine and soil? What is your reaction? Do
+                        they articulate it in terms of science? Or an “art” of wine making? What sort of sense of taste does developing
+                        a sense of terroir require cultivating? Do you believe that terroir exists? How does the notion of terroir
+                        fit within modern agricultural systems?
+                    </p>
+                    <p>
+                        Follow up this initial search with these readings:
+                    </p>
+                    <ul>
+                        <li>
+                            Heather Paxson, “<a href="https://anthropology.mit.edu/sites/default/files/documents/paxson_locating_value_in_artisan_cheese.pdf" target="_blank" rel="noopener noreferrer">Locating Value in Artisan Cheese: Reverse Engineering Terroir for New-World Landscapes</a>.”
+                            <i>American Anthropologist</i> 112, no. 3 (2010): 444–57.
+                        </li>
+                        <li>
+                            Brad Weiss, “<a href="https://doi.org/10.1111/j.1548-1360.2011.01106.x" target="_blank" rel="noopener noreferrer">Making Pigs Local: Discerning the Sensory Character of Place</a>.”
+                            <i>Cultural Anthropology</i> 26, no. 3 (2011): 438–61.
+                        </li>
+                        <li>
+                            Daniel Monterescu and Ariel Handel, “<a href="https://merip.org/2022/05/indigenous-wine-and-settler-colonialism-in-israel-and-palestine/" target="_blank" rel="noopener noreferrer">Indigenous Wine and Settler Colonialism in Israel and Palestine</a>,”
+                            <i>MERIP</i> 302 (Spring 2022)
+                        </li>
+                    </ul>
+                    <p>
+                        Does food, taste, and the notion of “terroir” lead us to any new way of reconciling the challenges of how attachment to
+                        place is both essential to earthly flourishing and essentializing? We can see throughout this unit that claiming the
+                        particularities of soil as an expression of identity and belonging can run the political spectrum. One text you
+                        might consider for discussing this further is Bruno Latour’s <a href="https://www.are.na/block/22813640" target="_blank" rel="noopener noreferrer"><i>Down to Earth</i></a>. Here is an excerpt:
+                    </p>
+                    <blockquote>
+                        “It is the uprooting that is illegitimate, not the belonging. To belong to a land, to want to stay put and keep
+                        on working one's plot of land, to be attached to it, has become "reactionary", as we have seen, only by
+                        contrast with the headlong flight forward imposed by modernization. If we stop fleeing, what does the desire
+                        for attachment look like? The negotiation -- the fraternization? -- between supporters of the Local and supporters
+                        of the Terrestrial has to bear on the importance, the legitimacy, even the necessity of belonging to a land,
+                        but -- and here lies the whole difficulty -- without immediately confusing it with what the Local has added to it: ethnic
+                        homogeneity, a focus on patrimony, historicism, nostalgia, inauthentic authenticity. On the contrary, there
+                        is nothing more innovative, nothing more present, subtle, technical, an artificial (in the positive sense
+                        of the word), nothing less rustic and rural, nothing more creative, nothing more contemporary than to
+                        negotiate landing on some ground."
+                        <cite>Bruto Latour, <i>Down to Earth</i>, 53</cite>
+                    </blockquote>
+                </FormattedText>
             </ActivityBlock>
         </UnitDay>
 
@@ -343,7 +349,7 @@ const title = "Soil as Belonging";
                 day={4}
                 headline="Ashes to Ashes: Cemeteries and Burial Ground"
         >
-            <FormattedText>
+            <FormattedText unit={number}>
                 <p class="large">
                     Graves and burial sites combine the two notions discussed in previous sections: ownership and ideological/emotional
                     attachment. They are also the ultimate subsumption in the soil and what makes the soil. For example, the Nazis
@@ -358,67 +364,69 @@ const title = "Soil as Belonging";
                 unit={number}
                 headline="Assignment"
             >
-                <p>
-                    Go to the local cemetery. Ask yourself the question: who belongs here? Is it the people buried here, is it the squirrels
-                    roaming over the property, is it the people mourning for their lost ones, or the gardener preparing the landscape or
-                    digging around? Is it the trees and other types of vegetation growing? Is it everyone feeding off the land? What is the
-                    role of land here? What are the different layers of belonging and what is the role of the soil here in cooperation
-                    with the dead, the inanimate, and the living? Draw a
-                    <a href="https://loridrakeauthor.com/2020/06/19/mind-mapping/" target="_blank" rel="noopener noreferrer">mind-map</a> that
-                    helps you visualize the different layers of belonging in relationship with the soil and write a paragraph
-                    that explains your thought process.
-                </p>
-                <p>
-                    Then, read this <a href="https://www.metmuseum.org/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/kreis" target="_blank" rel="noopener noreferrer">entry</a>
-                    on the website of the MET about fascist architect Wilhelm Kreis. You will learn that the Nazis dedicated an immense amount of
-                    planning in monuments mourning dead soldiers and cemeteries in general. Obviously they used the people’s emotional
-                    connection to death and mourning to cement their agenda in people’s hearts. Why do you think this is so effective,
-                    and do you know any other times and places where this tactic has been used? Is it the inevitability of our own
-                    death and that we know that one day we will be part of the soil as well?
-                </p>
-                <p>
-                    Rural burial grounds can also be destroyed. In Appalachia, they are often located in hollows, where they can
-                    be easily buried by overburden from strip mines. Local people respond with moral outrage to the desecration of
-                    graves. Also consider our examples from Israel/Palestine. What makes every case different? What is similar?
-                </p>
-                <h3>Questions</h3>
-                <ul>
-                    <li>
-                        What are the relations between soil and society in these images?
-                    </li>
-                    <li>
-                        What is soil doing in this image/context?
-                    </li>
-                    <li>
-                        How does our emotional connection to death and mourning provide the basis for collective manipulation?
-                    </li>
-                </ul>
+                <FormattedText unit={number}>
+                    <p>
+                        Go to the local cemetery. Ask yourself the question: who belongs here? Is it the people buried here, is it the squirrels
+                        roaming over the property, is it the people mourning for their lost ones, or the gardener preparing the landscape or
+                        digging around? Is it the trees and other types of vegetation growing? Is it everyone feeding off the land? What is the
+                        role of land here? What are the different layers of belonging and what is the role of the soil here in cooperation
+                        with the dead, the inanimate, and the living? Draw a
+                        <a href="https://loridrakeauthor.com/2020/06/19/mind-mapping/" target="_blank" rel="noopener noreferrer">mind-map</a> that
+                        helps you visualize the different layers of belonging in relationship with the soil and write a paragraph
+                        that explains your thought process.
+                    </p>
+                    <p>
+                        Then, read this <a href="https://www.metmuseum.org/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/kreis" target="_blank" rel="noopener noreferrer">entry</a>
+                        on the website of the MET about fascist architect Wilhelm Kreis. You will learn that the Nazis dedicated an immense amount of
+                        planning in monuments mourning dead soldiers and cemeteries in general. Obviously they used the people’s emotional
+                        connection to death and mourning to cement their agenda in people’s hearts. Why do you think this is so effective,
+                        and do you know any other times and places where this tactic has been used? Is it the inevitability of our own
+                        death and that we know that one day we will be part of the soil as well?
+                    </p>
+                    <p>
+                        Rural burial grounds can also be destroyed. In Appalachia, they are often located in hollows, where they can
+                        be easily buried by overburden from strip mines. Local people respond with moral outrage to the desecration of
+                        graves. Also consider our examples from Israel/Palestine. What makes every case different? What is similar?
+                    </p>
+                    <h3>Questions</h3>
+                    <ul>
+                        <li>
+                            What are the relations between soil and society in these images?
+                        </li>
+                        <li>
+                            What is soil doing in this image/context?
+                        </li>
+                        <li>
+                            How does our emotional connection to death and mourning provide the basis for collective manipulation?
+                        </li>
+                    </ul>
 
-                <h3>Readings / Other Media</h3>
+                    <h3>Readings / Other Media</h3>
 
-                <ul>
-                    <li>
-                        Mahmud Darwish, “Those Who Pass Between Fleeting Words” (Take your dead and live); Context: The controversy about whether Darwish wrote “take your dead and leave”.
-                    </li>
-                    <li>
-                        “<a href="https://wvrecord.com/stories/510605988-family-says-mountaintop-removal-mine-damaging-cemetery" target="_blank" rel="noopener noreferrer">Family Says Mountaintop Removal Mine Damaging Cemetery</a>,” <i>West Virginia Record</i> (2013)
-                    </li>
-                    <li>
-                        Anna Jozefacka, “<a href="https://www.metmuseum.org/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/kreis" target="_blank" rel="noopener noreferrer">Wilhelm Kreis</a>,” <i>The Modern Art Index Project</i>, The Metropolitan Museum of Art
-                    </li>
-                    <li>
-                        Rashid Kahlidi, “<a href="https://palestine.mei.columbia.edu/event-extras/2017/5/22/the-case-of-the-mamilla-cemetery-delgitimization-or-desecration" target="_blank" rel="noopener noreferrer">The Case of the Mamilla Cemetery: Delegitimization or Desecration?</a>”
-                    </li>
-                    <li>
-                        Here is an entire syllabus on <a href="https://syllabusproject.org/dead-head-on-grave-gardening/" target="_blank" rel="noopener noreferrer">grave gardening</a>!
-                    </li>
-                    <li>
-                        A film on <a href="https://ilikedirtfilm.com/" target="_blank" rel="noopener noreferrer">dirt and death</a>
-                    </li>
-                    <li>
-                        A book on <a href="https://tif.ssrc.org/2024/06/26/earth/" target="_blank" rel="noopener noreferrer">dirt and death</a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            Mahmud Darwish, “Those Who Pass Between Fleeting Words” (Take your dead and live); Context: The controversy about whether Darwish wrote “take your dead and leave”.
+                        </li>
+                        <li>
+                            “<a href="https://wvrecord.com/stories/510605988-family-says-mountaintop-removal-mine-damaging-cemetery" target="_blank" rel="noopener noreferrer">Family Says Mountaintop Removal Mine Damaging Cemetery</a>,” <i>West Virginia Record</i> (2013)
+                        </li>
+                        <li>
+                            Anna Jozefacka, “<a href="https://www.metmuseum.org/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/kreis" target="_blank" rel="noopener noreferrer">Wilhelm Kreis</a>,” <i>The Modern Art Index Project</i>, The Metropolitan Museum of Art
+                        </li>
+                        <li>
+                            Rashid Kahlidi, “<a href="https://palestine.mei.columbia.edu/event-extras/2017/5/22/the-case-of-the-mamilla-cemetery-delgitimization-or-desecration" target="_blank" rel="noopener noreferrer">The Case of the Mamilla Cemetery: Delegitimization or Desecration?</a>”
+                        </li>
+                        <li>
+                            Here is an entire syllabus on <a href="https://syllabusproject.org/dead-head-on-grave-gardening/" target="_blank" rel="noopener noreferrer">grave gardening</a>!
+                        </li>
+                        <li>
+                            A film on <a href="https://ilikedirtfilm.com/" target="_blank" rel="noopener noreferrer">dirt and death</a>
+                        </li>
+                        <li>
+                            A book on <a href="https://tif.ssrc.org/2024/06/26/earth/" target="_blank" rel="noopener noreferrer">dirt and death</a>
+                        </li>
+                    </ul>
+                </FormattedText>
             </ActivityBlock>
         </UnitDay>
     </PageBlock>
