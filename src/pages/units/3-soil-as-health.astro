@@ -85,18 +85,14 @@ const title = "Soil as Health";
                 <p>
                     Interview a friend/family member (gardner, wine lover, compost producer, etc.) about how they evaluate a good soil.
                 </p>
-                <ul>
-                    <li>
-                        What senses and means do they use to understand their soil?
-                    </li>
-                    <li>
-                        Where do judgments of soil come from? Or have they developed over time?
-                    </li>
-                    <li>
-                        If they don’t think they know the difference between good or bad soil, what information do they feel
-                        they lack to make that judgment?
-                    </li>
-                </ul>
+                <UnitQuestions
+                    unit={number}
+                    questions={[
+                        "What senses and means do they use to understand their soil?",
+                        "Where do judgments of soil come from? Or have they developed over time?",
+                        "If they don’t think they know the difference between good or bad soil, what information do they feel they lack to make that judgment?",
+                    ]}
+                />
             </ActivityBlock>
             <ActivityBlock
                 unit={number}
@@ -111,17 +107,14 @@ const title = "Soil as Health";
                     <a href="https://www.theatlantic.com/magazine/archive/1936/05/letters-from-the-dust-bowl/308897/" target="_blank" rel="noopener noreferrer">Caroline A. Henderson, a farmer in Oklahoma</a>,
                     to her friend in Maryland during the dust bowl, from 30 June 1935. Consider the following questions:
                 </p>
-                <ul>
-                    <li>
-                        How did Henderson understand the state of her soil?
-                    </li>
-                    <li>
-                        How did these environmental circumstances affect people’s lives, well-being, and choices?
-                    </li>
-                    <li>
-                        Does Henderson seem to wrestle with what caused these problems?
-                    </li>
-                </ul>
+                <UnitQuestions
+                    unit={number}
+                    questions={[
+                        "How did Henderson understand the state of her soil?",
+                        "How did these environmental circumstances affect people’s lives, well-being, and choices?",
+                        "Does Henderson seem to wrestle with what caused these problems?",
+                    ]}
+                />
             </ActivityBlock>
             <ActivityBlock
                 unit={number}
@@ -135,20 +128,15 @@ const title = "Soil as Health";
                 <p>
                     Read the following excerpts from soil conservationists and answer the following questions:
                 </p>
-                <ul>
-                    <li>
-                        How did soil experts understand the state of the soil?
-                    </li>
-                    <li>
-                        How did soil erosion relate to people’s lives, behavior, and choices?
-                    </li>
-                    <li>
-                        Who is considered responsible for the state of the soil, and what are the solutions to environmental problems?
-                    </li>
-                    <li>
-                        What sort of relationship between states and citizens (or colonial subjects) emerge around soil interventions?
-                    </li>
-                </ul>
+                <UnitQuestions
+                    unit={number}
+                    questions={[
+                        "How did soil experts understand the state of the soil?",
+                        "How did soil erosion relate to people’s lives, behavior, and choices?",
+                        "Who is considered responsible for the state of the soil, and what are the solutions to environmental problems?",
+                        "What sort of relationship between states and citizens (or colonial subjects) emerge around soil interventions?",
+                    ]}
+                />
                 <p>
                     1. G. V. Jacks and R. O. Whyte, <a href="https://archive.org/details/rapeofearth0000gvja/page/10/mode/2up" target="_blank" rel="noopener noreferrer"><i>The Rape of the Earth: A World Survey of Soil Erosion</i></a>
                     (London: Faber and Faber Ltd., 1939), p. 26:
@@ -208,20 +196,14 @@ const title = "Soil as Health";
                         Hannah le Roux and Gabrielle Hecht, <a href="https://www.e-flux.com/architecture/accumulation/345106/bad-earth/" target="_blank" rel="noopener noreferrer">Accumulation</a>
                     </li>
                 </ul>
-                <p>
-                    Consider the following questions:
-                </p>
-                <ul>
-                    <li>
-                        How is the contaminated soil experienced and evaluated?
-                    </li>
-                    <li>
-                        How is unhealthy soil related to human life trajectories?
-                    </li>
-                    <li>
-                        Who is considered responsible for the state of the soil and for mine workers’ health?
-                    </li>
-                </ul>
+                <UnitQuestions
+                    unit={number}
+                    questions={[
+                        "How is the contaminated soil experienced and evaluated?",
+                        "How is unhealthy soil related to human life trajectories?",
+                        "Who is considered responsible for the state of the soil and for mine workers’ health?",
+                    ]}
+                />
             </ActivityBlock>
         </UnitDay>
 
@@ -255,8 +237,10 @@ const title = "Soil as Health";
                     "What makes the methods of caring for soil so diverse?",
                 ]}
             />
-            <FormattedText>
-                <h3>Lesson Plan</h3>
+            <ActivityBlock
+                unit={number}
+                headline="Lesson Plan"
+            >
                 <blockquote>
                     “In response to an agrarian crisis, small-scale farmers in South India are experimenting with the application of
                     agricultural ferments to their degraded soils” <cite>(Munster, 2021)</cite>
@@ -265,7 +249,7 @@ const title = "Soil as Health";
                     Think of any plant of your choice and find out what type of soil it grows in.  Research information about
                     how it grows best and determine how you would take care of the plant and the surrounding soil.
                 </p>
-                <h4>Readings / other media:</h4>
+                <h4>Readings / other media</h4>
                 <ul>
                     <li>
                         Watch <a href="https://www.youtube.com/watch?v=1-CR5t_9kBg&t=360s" target="_blank" rel="noopener noreferrer">Daniel Munster’s lecture</a> on agrarian crisis
@@ -344,7 +328,7 @@ const title = "Soil as Health";
                         about 19th century American farmers in the northeast.
                     </li>
                 </ul>
-            </FormattedText>
+            </ActivityBlock>
             <ActivityBlock
                 unit={number}
                 headline="Assignment 2"
@@ -353,20 +337,16 @@ const title = "Soil as Health";
                     Browse through this <a href="https://digital.sciencehistory.org/collections/mg74qm28w" target="_blank" rel="noopener noreferrer">collection of pesticide containers</a>
                     and take notes on the following for discussion:
                 </p>
-                <ul>
-                    <li>
-                        What are some of the design and language choices used for marketing pesticides?
-                    </li>
-                    <li>
-                        Take note of dates: are there differences across time in how pesticides have been labeled and marketed?
-                    </li>
-                    <li>
-                        Who are the companies making these products?
-                    </li>
-                    <li>
-                        What else do you notice that surprises or intrigues you?
-                    </li>
-                </ul>
+
+                <UnitQuestions
+                    unit={number}
+                    questions={[
+                        "What are some of the design and language choices used for marketing pesticides?",
+                        "Take note of dates: are there differences across time in how pesticides have been labeled and marketed?",
+                        "Who are the companies making these products?",
+                        "What else do you notice that surprises or intrigues you?",
+                    ]}
+                />
                 <p>
                     In addition, read “Chapter 11: Beyond the Dreams of the Borgias” in Carson, Rachel. <i>Silent Spring</i>.
                     (Boston; Cambridge, Mass.: Houghton Mifflin Company, 1962). There are many places to find this online but
@@ -395,12 +375,14 @@ const title = "Soil as Health";
                     our terms from soil to dirt in this section, dirt nearly always marks something or someone suspect and
                     malign, suggesting those who labor in it are also dirty or “soiled”.
                 </p>
-                <h3>
-                    Lesson Plan: Soil, labor, and hookworm
-                </h3>
-                <p>
-                    Watch the two video excerpts below.
-                </p>
+            </FormattedText>
+            <ActivityBlock
+                unit={number}
+                headline="Lesson Plan: Soil, labor, and hookworm"
+            >
+                <h4>
+                    Watch
+                </h4>
                 <ul>
                     <li>
                         <a href="http://www.colonialfilm.org.uk/node/735" target="_blank" rel="noopener noreferrer"><i>Tropical Hookworm</i></a>
@@ -409,19 +391,14 @@ const title = "Soil as Health";
                         <a href="https://www.youtube.com/watch?v=OD-sDlSDrKk" target="_blank" rel="noopener noreferrer"><i>Unhooking the Hookworm</i></a>
                     </li>
                 </ul>
-                <h4>Discussion Questions for Videos</h4>
-                <ul>
-                    <li>
-                        If we understand each video as a public health message shown to a population vulnerable to hookworm, how
-                        do they address each of these audiences?
-                    </li>
-                    <li>
-                        How does each video explain or otherwise show the cause of hookworm infection?
-                    </li>
-                    <li>
-                        If you were to critically respond to these videos, what is left out of the story here?
-                    </li>
-                </ul>
+                <UnitQuestions
+                    unit={number}
+                    questions={[
+                        "If we understand each video as a public health message shown to a population vulnerable to hookworm, how do they address each of these audiences?",
+                        "How does each video explain or otherwise show the cause of hookworm infection?",
+                        "If you were to critically respond to these videos, what is left out of the story here?",
+                    ]}
+                />
                 <h4>Read</h4>
                 <ul>
                     <li>
@@ -450,7 +427,6 @@ const title = "Soil as Health";
                         Listen: “<a href="https://www.thisamericanlife.org/404/enemy-camp-2010/act-three-0" target="_blank" rel="noopener noreferrer">As The Worm Turns</a>,” This American Life
                     </li>
                 </ul>
-                <h4>Discussion Questions for Readings</h4>
                 <p>
                     Scientists in the late 19th century had seen the hookworm under a microscope and understood its lifecycle passing from
                     soil to humans. As you can see from the Rockefeller archive and Norman Stoll, by the early 20th century, the hookworm
@@ -458,19 +434,15 @@ const title = "Soil as Health";
                     spaces of capitalist agricultural expansion (such as tea plantations) where hookworm most quickly reaches
                     epidemic levels. Indeed, many people have and continue to suffer from the effects of hookworm infections.
                 </p>
-                <ul>
-                    <li>
-                        How does hookworm and soil help us put labor and health in the same analytical frame?
-                    </li>
-                    <li>
-                        Outside of a developmentalist framework, how do other cultures understand and live with worms?
-                    </li>
-                    <li>
-                        How might western biomedicine also be coming around to hookworm as an essential companion species for humans?
-                        And does this challenge the normative assessment of soil as dirty and even dangerous to our health?
-                    </li>
-                </ul>
-            </FormattedText>
+                <UnitQuestions
+                    unit={number}
+                    questions={[
+                        "How does hookworm and soil help us put labor and health in the same analytical frame?",
+                        "Outside of a developmentalist framework, how do other cultures understand and live with worms?",
+                        "How might western biomedicine also be coming around to hookworm as an essential companion species for humans? And does this challenge the normative assessment of soil as dirty and even dangerous to our health?",
+                    ]}
+                />
+            </ActivityBlock>
         </UnitDay>
 
         <UnitDay
@@ -565,7 +537,7 @@ const title = "Soil as Health";
                     Priscilla McCutcheon, “<a href="https://onlinelibrary-wiley-com.eux.idm.oclc.org/doi/full/10.1111/anti.12500" target="_blank" rel="noopener noreferrer">Fannie Lou Hamer’s Freedom Farms and Black Agrarian Geographies</a>,” <i>Antipode</i>
                 </li>
                 <li>
-                    “<a href="https://www.botanicalmind.online/podcasts/the-coloniality-of-planting" target="_blank" rel="noopener noreferrer"></a>,” The Botanical Mind
+                    “<a href="https://www.botanicalmind.online/podcasts/the-coloniality-of-planting" target="_blank" rel="noopener noreferrer">The Coloniality of Planting with Ros Gray & Shela Sheikh</a>,” The Botanical Mind, Camden Art Centre
                 </li>
             </ul>
             <p>
