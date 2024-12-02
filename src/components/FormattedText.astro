@@ -13,64 +13,16 @@ const { unit } = Astro.props;
 .formatted-text-block :global(p a),
 .formatted-text-block :global(li a),
 .formatted-text-block :global(blockquote a) {
+    color: var(--primary-text-color);
     font-weight: 400;
     transition: .3s all ease;
+    text-decoration-color: transparent;
 }
 
-.formatted-text-block.unit-1 :global(p a),
-.formatted-text-block.unit-1 :global(li a),
-.formatted-text-block.unit-1 :global(blockquote a) {
-    color: var(--accent-outline-unit-1);
-    text-decoration-color: var(--accent-srgb-highlight-unit-1);
-    text-decoration-color: var(--accent-p3-highlight-unit-1);
-}
-
-.formatted-text-block.unit-1 :global(p a:hover),
-.formatted-text-block.unit-1 :global(li a:hover),
-.formatted-text-block.unit-1 :global(blockquote a:hover) {
-    color: var(--accent-color-unit-1);
-}
-
-.formatted-text-block.unit-2 :global(p a),
-.formatted-text-block.unit-2 :global(li a),
-.formatted-text-block.unit-2 :global(blockquote a) {
-    color: var(--accent-outline-unit-2);
-    text-decoration-color: var(--accent-srgb-highlight-unit-2);
-    text-decoration-color: var(--accent-p3-highlight-unit-2);
-}
-
-.formatted-text-block.unit-2 :global(p a:hover),
-.formatted-text-block.unit-2 :global(li a:hover),
-.formatted-text-block.unit-2 :global(blockquote a:hover) {
-    color: var(--accent-color-unit-2);
-}
-
-.formatted-text-block.unit-3 :global(p a),
-.formatted-text-block.unit-3 :global(li a),
-.formatted-text-block.unit-3 :global(blockquote a) {
-    color: var(--accent-outline-unit-3);
-    text-decoration-color: var(--accent-srgb-highlight-unit-3);
-    text-decoration-color: var(--accent-p3-highlight-unit-3);
-}
-
-.formatted-text-block.unit-3 :global(p a:hover),
-.formatted-text-block.unit-3 :global(li a:hover),
-.formatted-text-block.unit-3 :global(blockquote a:hover) {
-    color: var(--accent-color-unit-3);
-}
-
-.formatted-text-block.unit-4 :global(p a),
-.formatted-text-block.unit-4 :global(li a),
-.formatted-text-block.unit-4 :global(blockquote a) {
-    color: var(--accent-outline-unit-4);
-    text-decoration-color: var(--accent-srgb-highlight-unit-4);
-    text-decoration-color: var(--accent-p3-highlight-unit-4);
-}
-
-.formatted-text-block.unit-4 :global(p a:hover),
-.formatted-text-block.unit-4 :global(li a:hover),
-.formatted-text-block.unit-4 :global(blockquote a:hover) {
-    olor: var(--accent-color-unit-4);
+.formatted-text-block :global(p a:hover),
+.formatted-text-block :global(li a:hover),
+.formatted-text-block :global(blockquote a:hover) {
+    text-decoration-color: var(--primary-text-color);
 }
 
 .formatted-text-block :global(p:first-of-type) {
