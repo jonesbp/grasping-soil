@@ -16,7 +16,7 @@ const {
             </div>
         </div>
     </div>
-    <div class="underlay">
+    <div class={`underlay ${(day % 2 === 0) ? 'left' : 'right'}`}>
         <img
             aria-hidden="true"
             alt=""
@@ -49,13 +49,20 @@ const {
 }
 
 .underlay img {
-    float: right;
     position: sticky;
-    margin-right: -140px;
     top: 40px;
     margin-top: 200px;
     height: 600px;
-    opacity: 0.6;
+    opacity: 0.3;
+}
+
+.underlay.left img {
+    margin-left: -140px;
+}
+
+.underlay.right img {
+    float: right;
+    margin-right: -140px;
 }
 
 .header-frame {
