@@ -10,6 +10,7 @@ import UnitDay from '../../components/UnitDay.astro';
 import UnitQuestions from '../../components/UnitQuestions.astro';
 import UnitStrip from '../../components/UnitStrip.astro';
 import UnitTitle from '../../components/UnitTitle.astro';
+import MediaList from "../../components/MediaList.astro";
 
 const number = 1;
 const title = "Soil as Substrate (Or “the Matter of Soil”)";
@@ -84,24 +85,24 @@ const title = "Soil as Substrate (Or “the Matter of Soil”)";
 
             <FormattedText unit={number}>
                 <h3>Recommended Reading</h3>
-                <ul>
+                <MediaList>
                     <li>
                         Ingold, Tim. “Toward an Ecology of Materials” Annual Review of Anthropology.
                     </li>
                     <li>
                         Puig de la Bellacasa, Maria. “<a href="https://wrap.warwick.ac.uk/id/eprint/114796/" target="_blank" rel="noopener noreferrer">Re-Animating Soils: Transforming Human–Soil Affections through Science, Culture and Community</a>.” <i>The Sociological Review</i> 67, no. 2 (March 1, 2019): 391–407.
                     </li>
-                </ul>
+                </MediaList>
 
                 <h3>Recommended Viewing</h3>
-                <ul>
+                <MediaList>
                     <li>
                         <a href="https://www.youtube.com/watch?v=XgiTOC9oGrM" target="_blank" rel="noopener noreferrer">Ruderal Ecologies- Radical Care Practices</a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/watch?v=x-I6qpvflfA" target="_blank" rel="noopener noreferrer">Re-Enchantment: Environmental Law and Ruderal Ecologies</a>
                     </li>
-                </ul>
+                </MediaList>
             </FormattedText>
         </UnitDay>
 
@@ -227,7 +228,7 @@ const title = "Soil as Substrate (Or “the Matter of Soil”)";
             </ActivityBlock>
             <FormattedText unit={number}>
                 <h3>Readings/other media</h3>
-                <ul>
+                <MediaList>
                     <li>
                         <a href="https://pubmed.ncbi.nlm.nih.gov/30951127/" target="_blank" rel="noopener noreferrer">History of Humification (e.g., Kleber and Lehmann, 2019)</a>
                     </li>
@@ -238,7 +239,7 @@ const title = "Soil as Substrate (Or “the Matter of Soil”)";
                     <li>
                         Or listen a bit more about worms: <a href="https://www.podchaser.com/podcasts/soil-stories-with-nic-and-lean-1136307" target="_blank" rel="noopener noreferrer">Soil Stories with Nic and Leanna</a>
                     </li>
-                </ul>
+                </MediaList>
 
                 <UnitQuestions
                     unit={number}
@@ -332,18 +333,18 @@ const title = "Soil as Substrate (Or “the Matter of Soil”)";
                 <h3>
                     Readings to Discuss
                 </h3>
-                <ul>
+                <MediaList>
                     <li>
                         Kirkwood, Niall. 2001. <i>Manufactured Sites: Rethinking the Post-Industrial Landscape</i>. London; New York: Spon Press.
                     </li>
                     <li>
                         Kennen, Kate, and Niall Kirkwood. 2015. “<a href="https://doi.org/10.4324/9781315746661-5" target="_blank" rel="noopener noreferrer">Site Programs and Land Use</a>.” In <i>Phyto</i>, 1st ed., 247–98. United Kingdom: Routledge.
                     </li>
-                </ul>
+                </MediaList>
                 <h3>
                     Additional Material
                 </h3>
-                <ul>
+                <MediaList>
                     <li>
                         Film: Irene Lustzig, <a href="https://richlandfilm.com/screenings/" target="_blank" rel="noopener noreferrer"><i>Richland</i></a>
                     </li>
@@ -358,7 +359,7 @@ const title = "Soil as Substrate (Or “the Matter of Soil”)";
                             </li>
                         </ul>
                     </li>
-                </ul>
+                </MediaList>
             </FormattedText>
             <ActivityBlock
                     unit={number}

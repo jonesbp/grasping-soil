@@ -1,0 +1,22 @@
+---
+
+---
+<ul class="media-list">
+    <slot />
+</ul>
+
+<style>
+ul.media-list {
+    margin-top: 0;
+}
+
+.media-list :global(li) {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+.media-list :global(ul) {
+    margin-top: .25em;
+    margin-bottom: 0;
+}
+</style>

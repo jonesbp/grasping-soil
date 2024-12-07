@@ -53,6 +53,7 @@ const { unit } = Astro.props;
     padding-left: .75em;
 }
 
+.formatted-text-block :global(ol),
 .formatted-text-block :global(ul) {
     font-size: 1.2rem;
     font-weight: 300;
@@ -72,5 +73,14 @@ const { unit } = Astro.props;
 .formatted-text-block :global(span.highlight-tag) {
     color: var(--primary-text-color);
     font-weight: 600;
+}
+
+
+.formatted-text-block :global(h3),
+.formatted-text-block :global(h4) {
+    color: var(--primary-text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2.5em 0 1em 0;
 }
 </style>
