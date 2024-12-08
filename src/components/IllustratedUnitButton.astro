@@ -1,0 +1,76 @@
+---
+const {
+    unit,
+    title,
+    path,
+} = Astro.props;
+---
+<a href={path} class="button">
+    <span class="label-position">
+        <span class="label">{unit}. {title}</span>
+    </span>
+    <img
+        class="color-overlay"
+        src={`/images/unit-${unit}/banner.jpg`}
+    />
+    <img
+        class="fade-underlay"
+        src={`/images/unit-${unit}/banner-fade.png`}
+    />
+</a>
+
+<style>
+a.button {
+    display: inline-block;
+    position: relative;
+}
+
+span.label-position {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    z-index: 2;
+}
+
+span.label {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--primary-text-color);
+    display: block;
+    font-family: 'Paix', sans-serif;
+    font-size: 3rem;
+    padding: .3333em .6667em;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+img.color-overlay {
+    display: block;
+    max-width: 100%;
+    opacity: 0;
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    transition: .3s all ease;
+    width: 100%;
+    z-index: 1;
+}
+
+a.button:hover img.color-overlay {
+    opacity: 1;
+}
+
+img.fade-underlay {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    z-index: 0;
+}
+</style>
