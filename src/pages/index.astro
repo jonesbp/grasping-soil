@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PageContent from '../components/PageContent.astro';
-import StripedBorder from '../components/StripedBorder.astro';
 
 const starSvg = (await import("../assets/star.svg?raw")).default;
 ---
@@ -10,9 +9,8 @@ const starSvg = (await import("../assets/star.svg?raw")).default;
 	<main>
 		<div class="hero-container">
 			<div class="image-clipper">
-				<img src="/images/hero.jpg" alt="placeholder hero image" />
+				<img src="/images/hero.png" alt="placeholder hero image" />
 			</div>
-			<StripedBorder top={true} />
 			<div class="text-overlay">
 				<h1 class="title">
 					Grasping<br />
@@ -30,10 +28,17 @@ const starSvg = (await import("../assets/star.svg?raw")).default;
 				<span set:html={starSvg} />
 			</div>
 			<div class="abstract">
+				<p class="large">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare, massa et vehicula pulvinar, augue orci interdum lorem, sollicitudin pharetra massa mi quis ex. Sed consequat ex eget tortor ultrices, non efficitur arcu fringilla. Ut accumsan erat in augue eleifend iaculis. Ut tempus justo elit, quis blandit est luctus at. Sed et tellus eget sem condimentum egestas. Ut consectetur ex at vulputate imperdiet. Nunc vulputate arcu massa, et interdum ante tincidunt nec. Quisque imperdiet ultricies nunc eget sagittis. Mauris consequat ligula vitae nisi facilisis tempus. Fusce cursus finibus varius. Praesent at dolor sit amet orci maximus ultrices.
+				</p>
 				<p>
-					Officiis et qui nisi nisi incidunt cumque. Consequatur impedit delectus odio tenetur et odit.
-					Molestias occaecati debitis odit atque ducimus quos. Id dolorum dolorem necessitatibus et.
-					Ea quis et aliquam aliquid iste ut.
+					Aliquam consectetur eu ligula quis tempus. Etiam pretium vulputate nulla et vestibulum. Suspendisse potenti. Vestibulum metus enim, aliquam et massa id, consectetur accumsan eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam enim nisl, ornare nec iaculis at, laoreet nec nisi. Cras viverra at arcu a bibendum. Quisque aliquam lectus quam, sed maximus leo dictum a. Etiam maximus magna vitae nisi sagittis, vitae pharetra ex mollis. Vivamus felis purus, aliquet vitae ullamcorper vel, eleifend vel velit. Suspendisse rhoncus augue vel nibh vestibulum ultricies. Aenean rhoncus felis id nulla tristique, nec sodales orci tincidunt. Ut sagittis nibh sed enim condimentum faucibus. Nam pulvinar turpis ante, a ornare mi accumsan ut. Suspendisse ipsum est, aliquam non placerat in, aliquam non odio. Etiam consequat molestie arcu, ut fermentum felis dapibus eu.
+				</p>
+				<p>
+					In hac habitasse platea dictumst. In massa ante, pharetra quis erat eget, blandit pretium augue. Quisque rhoncus ultricies placerat. Vestibulum ac nibh ultricies, feugiat mauris eget, dictum nisi. Suspendisse ac posuere tortor. Proin luctus finibus mi, id ullamcorper enim interdum vitae. Aenean tempus, diam quis feugiat hendrerit, ex orci finibus lorem, non semper nisi nibh ac ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed elementum turpis magna, ut condimentum tellus lobortis eu. Morbi quis tincidunt turpis. Aenean tellus metus, tristique at rutrum quis, pretium nec arcu. Suspendisse in mauris elit. Nunc lorem metus, mollis non massa vel, cursus tincidunt est. Nam justo elit, consequat et metus porttitor, hendrerit porttitor nisi. Fusce cursus maximus egestas. Cras mollis massa vel sollicitudin pellentesque.
+				</p>
+				<p>
+					Phasellus ac fringilla lectus. Fusce eleifend, nisl sed sodales aliquet, diam ipsum porttitor metus, et pretium arcu quam sit amet nisi. Curabitur non malesuada ipsum. Phasellus cursus tristique ligula, nec fringilla turpis tincidunt dapibus. Pellentesque fermentum, nisl vitae dignissim sollicitudin, magna libero convallis dui, id fringilla lacus urna ac est. Nam consequat arcu eu justo lacinia iaculis. Nunc pretium mi tellus, non pulvinar est maximus eu. Ut aliquam nisl nec urna laoreet, eu sodales ligula rutrum. Curabitur lorem risus, rutrum non congue ac, convallis nec libero. Mauris mollis ultrices arcu, a dapibus mi molestie vel. Nulla pulvinar tristique pharetra. Etiam quis accumsan elit. Integer bibendum justo quis mattis vestibulum. Sed nec lectus lobortis, placerat mi quis, condimentum nunc. Morbi dignissim congue tellus, id faucibus tortor. Nunc sed libero lacus.
 				</p>
 			</div>
 		</PageContent>
@@ -82,22 +87,22 @@ const starSvg = (await import("../assets/star.svg?raw")).default;
 }
 
 .hero-container h1.title {
-	color: var(--accent-color-blue);
-	font-family: 'Paix', sans-serif;
+	color: var(--primary-text-color);
+	font-family: 'Ocotillo', sans-serif;
 	font-size: 8rem;
 	font-weight: 700;
 	line-height: 80%;
 	margin: 0;
 	position: absolute;
 		left: 40px;
-		bottom: -3.36rem;
+		bottom: 1rem;
 	text-transform: uppercase;
 	z-index: 1;
 }
 
 
 .intro-links {
-	color: var(--primary-text-color);
+	color: var(--secondary-text-color);
 	font-family: 'Paix', sans-serif;
 	font-size: 2rem;
 	margin: 4rem 0 2rem 0;
@@ -105,28 +110,14 @@ const starSvg = (await import("../assets/star.svg?raw")).default;
 	text-transform: uppercase;
 }
 
-.intro-links a.syllabus-link {
-	color: var(--accent-color-unit-1);
-	text-decoration-color: var(--accent-srgb-highlight-unit-1);
-	text-decoration-color: var(--accent-p3-highlight-unit-1);
+.intro-links a {
+	color: var(--primary-text-color);
+	text-decoration-color: transparent;
 	transition: all .3s ease;
 }
 
-.intro-links a.syllabus-link:hover {
-	color: var(--accent-srgb-highlight-unit-1);
-	color: var(--accent-p3-highlight-unit-1);
-}
-
-.intro-links a.essays-link {
-	color: var(--accent-color-blue);
-	text-decoration-color: var(--accent-srgb-highlight-blue);
-	text-decoration-color: var(--accent-p3-highlight-blue);
-	transition: all .3s ease;
-}
-
-.intro-links a.essays-link:hover {
-	color: var(--accent-srgb-highlight-blue);
-	color: var(--accent-p3-highlight-blue);
+.intro-links a:hover {
+	text-decoration-color: var(--primary-text-color);
 }
 
 .horizontal-stars {
@@ -154,11 +145,16 @@ const starSvg = (await import("../assets/star.svg?raw")).default;
 }
 
 .abstract p {
-	font-size: 1.4em;
-	font-weight: 400;
+	font-size: 1.1rem;
+	font-weight: 300;
 	line-height: 145%;
 	margin: 2rem auto;
 	max-width: 740px;
+}
+
+.abstract p.large {
+	font-size: 1.4rem;
+	font-weight: 400;
 }
 
 </style>
