@@ -11,6 +11,7 @@ import UnitQuestions from '../../components/UnitQuestions.astro';
 import UnitStrip from '../../components/UnitStrip.astro';
 import UnitTitle from '../../components/UnitTitle.astro';
 import MediaList from '../../components/MediaList.astro';
+import IllustratedUnitButton from "../../components/IllustratedUnitButton.astro";
 
 const number = 3;
 const title = "Soil as Health";
@@ -580,6 +581,12 @@ const title = "Soil as Health";
                 </MediaList>
             </FormattedText>
         </UnitDay>
+        
+        <IllustratedUnitButton
+                unit={4}
+                title="Soil as Belonging"
+                path="/units/4-soil-as-belonging"
+        />
     </PageBlock>
 
 </UnitLayout>

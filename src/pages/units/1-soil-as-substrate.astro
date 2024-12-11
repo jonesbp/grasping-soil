@@ -11,6 +11,7 @@ import UnitQuestions from '../../components/UnitQuestions.astro';
 import UnitStrip from '../../components/UnitStrip.astro';
 import UnitTitle from '../../components/UnitTitle.astro';
 import MediaList from "../../components/MediaList.astro";
+import IllustratedUnitButton from '../../components/IllustratedUnitButton.astro';
 
 const number = 1;
 const title = "Soil as Substrate (Or “the Matter of Soil”)";
@@ -414,5 +415,11 @@ const title = "Soil as Substrate (Or “the Matter of Soil”)";
                 </FormattedText>
             </ActivityBlock>
         </UnitDay>
+
+        <IllustratedUnitButton
+            unit={2}
+            title="Soil as Archive"
+            path="/units/2-soil-as-archive"
+        />
     </PageBlock>
 </UnitLayout>

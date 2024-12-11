@@ -12,6 +12,7 @@ import UnitTitle from '../../components/UnitTitle.astro';
 import ActivityBlock from "../../components/ActivityBlock.astro";
 import ImageBlock from '../../components/ImageBlock.astro';
 import MediaList from "../../components/MediaList.astro";
+import IllustratedUnitButton from "../../components/IllustratedUnitButton.astro";
 
 const number = 2;
 const title = "Soil as Archive";
@@ -409,5 +410,11 @@ const title = "Soil as Archive";
                 </MediaList>
             </FormattedText>
         </UnitDay>
+
+        <IllustratedUnitButton
+            unit={3}
+            title="Soil as Health"
+            path="/units/3-soil-as-health"
+        />
     </PageBlock>
 </UnitLayout>
