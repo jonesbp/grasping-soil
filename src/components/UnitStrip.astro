@@ -7,6 +7,11 @@ const {
 ---
 <div class={`unit-strip unit-${unit}`}>
     <div class="contents">
+        <div class="overlay">
+            <a href="/" class="home-badge">
+                GS
+            </a>
+        </div>
         <img src={imageSrc} alt={imageAlt} />
     </div>
 </div>
@@ -24,10 +29,47 @@ const {
 .unit-strip .contents {
     margin: 0 auto;
     max-width: var(--max-content-width);
+    position: relative;
 }
 
 .unit-strip .contents img {
     display: block;
     max-width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.unit-strip .contents .overlay {
+    display: block;
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    z-index: 1;
+}
+
+.unit-strip .contents .overlay .home-badge {
+    align-items: center;
+    background-color: var(--primary-text-color);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-family: 'Ocotillo', sans-serif;
+    font-size: 54px;
+    justify-content: center;
+    opacity: .9;
+    position: absolute;
+        top: 20px;
+        left: 20px;
+    height: 96px;
+    width: 96px;
+    text-decoration: none;
+    transition: .3s all ease;
+    z-index: 2;
+}
+
+.unit-strip .contents .overlay .home-badge:hover {
+    opacity: 1;
 }
 </style>
