@@ -296,6 +296,11 @@
         .content {
             width: 94%;
         }
+
+        .abstract p.large {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
     }
 
     @media all and (max-width: 454px) {
