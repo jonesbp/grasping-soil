@@ -27,7 +27,6 @@
 
     const calculateProgress = (scroll) => {
         if (!viewportHeight) return 0;
-        console.log('calculating progress:', scroll, viewportHeight);
         const scrollRange = viewportHeight;
         return Math.min(Math.max(scroll / scrollRange, 0), 1);
     };
@@ -59,6 +58,14 @@
         bannerStyle = calculateBannerStyle(progress);
 
         import("../assets/star.svg?raw").then(result => starSvg = result.default);
+
+        const handleResize = () => {
+            calculateProgress(scrollY);
+            calculateBannerStyle(progress);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
     });
 </script>
 
