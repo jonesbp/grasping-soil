@@ -4,6 +4,7 @@
 
     let scrollY;
     let container;
+    let footer;
     let banner;
     let contentWrapper;
     let bannerHeight;
@@ -13,14 +14,25 @@
 
     $: progress = calculateProgress(scrollY);
     $: bannerStyle = calculateBannerStyle(progress);
-
-    function calculateProgress(scroll) {
-        if (!viewportHeight) return 0;
-        const scrollRange = viewportHeight;
-        return Math.min(Math.max(scroll / scrollRange, 0), 1);
+    $: {
+        if (footer) {
+            if (Math.ceil(window.innerHeight + scrollY) >= document.body.offsetHeight) {
+                footer.classList.add('visible');
+            } else {
+                footer.classList.remove('visible');
+            }
+        }
     }
 
-    function calculateBannerStyle(progress) {
+
+    const calculateProgress = (scroll) => {
+        if (!viewportHeight) return 0;
+        console.log('calculating progress:', scroll, viewportHeight);
+        const scrollRange = viewportHeight;
+        return Math.min(Math.max(scroll / scrollRange, 0), 1);
+    };
+
+    const calculateBannerStyle = (progress) => {
         if (!viewportHeight || !bannerHeight) return '';
 
         const startPosition = (viewportHeight - bannerHeight) / 4;
@@ -33,7 +45,7 @@
         }
 
         return `position: fixed; top: ${currentPosition}px; left: 0; right: 0; opacity: ${opacity};`;
-    }
+    };
 
     onMount(() => {
         viewportHeight = window.innerHeight;
@@ -101,6 +113,12 @@
             </div>
         </div>
     </div>
+
+    <footer bind:this={footer}>
+        <p>
+            &copy; {(new Date().getFullYear())} / <a href="/colophon">Colophon</a>
+        </p>
+    </footer>
 </div>
 
 <style>
@@ -161,7 +179,7 @@
         padding: 2rem;
         position: relative;
         width: 80%;
-        z-index: 2;
+        z-index: 10;
     }
 
     .intro-links {
@@ -218,6 +236,43 @@
 
     .links {
         margin-top: 4rem;
+    }
+
+    footer {
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.8);
+        height: auto;
+        min-height: auto;
+        opacity: 0;
+        padding: .5rem 2rem;
+        position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        transition: .3s all ease;
+        z-index: 100;
+    }
+
+    :global(footer.visible) {
+        opacity: 1;
+    }
+
+    footer p {
+        font-size: 1rem;
+        height: auto;
+        line-height: 100%;
+        text-align: right;
+        margin: 0;
+    }
+
+    footer a {
+        color: var(--primary-text-color);
+        text-decoration-color: transparent;
+        transition: .1s all ease;
+    }
+
+    footer a:hover {
+        text-decoration-color: var(--primary-text-color);
     }
 
     @media all and (max-width: 664px) {
