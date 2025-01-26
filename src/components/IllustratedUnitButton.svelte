@@ -1,28 +1,32 @@
----
-const {
-    unit,
-    title,
-    path,
-} = Astro.props;
----
+<script>
+    export let unit;
+    export let title;
+    export let path;
+</script>
 <a href={path} class="button">
     <span class="label-position">
         <span class="label">{unit}. {title}</span>
     </span>
     <img
+        role="presentation"
         class="color-overlay"
         src={`/images/unit-${unit}/banner.jpg`}
+        alt=""
     />
     <img
+        role="presentation"
         class="fade-underlay"
         src={`/images/unit-${unit}/banner-fade.png`}
+        alt=""
     />
 </a>
 
 <style>
 a.button {
+    container-type: inline-size;
     display: inline-block;
     position: relative;
+    width: 100%;
 }
 
 span.label-position {
@@ -72,5 +76,34 @@ img.fade-underlay {
     max-width: 100%;
     width: 100%;
     z-index: 0;
+}
+
+@container (max-width: 680px) {
+    span.label {
+        font-size: 2.5rem;
+    }
+
+}
+
+@container (max-width: 580px) {
+    span.label {
+        font-size: 2rem;
+    }
+}
+
+@container (max-width: 464px) {
+    span.label {
+        font-size: 1.5rem;
+    }
+}
+
+@container (max-width: 350px) {
+    span.label {
+        font-size: 1.25rem;
+    }
+
+    span.label-position {
+        border: 2px red solid;
+    }
 }
 </style>

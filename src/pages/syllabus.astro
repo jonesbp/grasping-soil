@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import PageHeader from "../components/PageHeader.astro";
 import PageContent from "../components/PageContent.astro";
-import IllustratedUnitButton from "../components/IllustratedUnitButton.astro";
+import IllustratedUnitButton from "../components/IllustratedUnitButton.svelte";
 ---
 
 <Layout title="Syllabus">
@@ -12,6 +12,7 @@ import IllustratedUnitButton from "../components/IllustratedUnitButton.astro";
             <ul>
                 <li>
                     <IllustratedUnitButton
+                        client:load
                         unit={1}
                         title="Soil as Substrate"
                         path="/units/1-soil-as-substrate"
@@ -19,23 +20,26 @@ import IllustratedUnitButton from "../components/IllustratedUnitButton.astro";
                 </li>
                 <li>
                     <IllustratedUnitButton
-                            unit={2}
-                            title="Soil as Archive"
-                            path="/units/2-soil-as-archive"
+                        client:load
+                        unit={2}
+                        title="Soil as Archive"
+                        path="/units/2-soil-as-archive"
                     />
                 </li>
                 <li>
                     <IllustratedUnitButton
-                            unit={3}
-                            title="Soil as Health"
-                            path="/units/3-soil-as-health"
+                        client:load
+                        unit={3}
+                        title="Soil as Health"
+                        path="/units/3-soil-as-health"
                     />
                 </li>
                 <li>
                     <IllustratedUnitButton
-                            unit={4}
-                            title="Soil as Belonging"
-                            path="/units/4-soil-as-belonging"
+                        client:load
+                        unit={4}
+                        title="Soil as Belonging"
+                        path="/units/4-soil-as-belonging"
                     />
                 </li>
             </ul>
@@ -59,5 +63,11 @@ li {
 
 li:first-child {
     margin-top: 0;
+}
+
+@media all and (max-width: 520px) {
+    ul {
+        width: 90%;
+    }
 }
 </style>

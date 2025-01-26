@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import IllustratedUnitButton from "./IllustratedUnitButton.svelte";
 
     let scrollY;
     let container;
@@ -92,7 +93,11 @@
                 </p>
             </div>
             <div class="links">
-
+                <IllustratedUnitButton
+                    unit={1}
+                    title="Soil as Substrate"
+                    path="/units/1-soil-as-substrate"
+                />
             </div>
         </div>
     </div>
@@ -209,6 +214,10 @@
 
     .horizontal-stars span :global(svg path) {
         fill: #96b4aa;
+    }
+
+    .links {
+        margin-top: 4rem;
     }
 
     @media all and (max-width: 664px) {
