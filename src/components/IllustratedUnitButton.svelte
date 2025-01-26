@@ -101,9 +101,5 @@ img.fade-underlay {
     span.label {
         font-size: 1.25rem;
     }
-
-    span.label-position {
-        border: 2px red solid;
-    }
 }
 </style>
