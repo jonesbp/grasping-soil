@@ -8,21 +8,35 @@ const {
 <div class={`unit-day unit-${unit}`}>
     <div class="overlay">
         <div class="header-frame">
-            <h2 id={`day-${day}`}>Day {day}: {headline}</h2>
+            <div class="illustration-block">
+                <img
+                        class="illustration"
+                        aria-role="presentation"
+                        alt=""
+                        src={`/images/unit-${unit}/day-${day}-color.jpg`}
+                />
+            </div>
+            <div class="text-block">
+                <div class="header-title">
+                    <h2 id={`day-${day}`}>Day {day}: {headline}</h2>
+                </div>
+                <div class="intro">
+                    <slot name="intro" />
+                </div>
+            </div>
         </div>
         <div class="content-frame">
             <div class="content">
                 <slot />
             </div>
         </div>
-    </div>
-    <div class={`underlay ${(day % 2 === 0) ? 'left' : 'right'}`}>
-        <img
-            aria-hidden="true"
-            alt=""
-            src={`/images/unit-${unit}/day-${day}-color.jpg`}
-            height="1000"
-        />
+        <div class="underlay">
+            <img
+                    aria-hidden="true"
+                    alt=""
+                    src={`/images/unit-${unit}/day-${day}.png`}
+            />
+        </div>
     </div>
 </div>
 
@@ -41,7 +55,7 @@ const {
 
 .underlay {
     position: absolute;
-    top: -240px;
+    top: 100px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -52,28 +66,33 @@ const {
     position: sticky;
     top: 40px;
     margin-top: 200px;
+    margin-left: -140px;
     height: 600px;
     opacity: 0.3;
 }
 
-.underlay.left img {
-    margin-left: -140px;
-}
-
-.underlay.right img {
-    left: 100%;
-    margin-right: -140px;
-}
-
 .header-frame {
+    position: relative;
+    z-index: 1;
+}
+
+.header-title {
     border-style: solid;
     border-width: 0 0 4px 0;
-    margin: 0;
+    border-color: var(--secondary-text-color);
+    margin: 2rem 0;
     padding: 0;
 }
 
-.unit-day .header-frame {
-    border-color: var(--secondary-text-color);
+.illustration-block {
+    background-color: white;
+    float: right;
+    padding: 0 0 2rem 2rem;
+}
+
+.illustration-block img.illustration {
+    max-height: 500px;
+    max-width: 500px;
 }
 
 h2 {
@@ -91,6 +110,7 @@ h2 {
 }
 
 .content-frame {
+    clear: right;
     position: relative;
         top: 0;
     margin: 0;

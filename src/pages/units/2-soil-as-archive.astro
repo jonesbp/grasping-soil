@@ -89,7 +89,7 @@ const title = "Soil as Archive";
             day={1}
             headline="Archives of Soil"
         >
-            <FormattedText unit={number}>
+            <FormattedText slot="intro" unit={number}>
                 <p class="large">
                     Today we continue some of the work we did in the prior unit on building our skills of assessment and
                     judgment of soil while also considering what values such practices reflect and reproduce. These activities
@@ -100,14 +100,14 @@ const title = "Soil as Archive";
                     and organize them; in the sense that they further certain (violent) classification projects; in the
                     sense that they tell historical stories; and in the sense that they have afterlives.
                 </p>
-                <UnitQuestions
-                        unit={number}
-                        questions={[
-                            "How have soil archives been created and used and in the service of what projects?",
-                            "What are the implications of the typologies that have been created for understanding and archiving soil?",
-                        ]}
-                />
             </FormattedText>
+            <UnitQuestions
+                    unit={number}
+                    questions={[
+                        "How have soil archives been created and used and in the service of what projects?",
+                        "What are the implications of the typologies that have been created for understanding and archiving soil?",
+                    ]}
+            />
 
             <ActivityBlock
                 unit={number}
@@ -166,7 +166,7 @@ const title = "Soil as Archive";
             unit={number}
             headline="Archives conspicuously without Soils"
         >
-            <FormattedText unit={number}>
+            <FormattedText slot="intro" unit={number}>
                 <p class="large">
                     Some archives are about soil, and intentionally index soil within archival frameworks. Some archives
                     go to elaborate lengths to remove soil–we might say, following Michel-Rolph Trouillot, to silence soil–and
@@ -286,7 +286,7 @@ const title = "Soil as Archive";
             day={3}
             headline="Soil as an archive of historical relations"
         >
-            <FormattedText>
+            <FormattedText slot="intro">
                 <p class="large">
                     Soils are created by many forms of circulation. Understanding soils and their mineral substrates, such
                     as arsenic ore, help us tell histories of racism, empire, capitalism, and landscape. Learn how chemical-intensive
@@ -348,7 +348,7 @@ const title = "Soil as Archive";
             day={4}
             headline="Soil as a living archive of social relations"
         >
-            <FormattedText unit={number}>
+            <FormattedText slot="intro" unit={number}>
                 <p class="large">
                     Different people have different ideas of what is desirable (in the soil), and static concepts of soil health,
                     fertility, and even toxicity do not necessarily help us understand how soil works for or against people. This
