@@ -30,13 +30,13 @@ const {
                 <slot />
             </div>
         </div>
-        <div class="underlay">
-            <img
-                    aria-hidden="true"
-                    alt=""
-                    src={`/images/unit-${unit}/day-${day}.png`}
-            />
-        </div>
+    </div>
+    <div class="underlay">
+        <img
+                aria-hidden="true"
+                alt=""
+                src={`/images/unit-${unit}/day-${day}.png`}
+        />
     </div>
 </div>
 
@@ -51,6 +51,7 @@ const {
 .overlay {
     position: relative;
     z-index: 1;
+    isolation: isolate;
 }
 
 .underlay {
@@ -60,6 +61,8 @@ const {
     bottom: 0;
     left: 0;
     z-index: 0;
+    transform: translateZ(0); /* Create new stacking context */
+    pointer-events: none; /* Prevent interaction with float */
 }
 
 .underlay img {
@@ -69,6 +72,8 @@ const {
     margin-left: -140px;
     height: 600px;
     opacity: 0.3;
+    pointer-events: none;
+    transform: translateZ(0); /* Force GPU rendering */
 }
 
 .header-frame {
@@ -86,13 +91,18 @@ const {
 
 .illustration-block {
     background-color: white;
+    contain: paint;
     float: right;
+    max-width: 50%;
     padding: 0 0 2rem 2rem;
 }
 
 .illustration-block img.illustration {
+    display: block;
     max-height: 500px;
-    max-width: 500px;
+    max-width: 100%;
+    position: relative;
+    width: auto;
 }
 
 h2 {
@@ -114,7 +124,7 @@ h2 {
     position: relative;
         top: 0;
     margin: 0;
-    padding: 4rem 2rem;
+    padding: 4rem 0;
 }
 
 .content-frame .content {
@@ -127,5 +137,19 @@ h2 {
     font-weight: 300;
     line-height: 140%;
     max-width: 760px;
+}
+
+@media all and (max-width: 640px) {
+    .illustration-block {
+        float: none;
+        margin-bottom: 2rem;
+        max-width: 500px;
+        padding: 0;
+        width: auto;
+    }
+
+    .content-frame {
+        padding-top: 0;
+    }
 }
 </style>
