@@ -228,6 +228,17 @@
         z-index: 10;
     }
 
+    .abstract a {
+        color: var(--secondary-text-color);
+        font-weight: 500;
+        text-decoration-color: #96b4aa;
+        transition: all .1s ease;
+    }
+
+    .abstract a:hover {
+        color: #96b4aa;
+    }
+
     .intro-links {
         color: var(--secondary-text-color);
         font-family: 'Paix', sans-serif;
