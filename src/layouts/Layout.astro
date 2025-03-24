@@ -1,11 +1,15 @@
 ---
+import PageWrapper from '../components/PageWrapper.astro';
+
 interface Props {
 	title: string;
+	specialLayout: boolean;
 	suppressFooter: boolean;
 }
 
 const {
 	title,
+	specialLayout,
 	suppressFooter,
 } = Astro.props;
 ---
@@ -20,44 +24,50 @@ const {
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
-		{!suppressFooter && (
-			<footer>
-				<div class="content">
-					<div class="left-side">
-						<div>
-							<ul class="primary">
-								<li>
-									<a href="/syllabus">Syllabus</a>
-									<ul>
-										<li><a href="/units/1-soil-as-substrate">1. Soil as Substrate</a></li>
-										<li><a href="/units/2-soil-as-archive">2. Soil as Archive</a></li>
-										<li><a href="/units/3-soil-as-health">3. Soil as Health</a></li>
-										<li><a href="/units/4-soil-as-belonging">4. Soil as Belonging</a></li>
+	<body class={specialLayout ? '' : 'normal-background'}>
+		{specialLayout ? (
+			<slot />
+		) : (
+			<PageWrapper>
+				<slot />
+				{!suppressFooter && (
+					<footer>
+						<div class="content">
+							<div class="left-side">
+								<div>
+									<ul class="primary">
+										<li>
+											<a href="/syllabus">Syllabus</a>
+											<ul>
+												<li><a href="/units/1-soil-as-substrate">1. Soil as Substrate</a></li>
+												<li><a href="/units/2-soil-as-archive">2. Soil as Archive</a></li>
+												<li><a href="/units/3-soil-as-health">3. Soil as Health</a></li>
+												<li><a href="/units/4-soil-as-belonging">4. Soil as Belonging</a></li>
+											</ul>
+										</li>
 									</ul>
-								</li>
-							</ul>
+								</div>
+								<div>
+									<ul class="primary">
+										<li>
+											<a href="/essays">Essays</a>
+										</li>
+										<li>
+											<a href="/reading-list">Reading List</a>
+										</li>
+										<li>
+											<a href="/contributors">Contributors</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="right-side">
+								<div>&copy; {(new Date()).getFullYear()} / <a href="/colophon">Colophon</a></div>
+							</div>
 						</div>
-						<div>
-							<ul class="primary">
-								<li>
-									<a href="/essays">Essays</a>
-								</li>
-								<li>
-									<a href="/reading-list">Reading List</a>
-								</li>
-								<li>
-									<a href="/contributors">Contributors</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="right-side">
-						<div>&copy; {(new Date()).getFullYear()} / <a href="/colophon">Colophon</a></div>
-					</div>
-				</div>
-			</footer>
+					</footer>
+				)}
+			</PageWrapper>
 		)}
 	</body>
 </html>
@@ -197,6 +207,10 @@ body {
 	color: var(--secondary-text-color);
 	margin: 0;
 	padding: 0;
+}
+
+body.normal-background {
+	background-color: #96b4aa;
 }
 
 main {
