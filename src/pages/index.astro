@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 
 import HomepageDisplay from '../components/HomepageDisplay.svelte';
+import HomepageMenu from '../components/HomepageMenu.svelte';
 ---
 <Layout
     title="Grasping Soil"
@@ -10,5 +11,6 @@ import HomepageDisplay from '../components/HomepageDisplay.svelte';
 >
     <main>
         <HomepageDisplay client:load />
+        <HomepageMenu client:load />
     </main>
 </Layout>
