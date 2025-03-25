@@ -6,6 +6,7 @@
     let container;
     let footer;
     let banner;
+    let resizeTimer;
     let contentWrapper;
     let bannerHeight;
     let viewportHeight;
@@ -49,16 +50,18 @@
     const ensureTitleVisible = () => {
         if (!title || !banner || !contentWrapper) return;
 
-        const titleRect = title.getBoundingClientRect();
-        const viewportBottom = window.innerHeight;
+        setTimeout(() => {
+            const titleRect = title.getBoundingClientRect();
+            const viewportBottom = window.innerHeight;
 
-        // If title is below viewport, adjust content position
-        if (titleRect.top >= viewportBottom) {
-            contentWrapper.style.marginTop = `${window.innerHeight / 2}px`;
-        }
+            // If title is below viewport, adjust content position
+            if (titleRect.top + (titleRect.height / 2) >= viewportBottom) {
+                contentWrapper.style.marginTop = `${window.innerHeight / 2}px`;
+            }
+        }, 10);
     };
 
-    onMount(() => {
+    const adjustLayout = (() => {
         viewportHeight = window.innerHeight;
         bannerHeight = banner.offsetHeight;
 
@@ -71,14 +74,19 @@
 
         // Apply adjustment to make title visible if needed
         ensureTitleVisible();
+    });
+
+    onMount(() => {
+        adjustLayout();
 
         import("../assets/star.svg?raw").then(result => starSvg = result.default);
 
         const handleResize = () => {
-            viewportHeight = window.innerHeight;
-            calculateProgress(scrollY);
-            calculateBannerStyle(progress);
-            ensureTitleVisible();
+            clearTimeout(resizeTimer);
+
+            resizeTimer = setTimeout(() => {
+                adjustLayout();
+            }, 250);
         };
 
         window.addEventListener('resize', handleResize);
