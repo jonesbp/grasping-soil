@@ -83,4 +83,9 @@ const { unit } = Astro.props;
     font-weight: 600;
     margin: 2.5em 0 1em 0;
 }
+
+.formatted-text-block :global(.inline-image img) {
+    max-width: 100%;
+    width: max-content;
+}
 </style>
