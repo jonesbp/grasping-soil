@@ -225,7 +225,7 @@
     }
 
     .content {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.85);
         font-size: 18px;
         max-width: 800px;
         margin: 0 auto 520px auto;
@@ -271,7 +271,7 @@
     }
 
     .abstract p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: 300;
         line-height: 145%;
         margin: 2rem auto;
