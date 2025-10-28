@@ -124,7 +124,7 @@
             </div>
             <div class="abstract">
                 <p class="large">
-                    Welcome to Grasping Soil, a syllabus and collection of essays that all consider, in some fundamental way: what
+                    Welcome to Grasping Soil, a syllabus and collection of essays that all ask, in some fundamental way: what
                     comes into view when we consider soil as both a container of human history and point of view for inquiry?
                 </p>
                 <p>
