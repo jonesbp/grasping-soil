@@ -1,0 +1,39 @@
+---
+
+---
+<div class="long-form-content">
+    <slot />
+</div>
+
+<style>
+.long-form-content {
+	margin: 0 auto;
+	max-width: 720px;
+	width: 94%;
+}
+
+.long-form-content :global(p) {
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 140%;
+}
+
+.long-form-content :global(p b) {
+	font-weight: 700;
+}
+
+.long-form-content :global(p a),
+.long-form-content :global(li a),
+.long-form-content :global(blockquote a) {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    transition: .3s all ease;
+    text-decoration-color: transparent;
+}
+
+.long-form-content :global(p a:hover),
+.long-form-content :global(li a:hover),
+.long-form-content :global(blockquote a:hover) {
+    text-decoration-color: var(--primary-text-color);
+}
+</style>
