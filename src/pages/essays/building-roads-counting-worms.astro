@@ -1,5 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+
+import EssayHeader from "../../components/EssayHeader.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
 import PageHeader from "../../components/PageHeader.astro";
@@ -9,17 +11,11 @@ import PageHeader from "../../components/PageHeader.astro";
 	<main>
 		<PageContent>
 			<LongFormContent>
-				<div class="essay-header">
-					<p class="location-tag">
-						Kwale District, Kenya:
-					</p>
-					<h1 class="title">
-						Building Roads, Counting Worms: Soil as a Medium for Parasitic Relations
-					</h1>
-					<p class="byline">
-						Emily Brownell
-					</p>
-				</div>
+				<EssayHeader
+					locationTag="Kwale Distrct, Kenya"
+					title="Building Roads, Counting Worms: Soil as a Medium for Parasitic Relations"
+					byline="Emily Brownell"
+				/>
 				<div>
 					Figure 1. Kwale District, Kenya, RARP construction site, 1986. Photo courtesy of David Crompton.
 					[Alt text: several men standing around on break from manual labour, resting and drinking water in rural Kenya. There is a Volkswagen Beetle in the background of the image. ]

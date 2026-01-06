@@ -1,0 +1,24 @@
+---
+interface Props {
+	byline: string;
+	locationTag: string;
+	title: string;
+}
+
+const {
+	byline,
+	locationTag,
+	title,
+} = Astro.props;
+---
+<div class="essay-header">
+	<p class="location-tag">
+		{locationTag}:
+	</p>
+	<h1 class="title">
+		{title}
+	</h1>
+	<p class="byline">
+		{byline}
+	</p>
+</div>
