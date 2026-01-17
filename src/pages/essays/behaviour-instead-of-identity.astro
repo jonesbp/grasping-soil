@@ -9,12 +9,12 @@ import PageHeader from "../../components/PageHeader.astro";
 <Layout>
 	<main>
 		<PageContent>
+			<EssayHeader
+				locationTag="Under the electron microscope, Lehmann Lab, Cornell University, New York"
+				title="Behaviour instead of Identity: Functional Complexity of Organic Matter as an Organising Principle in Soil Ecosystems"
+				byline="Johannes Lehmann"
+			/>
 			<LongFormContent>
-				<EssayHeader
-					locationTag="Under the electron microscope, Lehmann Lab, Cornell University, New York"
-					title="Behaviour instead of Identity: Functional Complexity of Organic Matter as an Organising Principle in Soil Ecosystems"
-					byline="Johannes Lehmann"
-				/>
 				<p>
 					Organic matter in soil possesses an enduring allure. This is not only because soil
 					houses the largest pool of carbon in terrestrial ecosystems – more than all plants
@@ -196,9 +196,9 @@ import PageHeader from "../../components/PageHeader.astro";
 					and forward-looking engagement with soil processes as argued in this essay. Would such a shift also
 					change how we view human identity and behaviour?
 				</p>
-				<hr />
-				<h2>References</h2>
-				<ul>
+				<hr class="essay-footer" />
+				<h2 class="essay-footer">References</h2>
+				<ul class="references">
 					<li>
 						Achard, F.C. 1786. ‘Chemische Untersuchung des Torfs’. <i>Crell’s Chemical Annals</i> 2: 391–403.
 					</li>

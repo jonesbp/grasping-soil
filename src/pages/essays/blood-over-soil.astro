@@ -9,18 +9,18 @@ import PageContent from "../../components/PageContent.astro";
 <Layout>
 	<main>
 		<PageContent>
+			<EssayHeader
+				locationTag="Berlin, The Cosmos"
+				title="Blood over Soil. Albert Speer’s Heavy Load-Bearing Cylinder, Glacial Till, and Racial Terra-Forming"
+				byline="Paul Kurek"
+			/>
 			<LongFormContent>
-				<EssayHeader
-					locationTag="Berlin, The Cosmos"
-					title="Blood over Soil. Albert Speer’s Heavy Load-Bearing Cylinder, Glacial Till, and Racial Terra-Forming"
-					byline="Paul Kurek"
-				/>
 				<div>
 					Figure 1. Glacial and interglacial soils in the area Berlin-Kolonnenbrücke: structure of glacial till, seen from the side, 1941,
 					Degebo. Source: Karteiarchiv Degebo, no. AIIa3., Neg. Nr. 716.
 					Alt text. Photograph of a piece of glacial till collected by the German Society of Soil Mechanics in the context of Albert Speer’s Germania plans.
 				</div>
-				<h3>Geology</h3>
+				<h3 class="essay-subhead">Geology</h3>
 				<p>
 					The above file card from the archives of the <i>Deutsche Gesellschaft für Bodenmechanik</i> (German Society for Soil Mechanics), short
 					<i>Degebo</i>, depicts a piece of German soil (Figure 1). Or does it? Well, this piece of earth was, without a doubt, withdrawn within
@@ -213,7 +213,7 @@ import PageContent from "../../components/PageContent.astro";
 					glacial till, the soil Speer intended to build upon, following his intuition to erect his monuments of a German super-identity, undermines
 					the message it was chosen to carry.
 				</p>
-				<h3>Cosmology</h3>
+				<h3 class="essay-subhead">Cosmology</h3>
 				<div>
 					Figure 6. NASA, Model of the Big Bounce Theory. Image by NASA/WMAP Science Team [modified].
 					Alt text Visualisation of the Big Bounce Theory, a speculative alternative to the Big Bang Theory.
@@ -274,7 +274,7 @@ import PageContent from "../../components/PageContent.astro";
 					us with a clearly measurable geological timeline (that predates human consciousness) into which we are embedded and with which we
 					have to grapple:
 				</p>
-				<ul>
+				<ul class="essay-list">
 					<li>
 						the date of the origin of the universe (13.5 billion years ago)
 					</li>
@@ -291,7 +291,7 @@ import PageContent from "../../components/PageContent.astro";
 				<p>
 					I believe there remains to be added to this list:
 				</p>
-				<ul>
+				<ul class="essay-list">
 					<li>
 						the death of the sun/earth (in 5 billion years from now)
 					</li>
@@ -308,7 +308,7 @@ import PageContent from "../../components/PageContent.astro";
 					It seems we’ve now got lost in the vastness of the cosmos, and it is time to return to the little piece of soil we started our journey with in
 					order to ground ourselves, even if just for a split-second of feeling some type of belonging to something at least or at last.
 				</p>
-				<h3><i>Be</i>(long)<i>ing</i></h3>
+				<h3 class="essay-subhead"><i>Be</i>(long)<i>ing</i></h3>
 				<div>
 					Figure 7. Pavol Kurek, ‘Mother and Son’, undated. Private source.
 					Alt text Family photograph of mother and son taken in Dürrnhaar, Bavaria.
@@ -435,9 +435,9 @@ import PageContent from "../../components/PageContent.astro";
 					the noise of trains passing by the cylinder that makes the earth shatter reverberating throughout all shifting layers of history:
 					<i>Ge-schiebe</i>, <i>Ge-schichte</i> and <i>Ge-wichte</i>…
 				</p>
-				<hr />
-				<h2>Notes</h2>
-				<ol>
+				<hr class="essay-footer" />
+				<h2 class="essay-footer">Notes</h2>
+				<ol class="notes">
 					<li id="note-1">
 						Unlike geology or soil science, fields interested in age or fertility, soil mechanics is strictly purpose-oriented and mainly concerned
 						with one question: how to deal with soil as a purely mechanical element in the construction world. In the late 19th/early 20th-century
@@ -449,24 +449,24 @@ import PageContent from "../../components/PageContent.astro";
 						any predecessor (1–2). Terzaghi, the ‘father of soil mechanics’, was the first to ask the question: ‘What was the weight limit for
 						construction before the soils collapse?’ (Kerisel 1987: 61). The book was a first-class synthesis and centennial achievement within civil
 						engineering (Kurrer 2016: 347). Only three years later, in 1928, the Degebo was founded in Berlin and embedded into TU Berlin (Kirsch 2016: 12).
-						Needless to say, to this day, soil mechanics is literally foundational for any kind of construction.  <a href="#note-ref-1">&crarr;</a>
+						Needless to say, to this day, soil mechanics is literally foundational for any kind of construction.  <a class="return-from-note" href="#note-ref-1">&crarr;</a>
 					</li>
 					<li id="note-2">
-						Litt et al. 2007: 45–47. <a href="#note-ref-2">&crarr;</a>
+						Litt et al. 2007: 45–47. <a class="return-from-note" href="#note-ref-2">&crarr;</a>
 					</li>
 					<li id="note-3">
-						Muhs 1940. All translations from German into English are mine, if not stated otherwise. <a href="#note-ref-3">&crarr;</a>
+						Muhs 1940. All translations from German into English are mine, if not stated otherwise. <a class="return-from-note" href="#note-ref-3">&crarr;</a>
 					</li>
 					<li id="note-4">
 						Troost 1938: 5. While Gerdy Troost’s name was printed on the book, the actual writer was the rather unknown geographer Karl Trampler: ‘his
 						treatise captures the design thinking of the day in relation to Nazi political ideology like none other in this period’
-						(Haney 2022: 21–22). <a href="#note-ref-4">&crarr;</a>
+						(Haney 2022: 21–22). <a class="return-from-note" href="#note-ref-4">&crarr;</a>
 					</li>
 					<li id="note-5">
-						Ahmed 2004: 26. <a href="#note-ref-5">&crarr;</a>
+						Ahmed 2004: 26. <a class="return-from-note" href="#note-ref-5">&crarr;</a>
 					</li>
 					<li id="note-6">
-						Griffin 2018: 41. <a href="#note-ref-6">&crarr;</a>
+						Griffin 2018: 41. <a class="return-from-note" href="#note-ref-6">&crarr;</a>
 					</li>
 					<li id="note-7">
 						Ironically, the conceptual pair of <i>blood and soil</i> was equally semantically unstable within the fascist realm of ideas. The idea that the
@@ -474,22 +474,22 @@ import PageContent from "../../components/PageContent.astro";
 						unique potency – was able to shape, and fertilise, even the most hostile soils (Haney 2022: 32). These two competing meanings, first – soil
 						shapes race; second – race shapes soil, were somewhat symptomatic for the social Darwinist power structures of the fascist regime and, indeed,
 						in the long run, the latter understanding, which was closer to what Hitler believed, became more important; which is why the formula
-						<i>blood over soil</i>, racial terra-forming, as I present it here, makes sense overall, I believe. <a href="#note-ref-7">&crarr;</a>
+						<i>blood over soil</i>, racial terra-forming, as I present it here, makes sense overall, I believe. <a class="return-from-note" href="#note-ref-7">&crarr;</a>
 					</li>
 					<li id="note-8">
-						Presner 2007: 29. <a href="#note-ref-8">&crarr;</a>
+						Presner 2007: 29. <a class="return-from-note" href="#note-ref-8">&crarr;</a>
 					</li>
 					<li id="note-9">
-						Hell 2019: 374. <a href="#note-ref-9">&crarr;</a>
+						Hell 2019: 374. <a class="return-from-note" href="#note-ref-9">&crarr;</a>
 					</li>
 					<li id="note-10">
 						Kurek 2025. While the secret project was referred to mostly as <i>Großbelastungskörper</i> (great load-bearing cylinder) or <i>Betonpilz</i>
 						(concrete mushroom) by the experts, the name <i>Schwerbelastungskörper</i> (heavy load-bearing cylinder) has established itself in the public
 						imaginary. It was coined by Michael Richter, a practising architect and member of the community organisation Berliner Unterwelten e.V., with
-						the publication of his brochure <i>Der Schwerbelastungskörper: Mysteriöses Erbe Der Reichshauptstadt</i> (with Felix Escher) in 2005. <a href="#note-ref-10">&crarr;</a>
+						the publication of his brochure <i>Der Schwerbelastungskörper: Mysteriöses Erbe Der Reichshauptstadt</i> (with Felix Escher) in 2005. <a class="return-from-note" href="#note-ref-10">&crarr;</a>
 					</li>
 					<li id="note-11">
-						Tomerius 2013: 156–157. <a href="#note-ref-11">&crarr;</a>
+						Tomerius 2013: 156–157. <a class="return-from-note" href="#note-ref-11">&crarr;</a>
 					</li>
 					<li id="note-12">
 						As geotechnical engineer Jean Kerisel laid out, the Cheops pyramid distinguished itself among other existing constructions through a ‘great
@@ -502,7 +502,7 @@ import PageContent from "../../components/PageContent.astro";
 						cylinder is distributed on a surface of only 100 square metres (ca. 1,000 square feet), whereas the weight of the Cheops pyramid presses
 						on 53,361 square metres (231x231) (ca. 500,000 square feet). Thus, Speer’s cylinder accumulates to 126.5 tons/square metre (ca. 12.65
 						tons/square foot), and thus ‘outweighs’ the ‘only’ around 93.7 tons/square metre (ca. 9.37 tons/square foot) of the Cheops Pyramid in terms
-						of soil pressure.  <a href="#note-ref-12">&crarr;</a>
+						of soil pressure.  <a class="return-from-note" href="#note-ref-12">&crarr;</a>
 					</li>
 					<li id="note-13">
 						For more about this tripartite mode of writing, see my recent think piece ‘Towards a Cultural Geology: Merging Material and Conceptual
@@ -510,43 +510,43 @@ import PageContent from "../../components/PageContent.astro";
 						layers that I bring together with current (neo-)materialist and geological readings of history, I argue that we, collectively, are part
 						of geology and, thus, belong to a complex space-time-identity-continuum…’ (Kurek 2025). I will unpack this in more detail in my upcoming
 						chapter ‘A Cultural Geology of <i>Be</i>(long)<i>ing</i>: <i>Ge-schiebe</i>, <i>Ge-schichte</i>, and <i>Ge-wichte</i>’; and my book
-						<i>Heavy Load-Bearing Modernity: A Cultural Geology of Albert Speer’s Berlin Germania</i>. <a href="#note-ref-13">&crarr;</a>
+						<i>Heavy Load-Bearing Modernity: A Cultural Geology of Albert Speer’s Berlin Germania</i>. <a class="return-from-note" href="#note-ref-13">&crarr;</a>
 					</li>
 					<li id="note-14">
-						Porter 2024: 62. <a href="#note-ref-14">&crarr;</a>
+						Porter 2024: 62. <a class="return-from-note" href="#note-ref-14">&crarr;</a>
 					</li>
 					<li id="note-15">
-						One of my efforts in the coming years will be to continue digitising the materials and make them publicly accessible. <a href="#note-ref-15">&crarr;</a>
+						One of my efforts in the coming years will be to continue digitising the materials and make them publicly accessible. <a class="return-from-note" href="#note-ref-15">&crarr;</a>
 					</li>
 					<li id="note-16">
-						Speer 2005: 149–150. <a href="#note-ref-16">&crarr;</a>
+						Speer 2005: 149–150. <a class="return-from-note" href="#note-ref-16">&crarr;</a>
 					</li>
 					<li id="note-17">
-						Edwards 1999: 2–3. <a href="#note-ref-17">&crarr;</a>
+						Edwards 1999: 2–3. <a class="return-from-note" href="#note-ref-17">&crarr;</a>
 					</li>
 					<li id="note-18">
-						Speer 2005: 83. <a href="#note-ref-18">&crarr;</a>
+						Speer 2005: 83. <a class="return-from-note" href="#note-ref-18">&crarr;</a>
 					</li>
 					<li id="note-19">
-						Speer 1985: 213. <a href="#note-ref-19">&crarr;</a>
+						Speer 1985: 213. <a class="return-from-note" href="#note-ref-19">&crarr;</a>
 					</li>
 					<li id="note-20">
-						Muhs 1948: 5. <a href="#note-ref-20">&crarr;</a>
+						Muhs 1948: 5. <a class="return-from-note" href="#note-ref-20">&crarr;</a>
 					</li>
 					<li id="note-21">
-						Projektarchiv Degebo, 3352-1c Probebelastung Bauwerk T, n.a., Veranlassung zu den nachstehenden Probebelastungen: 7. <a href="#note-ref-21">&crarr;</a>
+						Projektarchiv Degebo, 3352-1c Probebelastung Bauwerk T, n.a., Veranlassung zu den nachstehenden Probebelastungen: 7. <a class="return-from-note" href="#note-ref-21">&crarr;</a>
 					</li>
 					<li id="note-22">
-						Ahmed 2004: 26. <a href="#note-ref-22">&crarr;</a>
+						Ahmed 2004: 26. <a class="return-from-note" href="#note-ref-22">&crarr;</a>
 					</li>
 					<li id="note-23">
-						BArch R4606 639: 12–13. <a href="#note-ref-23">&crarr;</a>
+						BArch R4606 639: 12–13. <a class="return-from-note" href="#note-ref-23">&crarr;</a>
 					</li>
 					<li id="note-24">
-						BArch R4606 639: 12–13. <a href="#note-ref-24">&crarr;</a>
+						BArch R4606 639: 12–13. <a class="return-from-note" href="#note-ref-24">&crarr;</a>
 					</li>
 					<li id="note-25">
-						McGurl 2011: 384. <a href="#note-ref-25">&crarr;</a>
+						McGurl 2011: 384. <a class="return-from-note" href="#note-ref-25">&crarr;</a>
 					</li>
 					<li id="note-26">
 						Big Bounce is a speculative, but common cosmological model (among others), represented, e.g. by 2020 Nobel laureate (physics) Roger
@@ -555,27 +555,27 @@ import PageContent from "../../components/PageContent.astro";
 						(which is mathematically impossible to deduce so far), it started expanding again (Bojowald 2009: 127). Nevertheless, with the discovery
 						of dark energy, it is the inflation theory that is most supported by the available data. A good take on this is Brian Greene’s (professor
 						for mathematics and physics at Columbia) 2020 book <i>Until the End of Time: Mind, Matter, and Our Search for Meaning in an Evolving Universe</i>,
-						written for a broader audience. <a href="#note-ref-26">&crarr;</a>
+						written for a broader audience. <a class="return-from-note" href="#note-ref-26">&crarr;</a>
 					</li>
 					<li id="note-27">
-						Bojowald 2009: 127. <a href="#note-ref-27">&crarr;</a>
+						Bojowald 2009: 127. <a class="return-from-note" href="#note-ref-27">&crarr;</a>
 					</li>
 					<li id="note-28">
 						This essay is written with an emphasis on the ‘eternal flow’ obviously. One could, of course, argue, that this flow is guided by ‘eternal
 						principles’ – capturing the neverending metaphysical battle between rigidity and fluidity. Michael Levin, working on the intersection of
 						developmental biology, computer, science and cognitive science, is currently undertaking spectacular research that analyses how cells seem to
 						intuitively grasp the shape of the organism they are part of, which is relevant, e.g., for regrowing limbs (regenerative medicine) – as if
-						they were a aware of a Platonic realm of ideas. <a href="#note-ref-28">&crarr;</a>
+						they were a aware of a Platonic realm of ideas. <a class="return-from-note" href="#note-ref-28">&crarr;</a>
 					</li>
 					<li id="note-29">
 						Porter 2024: 85. ‘[A]ll physical states of the cosmos exist along a continuum that stretches across the whole of nature. Because the cosmic
 						stuffs are without exception mutually interconvertible (each can be transformed into the others), and because the transitions from one state
 						to the next are anything but clean (stuffs bleed into one another along this continuum, producing further intermediate states, such as air,
 						which represents the evaporation of water ascending to fire), hard and fast distinctions (‘borderlines’) are distortions of nature’s reality,
-						as are the way the stuffs come to be named.’ (Porter 2024: 78). <a href="#note-ref-29">&crarr;</a>
+						as are the way the stuffs come to be named.’ (Porter 2024: 78). <a class="return-from-note" href="#note-ref-29">&crarr;</a>
 					</li>
 					<li id="note-30">
-						Nietzsche 1954: 314–15. <a href="#note-ref-30">&crarr;</a>
+						Nietzsche 1954: 314–15. <a class="return-from-note" href="#note-ref-30">&crarr;</a>
 					</li>
 					<li id="note-31">
 						Klaus Theweleit offered an insightful analysis of the fascist soldier’s ‘hyper-masculine’ desire to ‘stay up’ and ‘stay hard’. He argued that
@@ -583,58 +583,58 @@ import PageContent from "../../components/PageContent.astro";
 						borders, as which he would cease to exist with the touch of an erotic woman. … He defends himself with a type of permanent erection of the
 						whole body, entire cities, whole troop units …. If it is the man himself, a city, a rock, a border: critical for the defense against the flood
 						is the towering’ (Theweleit 1977: 308–09). Interesting enough, contemporary psychiatrist Wilhelm Reich ‘reports from clinical practice that
-						soldiers indeed frequently suffered from permanent erections’ (Theweleit 1977: 311). <a href="#note-ref-31">&crarr;</a>
+						soldiers indeed frequently suffered from permanent erections’ (Theweleit 1977: 311). <a class="return-from-note" href="#note-ref-31">&crarr;</a>
 					</li>
 					<li id="note-32">
-						Landgraf 2023: 42. <a href="#note-ref-32">&crarr;</a>
+						Landgraf 2023: 42. <a class="return-from-note" href="#note-ref-32">&crarr;</a>
 					</li>
 					<li id="note-33">
-						Ibid. 43–44. <a href="#note-ref-33">&crarr;</a>
+						Ibid. 43–44. <a class="return-from-note" href="#note-ref-33">&crarr;</a>
 					</li>
 					<li id="note-34">
-						Goethe 1808: 34. <a href="#note-ref-34">&crarr;</a>
+						Goethe 1808: 34. <a class="return-from-note" href="#note-ref-34">&crarr;</a>
 					</li>
 					<li id="note-35">
-						Meillassoux 2005: 9. <a href="#note-ref-35">&crarr;</a>
+						Meillassoux 2005: 9. <a class="return-from-note" href="#note-ref-35">&crarr;</a>
 					</li>
 					<li id="note-36">
-						Ibid. <a href="#note-ref-36">&crarr;</a>
+						Ibid. <a class="return-from-note" href="#note-ref-36">&crarr;</a>
 					</li>
 					<li id="note-37">
-						Ibid: 10. <a href="#note-ref-37">&crarr;</a>
+						Ibid: 10. <a class="return-from-note" href="#note-ref-37">&crarr;</a>
 					</li>
 					<li id="note-38">
-						Strickland 2025. <a href="#note-ref-38">&crarr;</a>
+						Strickland 2025. <a class="return-from-note" href="#note-ref-38">&crarr;</a>
 					</li>
 					<li id="note-39">
-						Röttger-Rössler 2018: 253. <a href="#note-ref-39">&crarr;</a>
+						Röttger-Rössler 2018: 253. <a class="return-from-note" href="#note-ref-39">&crarr;</a>
 					</li>
 					<li id="note-40">
-						Röttger-Rössler 2018: 244. <a href="#note-ref-40">&crarr;</a>
+						Röttger-Rössler 2018: 244. <a class="return-from-note" href="#note-ref-40">&crarr;</a>
 					</li>
 					<li id="note-41">
-						Blumenberg 1960: 11. <a href="#note-ref-41">&crarr;</a>
+						Blumenberg 1960: 11. <a class="return-from-note" href="#note-ref-41">&crarr;</a>
 					</li>
 					<li id="note-42">
-						Arend 2017: 683. <a href="#note-ref-42">&crarr;</a>
+						Arend 2017: 683. <a class="return-from-note" href="#note-ref-42">&crarr;</a>
 					</li>
 					<li id="note-43">
-						Muhs 1948: 101–06. <a href="#note-ref-43">&crarr;</a>
+						Muhs 1948: 101–06. <a class="return-from-note" href="#note-ref-43">&crarr;</a>
 					</li>
 					<li id="note-44">
-						Dywidag. ‘Zeitlicher Verlauf der Baugrundbelastung’. 27 Nov. 1941. ALLVIA Ingenieurgesellschaft mbH, 4112-03. <a href="#note-ref-44">&crarr;</a>
+						Dywidag. ‘Zeitlicher Verlauf der Baugrundbelastung’. 27 Nov. 1941. ALLVIA Ingenieurgesellschaft mbH, 4112-03. <a class="return-from-note" href="#note-ref-44">&crarr;</a>
 					</li>
 					<li id="note-45">
-						Muhs 1948: 101–11. <a href="#note-ref-45">&crarr;</a>
+						Muhs 1948: 101–11. <a class="return-from-note" href="#note-ref-45">&crarr;</a>
 					</li>
 					<li id="note-46">
-						Projektarchiv Degebo, Tätigkeit des Arbeitsausschusses der Degebo im 12. Geschäftsjahr (1 April 1939 bis 31. März 1940): 5–6. <a href="#note-ref-46">&crarr;</a>
+						Projektarchiv Degebo, Tätigkeit des Arbeitsausschusses der Degebo im 12. Geschäftsjahr (1 April 1939 bis 31. März 1940): 5–6. <a class="return-from-note" href="#note-ref-46">&crarr;</a>
 					</li>
 					<li id="note-47">
-						Muhs 2004 1969: 21. <a href="#note-ref-47">&crarr;</a>
+						Muhs 2004 1969: 21. <a class="return-from-note" href="#note-ref-47">&crarr;</a>
 					</li>
 					<li id="note-48">
-						Ibid.: 18. <a href="#note-ref-48">&crarr;</a>
+						Ibid.: 18. <a class="return-from-note" href="#note-ref-48">&crarr;</a>
 					</li>
 					<li id="note-49">
 						The cylinder was the Degebo's main research site up to the 1980s. In conversation, some experts even claim 70–80% of knowledge we have about
@@ -642,23 +642,23 @@ import PageContent from "../../components/PageContent.astro";
 						on a variety of materials and soils. In 1979, Prof. Dr. Dr.-Ing. E.H. Meyerhof from the Technical University of Halifax, Canada, sent a letter
 						to the Degebo, highlighting the international reputation of the German research institute by stating that, with their ‘cutting-edge research,
 						especially their … large scaled test-loads … the Degebo has acquired an international reputation’. He acknowledged them as ‘one of the oldest
-						research institutes in the world within their field’ (Projektarchiv Degebo, Heft 33 einschl. Schriftwechsel). <a href="#note-ref-49">&crarr;</a>
+						research institutes in the world within their field’ (Projektarchiv Degebo, Heft 33 einschl. Schriftwechsel). <a class="return-from-note" href="#note-ref-49">&crarr;</a>
 					</li>
 					<li id="note-50">
-						More info on <a href="https://www.schwerbelastungskoerper.de" target="_blank" rel="noopener noreferrer">www.schwerbelastungskoerper.de</a> <a href="#note-ref-50">&crarr;</a>
+						More info on <a href="https://www.schwerbelastungskoerper.de" target="_blank" rel="noopener noreferrer">www.schwerbelastungskoerper.de</a> <a class="return-from-note" href="#note-ref-50">&crarr;</a>
 					</li>
 					<li id="note-51">
-						Meadows et al. 2004: 137. <a href="#note-ref-51">&crarr;</a>
+						Meadows et al. 2004: 137. <a class="return-from-note" href="#note-ref-51">&crarr;</a>
 					</li>
 					<li id="note-52">
 						As if there was a justifying voice whispering in our ears: ‘A fascination for hugeness is expressed in the Tower of Babel, the Egyptian pyramids,
 						the buildings of Olympia, the temples of Selinunt, the Colosseum in Rome, whether they represent the power of a state, individual will, a symbol
-						of faith, or a demonstration of technical skill.’ (Speer 1985: 213) <a href="#note-ref-52">&crarr;</a>
+						of faith, or a demonstration of technical skill.’ (Speer 1985: 213) <a class="return-from-note" href="#note-ref-52">&crarr;</a>
 					</li>
 				</ol>
-				<hr />
-				<h2>Acknowledgements</h2>
-				<h3>Personal</h3>
+				<hr class="essay-footer" />
+				<h2 class="essay-footer">Acknowledgements</h2>
+				<h3 class="footer-subhead">Personal</h3>
 				<p>
 					Emily Brownell, University of Edinburgh: for her patience with my manuscript, excellent feedback and encouraging words. Dana Cuff, UCLA Urban
 					Humanities Initiative: for encouraging me to explore architecture and urban spaces. Marco Kano: for lending me his civil engineering eye to check
@@ -669,7 +669,7 @@ import PageContent from "../../components/PageContent.astro";
 					Richter, Berliner Unterwelten e.V.: for providing me with a plethora of resources, connecting me with the right people, and making my project
 					possible. Maite Zubiaurre, UCLA Urban Humanities Initiative: for encouraging me to liberate my poetic voice.
 				</p>
-				<h3>Institutional</h3>
+				<h3 class="footer-subhead">Institutional</h3>
 				<p>
 					The White Horse Press; Michigan Society of Fellows; Germanic Languages and Literatures, University of Michigan (UM); Faculty Grant, UM Weiser
 					Center for Europe and Eurasia; Berlin Program for Advanced German and European Studies, Freie Universität Berlin; Ernst Adolf Marum Fellowship,
@@ -679,9 +679,9 @@ import PageContent from "../../components/PageContent.astro";
 					Travel Fellowships, UCLA Division of Humanities; Frances Talley Award & Summer Research Grant, UCLA Department of Germanic Languages; International
 					Institute Fieldwork Fellowship Award, UCLA International Institute
 				</p>
-				<hr />
-				<h2>References</h2>
-				<ul>
+				<hr class="essay-footer" />
+				<h2 class="essay-footer">References</h2>
+				<ul class="references">
 					<li>
 						Ahmed, Sarah. 2004. ‘Collective Feelings. Or, The Impressions Left by Others’. <i>Theory, Culture & Society</i> <b>21</b> (3): 25–42.
 					</li>
@@ -783,8 +783,8 @@ import PageContent from "../../components/PageContent.astro";
 						Weber, Renée (ed.) 1986. <i>Dialogues with Scientists and Sages: The Search for Unity</i>. London/New York City: Routledge & Kegan Paul.
 					</li>
 				</ul>
-				<h3>Archival Sources</h3>
-				<ul>
+				<h3 class="footer-subhead">Archival Sources</h3>
+				<ul class="references">
 					<li>
 						Degebo. ‘Tätigkeit des Arbeitsausschusses der Degebo im 12. Geschäftsjahr (1 April 1939 bis 31 März 1940)’. 1940. Projektarchiv Degebo, 3112-3117 Geschäftsführung bis 1945, 3112 Tätigkeitsberichte.
 					</li>

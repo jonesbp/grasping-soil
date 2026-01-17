@@ -18,6 +18,22 @@
 	line-height: 145%;
 }
 
+.long-form-content :global(blockquote) {
+	font-size: 1.1rem;
+	font-weight: 300;
+	line-height: 145%;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.long-form-content :global(ul.essay-list) {
+	font-size: 1.1rem;
+	font-weight: 300;
+	line-height: 145%;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
 .long-form-content :global(p b) {
 	font-weight: 700;
 }
@@ -35,5 +51,122 @@
 .long-form-content :global(li a:hover),
 .long-form-content :global(blockquote a:hover) {
     text-decoration-color: var(--primary-text-color);
+}
+
+.long-form-content :global(h3.essay-subhead) {
+	font-size: 1.3rem;
+	margin-top: 3rem;
+	margin-bottom: .75rem;
+}
+
+.long-form-content :global(h3.essay-subhead + p) {
+	margin-top: .75rem;
+}
+
+.long-form-content :global(h3.footer-subhead) {
+	font-size: 1.3rem;
+	margin-top: 3rem;
+	margin-bottom: .75rem;
+}
+
+.long-form-content :global(h3.footer-subhead + ul) {
+	margin-top: .75rem;
+}
+
+.long-form-content :global(h3.number-subhead) {
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.long-form-content :global(sup.note) {
+	font-size: 0.667em;
+	line-height: 0;
+	margin-left: .1em;
+	margin-right: .2em;
+	position: relative;
+	vertical-align: baseline;
+	top: -0.667em;
+}
+
+.long-form-content :global(sup.note a) {
+	color: var(--tertiary-text-color);
+}
+
+.long-form-content :global(sup.note a:hover) {
+	color: var(--primary-text-color);
+}
+
+.long-form-content :global(ul.references) {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.long-form-content :global(hr.essay-internal) {
+	border-color: var(--decorative-warm-gray);
+	border-style: dotted;
+	border-width: 12px 0 0 0;
+	margin: 4rem auto;
+	width: 76px;
+}
+
+.long-form-content :global(hr.essay-footer) {
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: var(--decorative-warm-gray);
+	margin: 4rem 0;
+}
+
+.long-form-content :global(h2.essay-footer) {
+	font-family: 'Paix', sans-serif;
+	margin-top: 4rem;
+	text-transform: uppercase;
+}
+
+.long-form-content :global(ul.references li) {
+	font-size: 1.1rem;
+	line-height: 125%;
+	margin-bottom: 1rem;
+	padding-left: 1.5rem;
+	text-indent: -1.5rem;
+}
+
+.long-form-content :global(ol.notes) {
+	font-size: 1.1rem;
+	line-height: 145%;
+	padding-left: 0;
+}
+
+.long-form-content :global(ol.notes li::marker) {
+	color: var(--tertiary-text-color);
+	font-weight: 300;
+}
+
+.long-form-content :global(ol.notes li) {
+	list-style-position: inside;
+	margin-bottom: 1rem;
+}
+
+.long-form-content :global(ol.notes li a) {
+	text-decoration: underline;
+	text-decoration-color: var(--decorative-warm-gray);
+}
+
+.long-form-content :global(ol.notes a.return-from-note) {
+	border-radius: .25em;
+	background-color: transparent;
+	color: var(--tertiary-text-color);
+	display: inline-block;
+	font-size: .75em;
+	line-height: 100%;
+	margin-left: .1rem;
+	padding: .375em .25em .125em .25em;
+	text-decoration: none;
+	transition: .1s all ease;
+	vertical-align: top;
+}
+
+.long-form-content :global(ol.notes a.return-from-note:hover) {
+	background-color: var(--decorative-warm-gray);
 }
 </style>

@@ -9,12 +9,12 @@ import PageContent from "../../components/PageContent.astro";
 <Layout>
 	<main>
 		<PageContent>
+			<EssayHeader
+				locationTag="Appalachia, USA"
+				title="Mountains Become Wasteland"
+				byline="Steven Stoll"
+			/>
 			<LongFormContent>
-				<EssayHeader
-					locationTag="Appalachia, USA"
-					title="Mountains Become Wasteland"
-					byline="Steven Stoll"
-				/>
 				<div>
 					Figure 1. A dragline in southern West Virginia, 2010. Note the size of the bulldozer and truck in comparison. Photo by Mark’s Photo, under licence from Getty Images.
 					[Alt text: A dragline operates in a strip mine]
@@ -136,7 +136,7 @@ import PageContent from "../../components/PageContent.astro";
 					officials could participate in a version of modernity, in which they join the industrial world as its source of industrial
 					power. Seldom, if ever, in human history, except during war, have people faced the intentional annihilation of their environment.
 				</p>
-				<hr />
+				<hr class="essay-internal" />
 				<div>
 					Figure 2. A family cemetery in West Virginia. Strip mining operations often bury these burial grounds in debris. Photo by John Nicely (s.d.), public domain from Library of Congress, Prints & Photographs Division, HABS survey.
 					[Alt text: Scattered headstones in a rural cemetery on a hillside in West Virginia.]
@@ -202,7 +202,7 @@ import PageContent from "../../components/PageContent.astro";
 					the market and dis-embedded from communities, rewarding absentee ownership with profit while those under
 					the dragline live in a diminished environment.<sup class="note" id="note-ref-9"><a href="#note-9">9</a></sup>
 				</p>
-				<hr />
+				<hr class="essay-internal" />
 				<p>
 					Bailey and his neighbours drive to the Capitol in Charleston to lobby for a regulatory law. They elect Bailey
 					to address the legislature. ‘I’m not an educated man’, he began,
@@ -274,7 +274,7 @@ import PageContent from "../../components/PageContent.astro";
 					It set standards for impoundment dams, but it protected those exposed to strip mining no better
 					than previous laws.<sup class="note" id="note-ref-15"><a href="#note-15">15</a></sup>
 				</p>
-				<hr />
+				<hr class="essay-internal" />
 				<div>
 					Figure 3.  The French countryside turned to wasteland during the First World War. The sign reads, ‘This Was Forges’, referring to Forges-sur-Meuse, site of the final Allied offensive. Photo by Edward Steichen (1918), public domain from Library of Congress, Prints & Photographs Division.
 					[alt text: The remnants of a French town, destroyed in one of the last battles of the First World War]
@@ -336,7 +336,7 @@ import PageContent from "../../components/PageContent.astro";
 					parts of the country. They appeal to a managerial class looking for an escape from some of the
 					stigma of Appalachia, ‘a way to become more modern, more homogeneously American’.<sup class="note" id="note-ref-21"><a href="#note-21">21</a></sup>
 				</p>
-				<hr />
+				<hr class="essay-internal" />
 				<p>
 					In 2013, members of the Jarrell family visited a cemetery in Boone County where their relatives
 					are buried. They needed permission from Alpha Natural Resources, the owner of the Twilight
@@ -370,49 +370,49 @@ import PageContent from "../../components/PageContent.astro";
 					again, and the dragline excavators will finally come to a stop, their gargantuan wheels and buckets
 					rusted, stuck, and gaping.
 				</p>
-				<hr />
+				<hr class="essay-internal" />
 				<p>
 					Ellis Bailey died in 1990 at the age of 86. He is buried in the town of Clear Creek.
 				</p>
-				<hr />
-				<h2>Notes</h2>
-				<ol>
+				<hr class="essay-footer" />
+				<h2 class="essay-footer">Notes</h2>
+				<ol class="notes">
 					<li id="note-1">
-						Sharpe 1970. <a href="#note-ref-1">&crarr;</a>
+						Sharpe 1970. <a class="return-from-note" href="#note-ref-1">&crarr;</a>
 					</li>
 					<li id="note-2">
-						Ibid.; Sharpe 1971: 24; Campbell 1970; Montrie 2003: 112; John D. Rockefeller IV quoted in Burns 2007: 200. <a href="#note-ref-2">&crarr;</a>
+						Ibid.; Sharpe 1971: 24; Campbell 1970; Montrie 2003: 112; John D. Rockefeller IV quoted in Burns 2007: 200. <a class="return-from-note" href="#note-ref-2">&crarr;</a>
 					</li>
 					<li id="note-3">
-						West Virginia University Library 2022. <a href="#note-ref-3">&crarr;</a>
+						West Virginia University Library 2022. <a class="return-from-note" href="#note-ref-3">&crarr;</a>
 					</li>
 					<li id="note-4">
-						Libroiron and Lepawsky 2022: 71; <i>Reader’s Digest</i> 1938: 74. <a href="#note-ref-4">&crarr;</a>
+						Libroiron and Lepawsky 2022: 71; <i>Reader’s Digest</i> 1938: 74. <a class="return-from-note" href="#note-ref-4">&crarr;</a>
 					</li>
 					<li id="note-5">
 						This goes for machines powered by solar and wind energy no less than fossil fuels because the
 						mechanism for converting any energy into mechanical power is created and adopted through social
-						relationships of money, exchange, labour, and so on. Hornborg 2023: 17–18. <a href="#note-ref-5">&crarr;</a>
+						relationships of money, exchange, labour, and so on. Hornborg 2023: 17–18. <a class="return-from-note" href="#note-ref-5">&crarr;</a>
 					</li>
 					<li id="note-6">
-						Liboiron and Lepawsky 2022: 77. <a href="#note-ref-6">&crarr;</a>
+						Liboiron and Lepawsky 2022: 77. <a class="return-from-note" href="#note-ref-6">&crarr;</a>
 					</li>
 					<li id="note-7">
 						The film’s credits list Kincaid as portraying the stripping companies. He is mentioned in an article about
-						the Raleigh County Community Action Association and might have been a member. Sharpe 1971. <a href="#note-ref-7">&crarr;</a>
+						the Raleigh County Community Action Association and might have been a member. Sharpe 1971. <a class="return-from-note" href="#note-ref-7">&crarr;</a>
 					</li>
 					<li id="note-8">
 						On the cemeteries of Appalachia, see Maples and East 2013. Caudill 1972: 812; Caudill 1971: 142–43. Caudill
 						testified that Ritchie said, ‘I thought my heart would bust in my breast … when I saw the coffins of my children
-						come out of the ground and go over the hill.’ <a href="#note-ref-8">&crarr;</a>
+						come out of the ground and go over the hill.’ <a class="return-from-note" href="#note-ref-8">&crarr;</a>
 					</li>
 					<li id="note-9">
-						Hornborg 2023: 40–44. <a href="#note-ref-9">&crarr;</a>
+						Hornborg 2023: 40–44. <a class="return-from-note" href="#note-ref-9">&crarr;</a>
 					</li>
 					<li id="note-10">
 						Scott (2010: 174–75) makes a similar point: ‘In the coalfields, property rights are stacked in favor of the corporations;
 						the right of an individual to protect his or her little piece of land is tenuous, downright illusory, if the coal
-						company that owns the hills above decides to alter the topography.’ <a href="#note-ref-10">&crarr;</a>
+						company that owns the hills above decides to alter the topography.’ <a class="return-from-note" href="#note-ref-10">&crarr;</a>
 					</li>
 					<li id="note-11">
 						Congress also investigated strip mining. In 1964, Secretary of the Interior Stewart Udall testified before a House
@@ -420,26 +420,26 @@ import PageContent from "../../components/PageContent.astro";
 						whole drainage basins into a barren wasteland. This, then, is the region’s basic dilemma. The resource which must
 						produce its livelihood and can ensure its future has also been its scourge.’ The Appalachian Regional Development Act
 						of 1965 included the first federal regulations for the restoration of land stripped for coal. Udall quoted in US Congress,
-						House of Representatives 1964: 51–53.<a href="#note-ref-11">&crarr;</a>
+						House of Representatives 1964: 51–53.<a class="return-from-note" href="#note-ref-11">&crarr;</a>
 					</li>
 					<li id="note-12">
-						The act is sometimes called the ‘regulatory law’. It has no official title. West Virginia Legislature 1967. <a href="#note-ref-12">&crarr;</a>
+						The act is sometimes called the ‘regulatory law’. It has no official title. West Virginia Legislature 1967. <a class="return-from-note" href="#note-ref-12">&crarr;</a>
 					</li>
 					<li id="note-13">
 						<i>The Highlands Voice</i> (May 1970 and February 1970). For oil prices, see
-						<a href="https://www.macrotrends.net/1369/crude-oil-price-history-chart" target="_blank" rel="noopener noreferrer">https://www.macrotrends.net/1369/crude-oil-price-history-chart</a> <a href="#note-ref-13">&crarr;</a>
+						<a href="https://www.macrotrends.net/1369/crude-oil-price-history-chart" target="_blank" rel="noopener noreferrer">https://www.macrotrends.net/1369/crude-oil-price-history-chart</a> <a class="return-from-note" href="#note-ref-13">&crarr;</a>
 					</li>
 					<li id="note-14">
 						Testimony of Norman Williams reported by the <i>Charleston Gazette</i> (27 Feb. 1971), reprinted in <i>The Highlands Voice</i>
 						(April 1971). Secretary of State John D. Rockefeller IV saw momentum building behind the prohibition bill and decided to support
-						it in his run for governor. <a href="#note-ref-14">&crarr;</a>
+						it in his run for governor. <a class="return-from-note" href="#note-ref-14">&crarr;</a>
 					</li>
 					<li id="note-15">
 						‘West Virginia Legislature Halts Move to Abolish Surface Mining’, <i>Coal Age</i> (April 1971); ‘West Virginia Senate Votes Ban
 						on Strip Mining in 36 Counties’, <i>New York Times</i> (7 March 1971). See the testimony of James Branscome in US Congress, Senate
 						1971: 224–25. Montrie 2003: 122–28, 142. For coal prices, see the US Energy Information Administration,
 						<a href="https://www.eia.gov/coal/" target="_blank" rel="noopener noreferrer">https://www.eia.gov/coal/</a>. The representative who
-						introduced the ban in Congress was Ken Hechler (WV 4th District, 1959–1977). US Congress, Senate 1971: 168, 224–25. <a href="#note-ref-15">&crarr;</a>
+						introduced the ban in Congress was Ken Hechler (WV 4th District, 1959–1977). US Congress, Senate 1971: 168, 224–25. <a class="return-from-note" href="#note-ref-15">&crarr;</a>
 					</li>
 					<li id="note-16">
 						Davidson 1955: 20–23; Stilgoe 1982: 220–21; Leshem and Pinkerton 2016: 50; Benjamin 1979: 163. Elsewhere, Benjamin (1968) wrote,
@@ -447,31 +447,31 @@ import PageContent from "../../components/PageContent.astro";
 						remained unchanged but the clouds, and beneath these clouds, in a field of force of destructive torrents and explosions, was the
 						tiny, fragile human body’. The 460 square miles of Zone Rouge, including the battlefields of the Somme and Verdun, where the bones
 						of 100,000 soldiers are still unburied, remain so contaminated by unexploded shells and toxins that at the present rate of restoration
-						it will be uninhabitable for another 300 years. <a href="#note-ref-16">&crarr;</a>
+						it will be uninhabitable for another 300 years. <a class="return-from-note" href="#note-ref-16">&crarr;</a>
 					</li>
 					<li id="note-17">
-						Tony 2021. <a href="#note-ref-17">&crarr;</a>
+						Tony 2021. <a class="return-from-note" href="#note-ref-17">&crarr;</a>
 					</li>
 					<li id="note-18">
-						The number of streams found with selenium was 73 out of 78 tested. The study is a digest of peer-reviewed studies. VF stands for valley fill. Palmer et al. 2010. <a href="#note-ref-18">&crarr;</a>
+						The number of streams found with selenium was 73 out of 78 tested. The study is a digest of peer-reviewed studies. VF stands for valley fill. Palmer et al. 2010. <a class="return-from-note" href="#note-ref-18">&crarr;</a>
 					</li>
 					<li id="note-19">
-						West Virginia Department of Health n.d. <a href="#note-ref-19">&crarr;</a>
+						West Virginia Department of Health n.d. <a class="return-from-note" href="#note-ref-19">&crarr;</a>
 					</li>
 					<li id="note-20">
-						US Department of Agriculture 1968. <a href="#note-ref-20">&crarr;</a>
+						US Department of Agriculture 1968. <a class="return-from-note" href="#note-ref-20">&crarr;</a>
 					</li>
 					<li id="note-21">
 						Scott 2010: 173–79. Richard Kelly, editor of <i>West Virginia Illustrated</i>, quoted in ‘The Greening of West Virginia’, <i>Coal Age</i> 77 (Feb. 1972): 8–88.
-						But this secondary use is often overstated by the industry. Only about 1% of formally stripped land can be used for anything. <a href="#note-ref-21">&crarr;</a>
+						But this secondary use is often overstated by the industry. Only about 1% of formally stripped land can be used for anything. <a class="return-from-note" href="#note-ref-21">&crarr;</a>
 					</li>
 					<li id="note-22">
-						Asbury 2013. <a href="#note-ref-22">&crarr;</a>
+						Asbury 2013. <a class="return-from-note" href="#note-ref-22">&crarr;</a>
 					</li>
 				</ol>
-				<hr />
-				<h2>References</h2>
-				<ul>
+				<hr class="essay-footer" />
+				<h2 class="essay-footer">References</h2>
+				<ul class="references">
 					<li>
 						Asbury, Kayla. 2013. ‘Family Says Mountaintop Removal Mine Damaging Cemetery’. <i>West Virginia Record</i>, 4 October.
 					</li>
