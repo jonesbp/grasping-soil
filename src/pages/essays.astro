@@ -8,50 +8,122 @@ import PageHeader from "../components/PageHeader.astro";
         <PageHeader title="Essays" />
         <ul>
         	<li>
-         		<span class="place">Under the electron miscroscope, Lehmann Lab, Cornell University, New York</span>
-           		<span class="title">Behaviour instead of Identity: Functional Complexity of Organic Matter as an Organising Principle in Soil Ecosystems</span>
-             	<span class="byline">Johannes Lehmann</span>
+         		<a href="/">
+	         		<span class="place">Under the electron miscroscope, Lehmann Lab, Cornell University, New York</span>
+	           		<span class="title">Behaviour instead of Identity: Functional Complexity of Organic Matter as an Organising Principle in Soil Ecosystems</span>
+	             	<span class="byline">Johannes Lehmann</span>
+     			</a>
 	         </li>
 			<li>
-				<span class="place"></span>
-				<span class="title"></span>
-				<span class="byline">Novick</span>
+				<a href="/">
+					<span class="place">British Mandate Palestine</span>
+					<span class="title">‘The Fertility of the Soil is in Your Hand’: On Manure and the Colonial Roots and Branches of the Organic Movement</span>
+					<span class="byline">Tamar Novick</span>
+				</a>
 			</li>
 			<li>
-				<span class="place"></span>
-				<span class="title"></span>
-				<span class="byline">Brownell</span>
+				<a href="/">
+					<span class="place">Kwale District, Kenya</span>
+					<span class="title">Building Roads, Counting Worms: Soil as a Medium for Parasitic Relations</span>
+					<span class="byline">Emily Brownell</span>
+				</a>
 			</li>
 			<li>
-				<span class="place"></span>
-				<span class="title"></span>
-				<span class="byline">Porter</span>
+				<a href="/">
+					<span class="place">The Ring of Fire</span>
+					<span class="title">Arsenic Cycles Through Racism and Empire</span>
+					<span class="byline">Jayson Maurice Porter</span>
+				</a>
 			</li>
 			<li>
-				<span class="place"></span>
-				<span class="title"></span>
-				<span class="byline">Stoll</span>
+				<a href="/">
+					<span class="place">Appalachia, USA</span>
+					<span class="title">Mountains Become Wasteland</span>
+					<span class="byline">Steven Stoll</span>
+				</a>
 			</li>
 			<li>
-				<span class="place"></span>
-				<span class="title"></span>
-				<span class="byline">Tessua</span>
+				<a href="/">
+					<span class="place">Ndungu, Tanzania</span>
+					<span class="title">Knowing Soil as a Living Thing, Treating it as a Non-Living Body: Contradictory Forms of Care</span>
+					<span class="byline">Lulu Tessua</span>
+				</a>
 			</li>
 			<li>
-				<span class="place"></span>
-				<span class="title"></span>
-				<span class="byline">Browne</span>
+				<a href="/">
+					<span class="place">Lusatia, Germany</span>
+					<span class="title">Punkt Null (Point Zero): An Ecological Substrate Begins Anew</span>
+					<span class="byline">Cynthia Browne</span>
+				</a>
 			</li>
 			<li>
-				<span class="place"></span>
-				<span class="title"></span>
-				<span class="byline">Kurek</span>
+				<a href="/">
+					<span class="place">Berlin, the Cosmos</span>
+					<span class="title">Blood over Soil. Albert Speer’s Heavy Load-Bearing Cylinder, Glacial Till, and Racial Terra-Forming</span>
+					<span class="byline">Paul Kurek</span>
+				</a>
 			</li>
 			<li>
-				<span class="place"></span>
-				<span class="title"></span>
-				<span class="byline">Halevy</span>
+				<a href="/">
+					<span class="place">The Gaza Strip, Palestine</span>
+					<span class="title">Cultivating an Ancient Soil: Sub-dune Histories and Ecologies</span>
+					<span class="byline">Dotan Halevy</span>
+				</a>
 			</li>
 	    </ul>
     </main>
 </Layout>
+
+<style>
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto 8rem auto;
+	width: 90%;
+}
+
+li {
+	margin-bottom: 4rem;
+}
+
+li:last-of-type {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+span.place {
+	color: var(--tertiary-text-color);
+	display: block;
+	font-family: 'Paix', sans-serif;
+	font-size: 1rem;
+	margin-bottom: .5rem;
+	text-transform: uppercase;
+}
+
+span.title {
+	color: var(--primary-text-color);
+	display: block;
+	font-size: 2rem;
+	line-height: 110%;
+}
+
+span.byline {
+	color: var(--tertiary-text-color);
+	display: block;
+	font-size: 1.3rem;
+	margin-top: .25rem;
+}
+
+a span.title {
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	transition: .3s all ease;
+}
+
+a:hover span.title {
+	text-decoration-color: var(--decorative-warm-gray);
+}
+</style>
