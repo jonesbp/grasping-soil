@@ -18,6 +18,14 @@
 	line-height: 145%;
 }
 
+.long-form-content :global(p.note) {
+	background-color: var(--background-medium-color);
+	font-size: 1.1rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	padding: 1rem;
+}
+
 .long-form-content :global(blockquote) {
 	font-size: 1.1rem;
 	font-weight: 300;
@@ -148,6 +156,11 @@
 }
 
 .long-form-content :global(ol.notes li a) {
+	text-decoration: underline;
+	text-decoration-color: var(--decorative-warm-gray);
+}
+
+.long-form-content :global(ul.references li a) {
 	text-decoration: underline;
 	text-decoration-color: var(--decorative-warm-gray);
 }
