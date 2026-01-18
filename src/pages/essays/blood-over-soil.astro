@@ -1,10 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
+import EssayImage from "../../components/EssayImage.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
+import PageHeader from "../../components/PageHeader.astro";
 
 const locationTag = "Berlin, The Cosmos";
 const title = "Blood over Soil. Albert Speer's Heavy Load-Bearing Cylinder, Glacial Till, and Racial Terra-Forming";
@@ -26,11 +27,15 @@ const byline = "Paul Kurek";
 			/>
 			<LongFormContent>
 				<h2 class="visually-hidden">Essay</h2>
-				<div>
-					Figure 1. Glacial and interglacial soils in the area Berlin-Kolonnenbrücke: structure of glacial till, seen from the side, 1941,
+				<EssayImage
+					fullImage="/kurek/fig1.jpg"
+					fullWidth={848}
+					fullHeight={596}
+					alt="Photograph of a piece of glacial till collected by the German Society of Soil Mechanics in the context of Albert Speer’s Germania plans."
+				>
+					<b>Figure 1.</b> Glacial and interglacial soils in the area Berlin-Kolonnenbrücke: structure of glacial till, seen from the side, 1941,
 					Degebo. Source: Karteiarchiv Degebo, no. AIIa3., Neg. Nr. 716.
-					Alt text. Photograph of a piece of glacial till collected by the German Society of Soil Mechanics in the context of Albert Speer’s Germania plans.
-				</div>
+				</EssayImage>
 				<h3 class="essay-subhead">Geology</h3>
 				<p>
 					The above file card from the archives of the <i>Deutsche Gesellschaft für Bodenmechanik</i> (German Society for Soil Mechanics), short
@@ -123,14 +128,22 @@ const byline = "Paul Kurek";
 					ways of seeing the world (geology/cosmology), asking the ancient question: ‘where do I belong in all of this?’, dealing with the inborn desire
 					to ground myself as an individual being-thrown-into-the-cosmos on a vertical, horizontal and existential scale <i>(Be(long)ing)</i>.
 				</p>
-				<div>
-					Figure 2. Heavy Load-Bearing Cylinder, 1941, Degebo. Source: Diaarchiv Degebo.
-					Alt text Archival photograph of the heavy load-bearing cylinder right after completion.
-				</div>
-				<div>
-					Figure 3. Great Arch, 24 February 1941, Büro Speer. Source: Bayerisches Hauptstaatsarchiv München, Büro Speer Pläne, 2898.
-					Alt text Sketch of Triumphal Arch by Albert Speer based on Hitler’s drawings.
-				</div>
+				<EssayImage
+					fullImage="/kurek/fig2.jpg"
+					fullWidth={732}
+					fullHeight={604}
+					alt="Archival photograph of the heavy load-bearing cylinder right after completion."
+				>
+					<b>Figure 2.</b> Heavy Load-Bearing Cylinder, 1941, Degebo. Source: Diaarchiv Degebo.
+				</EssayImage>
+				<EssayImage
+					fullImage="/kurek/fig3.jpg"
+					fullWidth={708}
+					fullHeight={542}
+					alt="Sketch of Triumphal Arch by Albert Speer based on Hitler’s drawings."
+				>
+					<b>Figure 3.</b> Great Arch, 24 February 1941, Büro Speer. Source: Bayerisches Hauptstaatsarchiv München, Büro Speer Pläne, 2898.
+				</EssayImage>
 				<p>
 					From an architectural standpoint, Speer’s Triumphal Arch, allegedly based on a 1920s sketch by Hitler, was almost fully developed in 1939, at
 					least on paper. Following the intuitive idea ‘the bigger the better’, the architect revealed in his memoirs that the edifice was planned at
@@ -180,15 +193,22 @@ const byline = "Paul Kurek";
 					to determine a finite spatio-temporal, stratigraphical or chronological order of the soil. Echoing this, classifying soil is equally difficult,
 					as different soil types constantly invade and flow into each other.
 				</p>
-				<div>
-					Figure 4. Drawing of Albert Speer’s North-South Axis, 1939. Generalbauinspektor]. Source: Landesarchiv Berlin, LAB, F. Rep. 270, A8750.
-					Alt text Drawing of the North-South Axis in Berlin highlighting the section between the Great Hall and the Great Arch based upon
-					Albert Speer’s Germania plans.
-				</div>
-				<div>
-					Figure 5. Drilling Profiles of Deep Drillings in the Context of the North–South Axis, 1938. Degebo. Source: Diaarchiv Degebo.
-					Alt text Visualisation of the deep drillings underneath the planned North–South Axis between the Greath Hall and the Great Arch
-				</div>
+				<EssayImage
+					fullImage="/kurek/fig4.jpg"
+					fullWidth={916}
+					fullHeight={434}
+					alt="Drawing of the North-South Axis in Berlin highlighting the section between the Great Hall and the Great Arch based upon Albert Speer’s Germania plans."
+				>
+					<b>Figure 4.</b> Drawing of Albert Speer’s North-South Axis, 1939. Generalbauinspektor]. Source: Landesarchiv Berlin, LAB, F. Rep. 270, A8750.
+				</EssayImage>
+				<EssayImage
+					fullImage="/kurek/fig5.jpg"
+					fullWidth={812}
+					fullHeight={652}
+					alt="Visualisation of the deep drillings underneath the planned North–South Axis between the Greath Hall and the Great Arch"
+				>
+					<b>Figure 5.</b> Drilling Profiles of Deep Drillings in the Context of the North–South Axis, 1938. Degebo. Source: Diaarchiv Degebo.
+				</EssayImage>
 				<p>
 					The internal and external irregularity of glacial till became most evident in the accounts of the geologists working on the project. When
 					facing the multilayered properties of Berlin’s soil in 1938 while preparing the construction of Hitler’s monumental North-South Axis – the planned
@@ -225,10 +245,14 @@ const byline = "Paul Kurek";
 					the message it was chosen to carry.
 				</p>
 				<h3 class="essay-subhead">Cosmology</h3>
-				<div>
-					Figure 6. NASA, Model of the Big Bounce Theory. Image by NASA/WMAP Science Team [modified].
-					Alt text Visualisation of the Big Bounce Theory, a speculative alternative to the Big Bang Theory.
-				</div>
+				<EssayImage
+					fullImage="/kurek/fig6.jpg"
+					fullWidth={1200}
+					fullHeight={675}
+					alt="Visualisation of the Big Bounce Theory, a speculative alternative to the Big Bang Theory."
+				>
+					<b>Figure 6.</b> NASA, Model of the Big Bounce Theory. Image by NASA/WMAP Science Team [modified].
+				</EssayImage>
 				<p>
 					If we decide to peel away the layer of nationhood and dig even deeper into the space-time-identity continuum, we shall see: about fourteen
 					billion years ago the piece of soil we are examining here was contained within a tiny pinhead with the rest of all matter that now exists in
@@ -320,10 +344,14 @@ const byline = "Paul Kurek";
 					order to ground ourselves, even if just for a split-second of feeling some type of belonging to something at least or at last.
 				</p>
 				<h3 class="essay-subhead"><i>Be</i>(long)<i>ing</i></h3>
-				<div>
-					Figure 7. Pavol Kurek, ‘Mother and Son’, undated. Private source.
-					Alt text Family photograph of mother and son taken in Dürrnhaar, Bavaria.
-				</div>
+				<EssayImage
+					fullImage="/kurek/fig7.jpg"
+					fullWidth={426}
+					fullHeight={462}
+					alt="Family photograph of mother and son taken in Dürrnhaar, Bavaria."
+				>
+					<b>Figure 7.</b> Pavol Kurek, ‘Mother and Son’, undated. Private source.
+				</EssayImage>
 				<p>
 					While researching the cylinder, my journey led me from the various archives in Berlin to a private archive close to Munich, where I was able to
 					locate the building’s construction plans that had been deemed lost since the war, so, ironically, my search sent me back home, almost full

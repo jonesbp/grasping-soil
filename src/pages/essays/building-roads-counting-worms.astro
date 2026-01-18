@@ -1,10 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
+import EssayImage from "../../components/EssayImage.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
+import PageHeader from "../../components/PageHeader.astro";
 
 const locationTag = "Kwale Distrct, Kenya";
 const title = "Building Roads, Counting Worms: Soil as a Medium for Parasitic Relations";
@@ -25,10 +26,16 @@ const byline = "Emily Brownell";
 			/>
 			<LongFormContent>
 				<h2 class="visually-hidden">Essay</h2>
-				<div>
-					Figure 1. Kwale District, Kenya, RARP construction site, 1986. Photo courtesy of David Crompton.
-					[Alt text: several men standing around on break from manual labour, resting and drinking water in rural Kenya. There is a Volkswagen Beetle in the background of the image. ]
-				</div>
+				<EssayImage
+					fullImage="/brownell/fig1-full.jpg"
+					fullWidth={2400}
+					fullHeight={1578}
+					smallImage="/brownell/fig1-small.jpg"
+					smallWidth={1280}
+					alt="several men standing around on break from manual labour, resting and drinking water in rural Kenya. There is a Volkswagen Beetle in the background of the image. "
+				>
+					<b>Figure 1.</b> Kwale District, Kenya, RARP construction site, 1986. Photo courtesy of David Crompton.
+				</EssayImage>
 				<p>
 					In the early 1980s, graduate students from Cornell University arrived in the Kwale District of Kenya to
 					assess the health status of road workers.<sup class="note" id="note-ref-1"><a href="#note-1">1</a></sup> I’ve seen a few pictures. In one, there’s a young chap in a
@@ -62,10 +69,16 @@ const byline = "Emily Brownell";
 					moved in a given amount of time, making sure they filled the barrow  just to the line demarcated by a splash of
 					white paint.
 				</p>
-				<div>
-					Figure 2. Kwale District, Kenya RARP Construction site, 1986. Photo courtesy of David Crompton.
-					[Men loading and hauling wheelbarrows up a steep incline while another man records with a clipboard]
-				</div>
+				<EssayImage
+					fullImage="/brownell/fig2-full.jpg"
+					fullWidth={2400}
+					fullHeight={1486}
+					smallImage="/brownell/fig2-small.jpg"
+					smallWidth={1280}
+					alt="Men loading and hauling wheelbarrows up a steep incline while another man records with a clipboard"
+				>
+					<b>Figure 2.</b> Kwale District, Kenya RARP Construction site, 1986. Photo courtesy of David Crompton.
+				</EssayImage>
 				<p>
 					These men and women (because, despite the photographs, many women also came to do the manual labour of road building)
 					were part of Kenya’s Rural Access Roads Programme (RARP). RARP began in 1974 and ran for over a decade through funding

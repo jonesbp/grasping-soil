@@ -1,10 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
+import EssayImage from "../../components/EssayImage.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
+import PageHeader from "../../components/PageHeader.astro";
 
 const locationTag = "The Gaza Strip, Palestine";
 const title = "Cultivating an Ancient Soil: Sub-dune Histories and Ecologies";
@@ -153,22 +154,34 @@ const byline = "Dotan Halevy";
 					Palestinian landowner. ‘Our last season ended abruptly in 1982’, Dothan wrote, ‘when the landowner preemptively re-interred the excavated
 					area and denied us further access.’<sup class="note" id="note-ref-18"><a href="#note-18">18</a></sup>
 				</p>
-				<div>
-					Figures 1 and 2: The advancement of the sand removal and site excavation. The red arrow marks the site of the future plantation. Photos
-					from Qedem 49, XXXIII – Figure 1: ‘Photo 4. The site of Deir el-Balah in August 1977’; Figure 2: ‘Photo 6. The site of Deir el-Balah in
+				<EssayImage
+					fullImage="/halevy/fig1+2.jpg"
+					fullWidth={942}
+					fullHeight={322}
+					alt="Removal of sand advances with the site’s excavation."
+				>
+					<b>Figures 1 and 2.</b> The advancement of the sand removal and site excavation. The red arrow marks the site of the future plantation. Photos
+					from Qedem 49, XXXIII – <b>Figure 1</b> ‘Photo 4. The site of Deir el-Balah in August 1977’; <b>Figure 2.</b> ‘Photo 6. The site of Deir el-Balah in
 					April 1979’.
-					Alt text: Removal of sand advances with the site’s excavation.
-				</div>
-				<div>
-					Figures 3 and 4: The advancement of the local plantation in 1981 is marked by a red arrow. Photos from Qedem 49, VIII, XXXV – Figure
-					3: ‘Color plate 2B. The site of Deir el-Balah in 1981’; Figure 4: ‘Photo 10. The site of Deir el-Balah in 1982’.
-					Alt text: Palestinian plantation advances on the excavated dunes.
-				</div>
-				<div>
-					Picture 5: The crater created by the excavation and the plantation already in place upon the conclusion of the dig in 1982. Photo
+				</EssayImage>
+				<EssayImage
+					fullImage="/halevy/fig3+4.jpg"
+					fullWidth={793}
+					fullHeight={511}
+					alt="Palestinian plantation advances on the excavated dunes."
+				>
+					<b>Figures 3 and 4.</b> The advancement of the local plantation in 1981 is marked by a red arrow. Photos from Qedem 49, VIII, XXXV – <b>Figure 3.</b>
+					‘Color plate 2B. The site of Deir el-Balah in 1981’; <b>Figure 4.</b> ‘Photo 10. The site of Deir el-Balah in 1982’.
+				</EssayImage>
+				<EssayImage
+					fullImage="/halevy/fig5.jpg"
+					fullWidth={638}
+					fullHeight={465}
+					alt="The crater created by the excavation and the plantation already in place upon the conclusion of the dig in 1982."
+				>
+					<b>Figure 5.</b> The crater created by the excavation and the plantation already in place upon the conclusion of the dig in 1982. Photo
 					from Qedem 49, XXX: ‘Photo 1. The site of Deir el-Balah in 1982, general view’.
-					Alt text: The crater created by the excavation and the plantation already in place upon the conclusion of the dig in 1982.
-				</div>
+				</EssayImage>
 				<h3 class="number-subhead">II</h3>
 				<p>
 					The Israeli accounts narrating the exposure of the ancient cemetery of Deir al-Balah all start from the Palestinian effort at ‘land
@@ -335,11 +348,15 @@ const byline = "Dotan Halevy";
 					Like the British before them, it was now the Israeli settlers’ turn to assert that the dunes were empty and uncultivable for the local
 					Arabs and thus needed to be appropriated by the technologically advanced.
 				</p>
-				<div>
-					Map 1. The Sumayri dune, and the excavation site marked by a red dot.
+				<EssayImage
+					fullImage="/halevy/map1.jpg"
+					fullWidth={1464}
+					fullHeight={1280}
+					alt="The place where the Sumayri dune and the excavation site meet."
+				>
+					<b>Map 1.</b> The Sumayri dune, and the excavation site marked by a red dot.
 					Gaza 1:100,000, Map created by UK Government (1934; revised 1943,1955; printed 1959), Crown copyright expired.
-					Alt text: The place where the Sumayri dune and the excavation site meet.
-				</div>
+				</EssayImage>
 				<p>
 					As mentioned, this vision of the dunes was not foreign to Zionist-turned-Israeli understanding of the coastal landscape. Its key representative
 					in the Israeli case is probably Adolf Reifenberg, a German-Jewish soil chemist and one of the founders of agricultural studies at the Hebrew
@@ -406,13 +423,18 @@ const byline = "Dotan Halevy";
 					remained only in the archaeological reports. No signs remained in the place itself or on the maps. Neither the Deir al-Balah people
 					nor the students who took part in the dig could tell later where it was.
 				</p>
-				<div>
-					Map 2. The Israeli Settlements upon the Sumayri dune and the Dier al-Balah farmland. The excavation site is marked by a red dot.
+				<EssayImage
+					fullImage="/halevy/map2-full.jpg"
+					fullWidth={1514}
+					fullHeight={1056}
+					smallImage="/halevy/map2-small.jpg"
+					smallWidth={1280}
+					alt="The Israeli Settlements upon the Sumayri dune and the Dier al-Balah farmland. The excavation site is at the overlap of the two."
+				>
+					<b>Map 2.</b> The Israeli Settlements upon the Sumayri dune and the Dier al-Balah farmland. The excavation site is marked by a red dot.
 					Gaza 1:50:000. Map by Survey of Israel 2006; Accessible via amudanan.co.il. Courtesy of the Survey of Israel (MAPI). All rights
 					reserved to the Survey of Israel. English captions and other marks are by the author and do not appear on the original map.
-					Alt text: The Israeli Settlements upon the Sumayri dune and the Dier al-Balah farmland. The excavation site is at the overlap
-					of the two.
-				</div>
+				</EssayImage>
 				<h3 class="number-subhead">V</h3>
 				<p>
 					The final layer of colonial dialectics in this case was revealed in the years following, when the findings of Deir al-Balah were gradually

@@ -1,10 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
+import EssayImage from "../../components/EssayImage.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
+import PageHeader from "../../components/PageHeader.astro";
 
 const locationTag = "Appalachia, USA";
 const title = "Mountains Become Wasteland";
@@ -25,10 +26,17 @@ const byline = "Steven Stoll";
 			/>
 			<LongFormContent>
 				<h2 class="visually-hidden">Essay</h2>
-				<div>
-					Figure 1. A dragline in southern West Virginia, 2010. Note the size of the bulldozer and truck in comparison. Photo by Mark’s Photo, under licence from Getty Images.
-					[Alt text: A dragline operates in a strip mine]
-				</div>
+				<EssayImage
+					fullImage="/stoll/fig1-full.jpg"
+					fullWidth={2400}
+					fullHeight={1600}
+					smallImage="/stoll/fig1-small.jpg"
+					smallWidth={1280}
+					alt="A dragline operates in a strip mine"
+				>
+					<b>Figure 1.</b> A dragline in southern West Virginia, 2010. Note the size of the bulldozer and
+					truck in comparison. Photo by Mark’s Photo, under licence from Getty Images.
+				</EssayImage>
 				<p>
 					On a spring morning in 1966, a retired coal miner named Ellis Bailey awoke to a rockslide that
 					crushed part of his house, engulfed his car, wrecked his garden and polluted the spring that
@@ -147,10 +155,17 @@ const byline = "Steven Stoll";
 					power. Seldom, if ever, in human history, except during war, have people faced the intentional annihilation of their environment.
 				</p>
 				<hr class="essay-internal" />
-				<div>
-					Figure 2. A family cemetery in West Virginia. Strip mining operations often bury these burial grounds in debris. Photo by John Nicely (s.d.), public domain from Library of Congress, Prints & Photographs Division, HABS survey.
-					[Alt text: Scattered headstones in a rural cemetery on a hillside in West Virginia.]
-				</div>
+				<EssayImage
+					fullImage="/stoll/fig2-full.jpg"
+					fullWidth={2044}
+					fullHeight={1600}
+					smallImage="/stoll/fig2-small.jpg"
+					smallWidth={1280}
+					alt="Scattered headstones in a rural cemetery on a hillside in West Virginia."
+				>
+					<b>Figure 2.</b> A family cemetery in West Virginia. Strip mining operations often bury these burial grounds in debris. Photo
+					by John Nicely (s.d.), public domain from Library of Congress, Prints & Photographs Division, HABS survey.
+				</EssayImage>
 				<p>
 					Early in the film, Ellis Bailey is buying groceries when he confronts a coal worker named Robert Kincaid. People in
 					town knew that Bailey and a few neighbours were soon driving to Charleston to lobby the state Senate for a law to
@@ -285,10 +300,19 @@ const byline = "Steven Stoll";
 					than previous laws.<sup class="note" id="note-ref-15"><a href="#note-15">15</a></sup>
 				</p>
 				<hr class="essay-internal" />
-				<div>
-					Figure 3.  The French countryside turned to wasteland during the First World War. The sign reads, ‘This Was Forges’, referring to Forges-sur-Meuse, site of the final Allied offensive. Photo by Edward Steichen (1918), public domain from Library of Congress, Prints & Photographs Division.
-					[alt text: The remnants of a French town, destroyed in one of the last battles of the First World War]
-				</div>
+				<EssayImage
+					fullImage="/stoll/fig3-full.jpg"
+					fullWidth={2354}
+					fullHeight={1600}
+					smallImage="/stoll/fig3-small.jpg"
+					smallWidth={1280}
+					alt="The remnants of a French town, destroyed in one of the last battles of the First World War"
+				>
+
+					<b>Figure 3.</b> The French countryside turned to wasteland during the First World War. The sign
+					reads, ‘This Was Forges’, referring to Forges-sur-Meuse, site of the final Allied offensive. Photo by
+					Edward Steichen (1918), public domain from Library of Congress, Prints & Photographs Division.
+				</EssayImage>
 				<p>
 					Another term describes the strange sense of displacement caused by strip mining. No-man’s land first
 					appeared in the English Domesday book of 1086 for a location beyond the walls of London reserved for

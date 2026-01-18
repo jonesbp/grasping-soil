@@ -1,10 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
+import EssayImage from "../../components/EssayImage.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
+import PageHeader from "../../components/PageHeader.astro";
 
 const locationTag = "Lusatia, Germany";
 const title = "Punkt Null (Point Zero): An Ecological Substrate Begins Anew";
@@ -139,18 +140,30 @@ const byline = "Cynthia Browne";
 					The patch of Welzow-Süd, whose mine began operations in 1959, is part and parcel of this history of industrial ruination that
 					leaves in its wake residue and rubble.
 				</p>
-				<div>
-					Figure 1. Viewing point of Tagebau Nochten (a), one of the four remaining active lignite mines in Lusatia; and the view from
+				<EssayImage
+					fullImage="/browne/fig1-full.jpg"
+					fullWidth={2400}
+					fullHeight={900}
+					smallImage="/browne/fig1-small.jpg"
+					smallWidth={1280}
+					alt="interior shot of a viewing building and the view out from it"
+				>
+					<b>Figure 1.</b> Viewing point of Tagebau Nochten (a), one of the four remaining active lignite mines in Lusatia; and the view from
 					there (b), 19 September 2021. Photos by the author, with thanks to Christian and Edith Penk for sharing their knowledge and
 					experience of the area.
-					Alt text; interior shot of a viewing building and the view out from it
-				</div>
-				<div>
-					Figure 2. Colour photo by the author of a black and white photograph reproduced on an informational tablet for visitors at the
+				</EssayImage>
+				<EssayImage
+					fullImage="/browne/fig2-full.jpg"
+					fullWidth={1384}
+					fullHeight={794}
+					smallImage="/browne/fig2-small.jpg"
+					smallWidth={1280}
+					alt="image of an old photo showing boulders and excavation"
+				>
+					<b>Figure 2.</b> Colour photo by the author of a black and white photograph reproduced on an informational tablet for visitors at the
 					Tagebau Nochten viewing point. It documents the accumulation of rubble, i.e. large boulders, as part of the excavation of lignite
 					at the former Greifenhain open-cast mine. The original black and white photograph was taken in 1973 by W. Nowel.
-					Alt text: image of an old photo showing boulders and excavation
-				</div>
+				</EssayImage>
 				<p>
 					To dig up buried lignite on an industrial scale is to exchange one biogeochemical residue, i.e. lignite, for another kind of
 					residue: disturbed and mixed geological layers visible as sandy piles, heaps of stone and leftover rubble that then get used to
@@ -286,10 +299,14 @@ const byline = "Cynthia Browne";
 					such responsibility to control the future temporalities of a substrate’s ecology, by underscoring how such processes are subject
 					to not only human, but also geophysical and biochemical, temporalities.
 				</p>
-				<div>
-					Figure 3. Monitoring stations set up by scientists at Punkt Null (Point Zero), 23 September 2021. Photo by the author.
-					Alt text photo of grassland with small trees and a number of white plastic objects
-				</div>
+				<EssayImage
+					fullImage="/browne/fig3.jpg"
+					fullWidth={960}
+					fullHeight={1280}
+					alt="photo of grassland with small trees and a number of white plastic objects"
+				>
+					<b>Figure 3.</b> Monitoring stations set up by scientists at Punkt Null (Point Zero), 23 September 2021. Photo by the author.
+				</EssayImage>
 				<p>
 					In other words, the very elements of surprise and the temporalities unfolding from unexpected occurrences which punctuate Chicken Creek’s
 					biogeochemical life after ‘point zero’, provide evidence that responsibility for ecological restoration that hinges on such anthropocentric control
