@@ -1,20 +1,30 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
----
 
-<Layout>
+const locationTag = "Appalachia, USA";
+const title = "Mountains Become Wasteland";
+const byline = "Steven Stoll";
+---
+<Layout title={title}>
 	<main>
 		<PageContent>
+			<PageHeader
+				title="Essays"
+				skipH1={true}
+				linkTo="/essays"
+			/>
 			<EssayHeader
-				locationTag="Appalachia, USA"
-				title="Mountains Become Wasteland"
-				byline="Steven Stoll"
+				locationTag={locationTag}
+				title={title}
+				byline={byline}
 			/>
 			<LongFormContent>
+				<h2 class="visually-hidden">Essay</h2>
 				<div>
 					Figure 1. A dragline in southern West Virginia, 2010. Note the size of the bulldozer and truck in comparison. Photo by Mark’s Photo, under licence from Getty Images.
 					[Alt text: A dragline operates in a strip mine]

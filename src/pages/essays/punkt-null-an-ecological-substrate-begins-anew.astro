@@ -1,20 +1,30 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
----
 
-<Layout>
+const locationTag = "Lusatia, Germany";
+const title = "Punkt Null (Point Zero): An Ecological Substrate Begins Anew";
+const byline = "Cynthia Browne";
+---
+<Layout title={title}>
 	<main>
 		<PageContent>
+			<PageHeader
+				title="Essays"
+				skipH1={true}
+				linkTo="/essays"
+			/>
 			<EssayHeader
-				locationTag="Lusatia, Germany"
-				title="Punkt Null (Point Zero): An Ecological Substrate Begins Anew"
-				byline="Cynthia Browne"
+				locationTag={locationTag}
+				title={title}
+				byline={byline}
 			/>
 			<LongFormContent>
+				<h2 class="visually-hidden">Essay</h2>
 				<p>
 					As we drive across sweeping green fields towards the Chicken Creek (<i>Hühnerwasser</i>) artificial catchment
 					from the German city of Cottbus in September 2021, Professor R. tells me that the substrate sustaining this vegetation

@@ -1,21 +1,32 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
-import PageHeader from "../../components/PageHeader.astro";
+
+const locationTag = "British Mandate Palestine";
+const title = "'The Fertility of the Soil is in Your Hand': On Manure and the Colonial Roots and Branches of the Organic Movement";
+const byline = "Tamar Novick";
 ---
 
-<Layout>
+<Layout title={title}>
 	<main>
-		<PageContent>
+			<PageHeader
+				title="Essays"
+				skipH1={true}
+				linkTo="/essays"
+			/>
 			<EssayHeader
-				locationTag="British Mandate Palestine"
-				title="‘The Fertility of the Soil is in Your Hand’: On Manure and the Colonial Roots and Branches of the Organic Movement"
+				locationTag={locationTag}
+				title={title}
+				byline={byline}
+			/>
 				byline="Tamar Novick"
 			/>
 			<LongFormContent>
+				<h2 class="visually-hidden">Essay</h2>
 				<p>
 					To substantiate the ideas he was about to present to the British Royal Society of Arts, the newly
 					knighted Albert Howard, considered the founder – or the twentieth century’s most important advocate –

@@ -1,20 +1,30 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
----
 
-<Layout>
+const locationTag = "The Ring of Fire";
+const title = "Arsenic Cycles Through Racism and Empire";
+const byline = "Jayson Maurice Porter";
+---
+<Layout title={title}>
 	<main>
 		<PageContent>
+			<PageHeader
+				title="Essays"
+				skipH1={true}
+				linkTo="/essays"
+			/>
 			<EssayHeader
-				locationTag="The Ring of Fire"
-				title="Arsenic Cycles Through Racism and Empire"
-				byline="Jayson Maurice Porter"
+				locationTag={locationTag}
+				title={title}
+				byline={byline}
 			/>
 			<LongFormContent>
+				<h2 class="visually-hidden">Essay</h2>
 				<p>
 					Arsenic is a byproduct of Earth bubbling from the inside out. Before there was life, and therefore before the possibility of
 					toxicity, arsenic spewed from holes and crevasses in Earth’s crust and bonded with sulphur, iron, and other metals.

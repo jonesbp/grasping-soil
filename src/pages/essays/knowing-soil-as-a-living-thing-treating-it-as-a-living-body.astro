@@ -1,19 +1,30 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
+
+const locationTag = "Ndungu, Tanzania";
+const title = "Knowing Soil as a Living Thing, Treating it as a Non-Living Body: Contradictory Forms of Care";
+const byline = "Lulu Tessua";
 ---
-<Layout>
+<Layout title={title}>
 	<main>
 		<PageContent>
+			<PageHeader
+				title="Essays"
+				skipH1={true}
+				linkTo="/essays"
+			/>
 			<EssayHeader
-				locationTag="Ndungu, Tanzania"
-				title="Knowing Soil as a Living Thing, Treating it as a Non-Living Body: Contradictory Forms of Care"
-				byline="Lulu Tessua"
+				locationTag={locationTag}
+				title={title}
+				byline={byline}
 			/>
 			<LongFormContent>
+				<h2 class="visually-hidden">Essay</h2>
 				<p>
 					Ndungu is a village in the Kilimanjaro region under the foothills of the Pare mountains of North-Eastern Tanzania. The village is located in
 					South Pare along the Mkomazi river basin. When a traveller passes by the main road, Ndungu gives the impression of a semi-arid place. There are

@@ -1,20 +1,30 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
-import PageHeader from "../../components/PageHeader.astro";
+
+const locationTag = "Under the electron microscope, Lehmann Lab, Cornell University, New York";
+const title = "Behaviour instead of Identity: Functional Complexity of Organic Matter as an Organising Principle in Soil Ecosystems";
+const byline = "Johannes Lehmann";
 ---
-<Layout>
+<Layout title={title}>
 	<main>
 		<PageContent>
+			<PageHeader
+				title="Essays"
+				skipH1={true}
+				linkTo="/essays"
+			/>
 			<EssayHeader
-				locationTag="Under the electron microscope, Lehmann Lab, Cornell University, New York"
-				title="Behaviour instead of Identity: Functional Complexity of Organic Matter as an Organising Principle in Soil Ecosystems"
-				byline="Johannes Lehmann"
+				locationTag={locationTag}
+				title={title}
+				byline={byline}
 			/>
 			<LongFormContent>
+				<h2 class="visually-hidden">Essay</h2>
 				<p>
 					Organic matter in soil possesses an enduring allure. This is not only because soil
 					houses the largest pool of carbon in terrestrial ecosystems – more than all plants

@@ -1,5 +1,5 @@
 ---
-const { title } = Astro.props;
+const { title, skipH1, linkTo } = Astro.props;
 ---
 
 <div class="page-header">
@@ -9,11 +9,17 @@ const { title } = Astro.props;
     <div class="image-clipper">
         <img src="/images/hero.jpg" alt="illustration depicting layers of soil with roots and human artifacts interpersed and people working the surface" />
     </div>
-    <div class="text-overlay">
-        <div class="title">
-            <h1>{title}</h1>
-        </div>
-    </div>
+    {title && (
+	    <div class="text-overlay">
+	        <div class="title">
+				{skipH1 ? (
+					<p>{linkTo ? <a href={linkTo}>{title}</a> : title}</p>
+				) : (
+					<h1>{linkTo ? <a href={linkTo}>{title}</a> : title}</h1>
+				)}
+	        </div>
+	    </div>
+	)}
 </div>
 
 <style>
@@ -87,6 +93,22 @@ const { title } = Astro.props;
         bottom: 2px;
     text-transform: uppercase;
     z-index: 1;
+}
+
+h1, p {
+    display: inline;
+    font-size: 1em;
+    margin: 0;
+}
+
+.page-header .title a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    transition: .3s all ease;
+}
+
+.page-header .title a:hover {
+    opacity: .7;
 }
 
 @media all and (max-width: 1120px) {
@@ -166,9 +188,4 @@ const { title } = Astro.props;
     }
 }
 
-h1 {
-    display: inline;
-    font-size: 1em;
-    margin: 0;
-}
 </style>

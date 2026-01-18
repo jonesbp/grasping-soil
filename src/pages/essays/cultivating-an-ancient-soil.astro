@@ -1,21 +1,30 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
-import PageHeader from "../../components/PageHeader.astro";
----
 
-<Layout>
+const locationTag = "The Gaza Strip, Palestine";
+const title = "Cultivating an Ancient Soil: Sub-dune Histories and Ecologies";
+const byline = "Dotan Halevy";
+---
+<Layout title={title}>
 	<main>
 		<PageContent>
+			<PageHeader
+				title="Essays"
+				skipH1={true}
+				linkTo="/essays"
+			/>
 			<EssayHeader
-				locationTag="The Gaza Strip, Palestine"
-				title="Cultivating an Ancient Soil: Sub-dune Histories and Ecologies"
-				byline="Dotan Halevy"
+				locationTag={locationTag}
+				title={title}
+				byline={byline}
 			/>
 			<LongFormContent>
+				<h2 class="visually-hidden">Essay</h2>
 				<p>
 					Sand is a material defined by size. It can consist of any inert substance as long as its particles range
 					from 250 micrometres to 2 millimetres in diameter. Under what conditions can this material attribute become

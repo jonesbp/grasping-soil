@@ -1,20 +1,31 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
+
+const locationTag = "Berlin, The Cosmos";
+const title = "Blood over Soil. Albert Speer's Heavy Load-Bearing Cylinder, Glacial Till, and Racial Terra-Forming";
+const byline = "Paul Kurek";
 ---
 
-<Layout>
+<Layout title={title}>
 	<main>
 		<PageContent>
+			<PageHeader
+				title="Essays"
+				skipH1={true}
+				linkTo="/essays"
+			/>
 			<EssayHeader
-				locationTag="Berlin, The Cosmos"
-				title="Blood over Soil. Albert Speer’s Heavy Load-Bearing Cylinder, Glacial Till, and Racial Terra-Forming"
-				byline="Paul Kurek"
+				locationTag={locationTag}
+				title={title}
+				byline={byline}
 			/>
 			<LongFormContent>
+				<h2 class="visually-hidden">Essay</h2>
 				<div>
 					Figure 1. Glacial and interglacial soils in the area Berlin-Kolonnenbrücke: structure of glacial till, seen from the side, 1941,
 					Degebo. Source: Karteiarchiv Degebo, no. AIIa3., Neg. Nr. 716.
