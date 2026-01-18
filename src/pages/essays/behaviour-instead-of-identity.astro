@@ -1,10 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-import PageHeader from "../../components/PageHeader.astro";
 import EssayHeader from "../../components/EssayHeader.astro";
+import EssayImage from "../../components/EssayImage.astro";
 import LongFormContent from "../../components/LongFormContent.astro";
 import PageContent from "../../components/PageContent.astro";
+import PageHeader from "../../components/PageHeader.astro";
 
 const locationTag = "Under the electron microscope, Lehmann Lab, Cornell University, New York";
 const title = "Behaviour instead of Identity: Functional Complexity of Organic Matter as an Organising Principle in Soil Ecosystems";
@@ -130,13 +131,19 @@ const byline = "Johannes Lehmann";
 					possibly increase the organic matter in soil that is truly a flow-through reactor
 					of transient carbon rather than a storage container of static carbon (Figure 1).
 				</p>
-				<div>
-					Figure 1. Bathtub analogy of why there is soil organic carbon as a balance between
+				<EssayImage
+					fullImage="/lehmann/fig1-full.jpg"
+					fullWidth={2400}
+					fullHeight={1500}
+					smallImage="/lehmann/fig1-small.jpg"
+					smallWidth={1280}
+					alt="sketch of a bathtub indicating carbon input into and output from soil"
+				>
+					<b>Figure 1.</b> Bathtub analogy of why there is soil organic carbon as a balance between
 					input (plant input of photosynthetically fixed carbon) and output (carbon dioxide).
 					Soil organic carbon can flow out of the bathtub in principle, but it does not, because
 					the pipe going out is controlling the output.
-					[alt text: sketch of a bathtub indicating carbon input into and output from soil]
-				</div>
+				</EssayImage>
 				<p>
 					Another important aspect that must be reassessed when questioning extracted ‘humic substances’
 					is that an ‘average soil’ does not exist. Using very fine-scale investigation with the help of
@@ -167,13 +174,16 @@ const byline = "Johannes Lehmann";
 					identify or quantify ‘humic substances’ than by an alkaline extraction, ‘humic substances’ are
 					not a helpful way to truly understand soil organic carbon.
 				</p>
-				<div>
-					Figure 2. Fruit smoothie experiment as a performance on ‘humic substances’ at the workshop ‘Thinking
+				<EssayImage
+					fullImage="/lehmann/fig2.jpg"
+					fullWidth={1067}
+					fullHeight={585}
+					alt="photos of three different fruits in glasses and a man in a white coat holding up a smoothie made from them"
+				>
+					<b>Figure 2.</b> Fruit smoothie experiment as a performance on ‘humic substances’ at the workshop ‘Thinking
 					from the Substrate’, 3–6 June 2024, Harnack House, Max Planck Institute, Berlin, organised by Emily
 					Brownell. Photos: courtesy of Amiel Bize (left); by the author (right).
-					[alt text] photos of three different fruits in glasses and a man in a white coat holding up a smoothie
-					made from them]
-				</div>
+				</EssayImage>
 				<p>
 					The shift in scholarship from sequestering recalcitrant ‘humic substances’ to caring about feeding
 					and housing diverse actors with diverse substrates is much more in line with Donna Haraway’s assertion

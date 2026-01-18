@@ -1,0 +1,80 @@
+---
+const {
+	fullImage,
+	fullWidth,
+	fullHeight,
+	smallImage,
+	smallWidth,
+	alt
+} = Astro.props;
+---
+
+<div class="image-block">
+	<img
+		src={`/images/essays${fullImage}`}
+		srcset={smallImage && smallWidth && fullWidth ? `/images/essays${smallImage} ${smallWidth}w, /images/essays${fullImage} ${fullWidth}w` : undefined}
+		width={fullWidth}
+		height={fullHeight}
+		alt={alt}
+	/>
+	<p class="caption">
+		<slot />
+	</p>
+</div>
+
+<style>
+.image-block {
+	margin: 4rem -38.23529412%;
+	width: 1200px;
+}
+
+img {
+	display: block;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%;
+}
+
+.caption {
+	font-size: 1rem !important;
+	margin-right: auto;
+	margin-bottom: 0 !important;
+	margin-left: auto;
+	max-width: 680px;
+}
+
+@media all and (max-width: 1200px) {
+	.image-block {
+		margin-left: -140px;
+		margin-right: -140px;
+		width: 960px;
+	}
+}
+
+@media all and (max-width: 960px) {
+	.image-block {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+		width: 680px;
+	}
+
+	.caption {
+		max-width: 100%;
+	}
+}
+
+@media all and (max-width: 680px) {
+	.image-block {
+		margin-right: -3.19148936%;
+		margin-left: -3.19148936%;
+		max-width: none;
+		width: 106.38297872%;
+	}
+
+	.caption {
+		max-width: 94%;
+	}
+}
+</style>
