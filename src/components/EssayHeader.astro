@@ -1,11 +1,13 @@
 ---
 interface Props {
+	authorSlug: string;
 	byline: string;
 	locationTag: string;
 	title: string;
 }
 
 const {
+	authorSlug,
 	byline,
 	locationTag,
 	title,
@@ -19,7 +21,7 @@ const {
 		{title}
 	</h1>
 	<p class="byline">
-		{byline}
+		<a href={`/contributors#${authorSlug}`}>{byline}</a>
 	</p>
 </div>
 
@@ -52,5 +54,16 @@ p.byline {
 	font-size: 1.4rem;
 	font-weight: 300;
 	margin-top: 0;
+}
+
+p.byline a {
+	color: var(--tertiary-text-color);
+	text-decoration-color: transparent;
+	transition: .1s all ease;
+}
+
+p.byline a:hover {
+	color: var(--primary-text-color);
+	text-decoration-color: var(--tertiary-text-color);
 }
 </style>
