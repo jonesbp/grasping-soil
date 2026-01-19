@@ -1,13 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import LongFormContent from "../components/LongFormContent.astro";
 import PageContent from "../components/PageContent.astro";
 import PageHeader from "../components/PageHeader.astro";
 ---
 
 <Layout title="Colophon">
-    <main>
-        <PageHeader title="Colophon" />
-        <PageContent>
-        </PageContent>
-    </main>
+	<main>
+		<PageHeader title="Colophon" />
+		<PageContent>
+			<LongFormContent>
+				<p>
+					<i>Grasping Soil</i> was made possible by funding from AHRC, Max Planck Institute and University of Edinburgh.
+				</p>
+				<p>
+					The book, <a href="https://www.whpress.co.uk/publications/2025/11/05/graspingsoil/" target="_blank" rel="noopener noreferrer"><i>Grasping Soil: A Syllabus and Essays for The Environmental Humanities</i></a>,
+					is available from <a href="https://www.whpress.co.uk" target="_blank" rel="noopener noreferrer">The White Horse Press</a>.
+				</p>
+				<p>
+					<a href="https://processtypefoundry.com" target="_blank" rel="noopener noreferrer">Process Type Foundry</a>
+					contributed a license to their typeface <a href="https://seravek.com" target="_blank" rel="noopener noreferrer">Seravek</a>.
+				</p>
+			</LongFormContent>
+		</PageContent>
+	</main>
 </Layout>
