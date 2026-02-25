@@ -14,9 +14,11 @@ const {
 } = Astro.props;
 ---
 <div class="essay-header">
-	<p class="location-tag">
-		{locationTag}:
-	</p>
+	{locationTag && (
+		<p class="location-tag">
+			{locationTag}:
+		</p>
+	)}
 	<h1 class="title">
 		{title}
 	</h1>
