@@ -60,8 +60,24 @@ const { title, skipH1, linkTo } = Astro.props;
     border-color: var(--primary-text-color);
     border-style: solid;
     border-width: 0 0 4px 0;
-    opacity: .7;
     overflow: hidden;
+    position: relative;
+}
+
+.page-header .image-clipper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(var(--background-color-rgb), 0) 0%,
+        rgba(var(--background-color-rgb), 0) 40%,
+        rgba(var(--background-color-rgb), .6) 100%
+    );
+    z-index: 1;
 }
 
 .page-header img {
