@@ -59,7 +59,6 @@
                 </ul>
             </li>
             <li><a href="/essays" class:active={isActivePath('/essays')}>Essays</a></li>
-            <li><a href="/reading-list" class:active={isActivePath('/reading-list')}>Reading List</a></li>
             <li><a href="/contributors" class:active={isActivePath('/contributors')}>Contributors</a></li>
         </ul>
     </div>
